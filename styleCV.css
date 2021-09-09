@@ -144,5 +144,6 @@ body {
     }
     .diplomes .dipl {
         margin-left: 25px;
+        font-size: 5px;
     }
 }
