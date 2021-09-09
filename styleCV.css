@@ -26,7 +26,10 @@ b {
     font-size: 30px;
     margin-right: 60px;
 }
-
+a:link {
+    text-decoration: none;
+    color: red;
+}
 h2 {
     /*text-align: center;*/
 }
@@ -110,6 +113,9 @@ body {
     margin-bottom: 0;
 }
 
+.fab fa-linkedin{
+    font-size: 10px;
+}
 .experiencepro {
     /*overflow-y: scroll;*/
     /*background: linear-gradient(var(--primarycolor), var(--secondarycolor));*/
