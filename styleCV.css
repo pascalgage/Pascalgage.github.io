@@ -21,6 +21,11 @@ li {
 b {
     font-size: 17px;
 }
+.y {
+    margin-left: 35px;
+    font-size: 30px;
+    margin-right: 60px;
+}
 
 h2 {
     /*text-align: center;*/
@@ -76,6 +81,7 @@ body {
 
 .competences {
     border-radius: 10px;
+    background-color: lavenderblush;
     border: 2px solid black;
     grid-area: COMP;
 }
@@ -127,6 +133,8 @@ body {
 }
 
 .dipl {
+    
+    margin-top: 13px;
     font-size: 25px;
 }
 
