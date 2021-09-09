@@ -1,0 +1,114 @@
+:root {
+    --primarycolor: #ab4967;
+    --secondarycolor: #a993b4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 10px;
+    margin: 15px;
+    list-style: none;
+    text-decoration: none;
+}
+
+li {
+    padding: 5px;
+}
+
+b {
+    font-size: 17px;
+}
+
+h2 {
+    /*text-align: center;*/
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--secondarycolor);
+}
+
+.header {
+    background: linear-gradient(var(--primarycolor), var(--secondarycolor));
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 75px 75px;
+    grid-template-areas: "PHOTO TITRE1" "PHOTO TITRE2";
+}
+
+.header figure {
+    margin: 0;
+    grid-area: PHOTO;
+}
+
+.header h1 {
+    text-align: center;
+    grid-area: TITRE1;
+    margin-left: 10px;
+}
+
+.header h2 {
+    text-align: center;
+    grid-area: TITRE2;
+    margin-left: 10px;
+}
+
+.header img {
+    transform: scaleX(-1);
+    width: 150px;
+}
+
+.main {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 300px 1fr;
+    grid-template-areas: "ETAT DIP" "COMP EXP";
+}
+
+.competences {
+    border-radius: 10px;
+    border: 2px solid black;
+    grid-area: COMP;
+}
+
+.etatcivil {
+    border-radius: 10px;
+    border: 2px solid black;
+    grid-area: ETAT;
+}
+
+.diplomes {
+    border-radius: 10px;
+    border: 2px solid black;
+    grid-area: DIP;
+}
+
+.etatcivil h1 {
+    margin-bottom: 0;
+}
+
+.experiencepro {
+    /*overflow-y: scroll;*/
+    /*background: linear-gradient(var(--primarycolor), var(--secondarycolor));*/
+    border-radius: 10px;
+    border: 2px solid black;
+    grid-area: EXP;
+}
+
+.experiencepro p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.pastille {
+    font-family: cursive;
+    color: darkred;
+    font-style: italic;
+    margin-bottom: 5px;
+}
