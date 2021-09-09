@@ -1,6 +1,6 @@
 :root {
-    --primarycolor: #ab4967;
-    --secondarycolor: #a993b4;
+    --primarycolor: #f8f0f3;
+    --secondarycolor: #fdfcfd;
 }
 
 * {
@@ -34,7 +34,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(var(--primarycolor), var(--secondarycolor));
+    background: linear-gradient(lightgrey, white);
     display: grid;
     grid-template-columns: 150px 1fr;
     grid-template-rows: 75px 75px;
@@ -48,6 +48,7 @@ body {
 
 .header h1 {
     text-align: center;
+    color: darkred;
     grid-area: TITRE1;
     margin-left: 10px;
 }
@@ -59,6 +60,8 @@ body {
 }
 
 .header img {
+    margin-top: 5px;
+    margin-left: 20px;
     transform: scaleX(-1);
     width: 150px;
 }
@@ -67,7 +70,7 @@ body {
     display: grid;
     gap: 1px;
     grid-template-columns: 350px 1fr;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: 400px 1fr;
     grid-template-areas: "ETAT DIP" "COMP EXP";
 }
 
@@ -79,6 +82,8 @@ body {
 
 .etatcivil {
     border-radius: 10px;
+    background-color: black;
+    color: #fff;
     border: 2px solid black;
     grid-area: ETAT;
 }
@@ -89,6 +94,10 @@ body {
     grid-area: DIP;
 }
 
+.diplomes .dipl {
+    margin-left: 150px;
+}
+
 .etatcivil h1 {
     margin-bottom: 0;
 }
@@ -97,6 +106,8 @@ body {
     /*overflow-y: scroll;*/
     /*background: linear-gradient(var(--primarycolor), var(--secondarycolor));*/
     border-radius: 10px;
+    background-color: black;
+    color: #fff;
     border: 2px solid black;
     grid-area: EXP;
 }
@@ -111,4 +122,27 @@ body {
     color: darkred;
     font-style: italic;
     margin-bottom: 5px;
+}
+
+.dipl {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 420px) {
+    .header {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 150px 150px;
+        grid-template-areas: "PHOTO TITRE1" "PHOTO TITRE2";
+    }
+    .main {
+        display: grid;
+        gap: 1px;
+        grid-template-columns: 350px 1fr;
+        grid-template-rows: 800px 1fr;
+        grid-template-areas: "ETAT DIP" "COMP EXP";
+    }
+    .diplomes .dipl {
+        margin-left: 25px;
+    }
 }
