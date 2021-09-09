@@ -89,6 +89,8 @@ body {
 }
 
 .diplomes {
+    background-color: lavenderblush;
+    margin-right: 23px;
     border-radius: 10px;
     border: 2px solid black;
     grid-area: DIP;
@@ -119,7 +121,7 @@ body {
 
 .pastille {
     font-family: cursive;
-    color: darkred;
+    color: red;
     font-style: italic;
     margin-bottom: 5px;
 }
