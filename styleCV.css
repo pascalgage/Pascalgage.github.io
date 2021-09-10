@@ -1,6 +1,7 @@
 :root {
     --primarycolor: #ada3a7;
     --secondarycolor: #fdfcfd;
+    --tertiarycolor: #3b5998;
 }
 
 * {
@@ -19,7 +20,12 @@ li {
 }
 
 b {
+    list-style-type: disc red;
     font-size: 17px;
+}
+
+.experiencepro b {
+    list-style-type: disc;
 }
 
 .y {
@@ -45,7 +51,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(var(--primarycolor), var(--secondarycolor));
+    background-color: #fff;
     display: grid;
     grid-template-columns: 150px 1fr;
     grid-template-rows: 75px 75px;
@@ -59,7 +65,7 @@ body {
 
 .header h1 {
     text-align: center;
-    color: red;
+    color: var(--tertiarycolor);
     grid-area: TITRE1;
     margin-left: 10px;
 }
@@ -95,7 +101,7 @@ body {
 
 .etatcivil {
     border-radius: 10px;
-    background-color: black;
+    background-color: var(--tertiarycolor);
     color: #fff;
     border: 2px solid black;
     grid-area: ETAT;
@@ -123,7 +129,7 @@ body {
 
 .experiencepro {
     border-radius: 10px;
-    background-color: black;
+    background-color: var(--tertiarycolor);
     color: #fff;
     border: 2px solid black;
     grid-area: EXP;
@@ -135,13 +141,14 @@ body {
 }
 
 .pastille {
+    list-style-type: disc;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    font-style: bold;
     margin-bottom: 5px;
 }
 
 .dipl {
+    list-style-type: disc;
     margin-top: 13px;
     font-size: 25px;
 }
