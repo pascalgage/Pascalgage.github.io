@@ -94,7 +94,7 @@ body {
 
 .competences {
     border-radius: 10px;
-    background-color: lavenderblush;
+    background-color: #fff;
     border: 2px solid black;
     grid-area: COMP;
 }
@@ -108,7 +108,7 @@ body {
 }
 
 .diplomes {
-    background-color: lavenderblush;
+    background-color: #fff;
     margin-right: 23px;
     border-radius: 10px;
     border: 2px solid black;
