@@ -21,15 +21,22 @@ li {
 b {
     font-size: 17px;
 }
+
 .y {
     margin-left: 35px;
     font-size: 30px;
     margin-right: 60px;
 }
+
 a:link {
     text-decoration: none;
     color: red;
 }
+
+.etatcivil a {
+    color: #fff;
+}
+
 h2 {
     /*text-align: center;*/
 }
@@ -42,7 +49,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(var(--primarycolor),var(--secondarycolor));
+    background: linear-gradient(var(--primarycolor), var(--secondarycolor));
     display: grid;
     grid-template-columns: 150px 1fr;
     grid-template-rows: 75px 75px;
@@ -56,7 +63,7 @@ body {
 
 .header h1 {
     text-align: center;
-    color: darkred;
+    color: red;
     grid-area: TITRE1;
     margin-left: 10px;
 }
@@ -114,9 +121,10 @@ body {
     margin-bottom: 0;
 }
 
-.fab fa-linkedin{
+.fab fa-linkedin {
     font-size: 10px;
 }
+
 .experiencepro {
     /*overflow-y: scroll;*/
     /*background: linear-gradient(var(--primarycolor), var(--secondarycolor));*/
@@ -140,7 +148,6 @@ body {
 }
 
 .dipl {
-    
     margin-top: 13px;
     font-size: 25px;
 }
