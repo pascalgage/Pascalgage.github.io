@@ -126,8 +126,6 @@ body {
 }
 
 .experiencepro {
-    /*overflow-y: scroll;*/
-    /*background: linear-gradient(var(--primarycolor), var(--secondarycolor));*/
     border-radius: 10px;
     background-color: black;
     color: #fff;
@@ -163,7 +161,7 @@ body {
         display: grid;
         gap: 1px;
         grid-template-columns: 350px 1fr;
-        grid-template-rows: 800px 1fr;
+        grid-template-rows: 900px 1fr;
         grid-template-areas: "ETAT DIP" "COMP EXP";
     }
     .diplomes .dipl {
@@ -182,7 +180,7 @@ body {
         display: grid;
         gap: 1px;
         grid-template-columns: 350px 1fr;
-        grid-template-rows: 800px 1fr;
+        grid-template-rows: 900px 1fr;
         grid-template-areas: "ETAT DIP" "COMP EXP";
     }
     .diplomes .dipl {
