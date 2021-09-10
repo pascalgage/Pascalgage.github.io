@@ -141,8 +141,8 @@ body {
 }
 
 .pastille {
-    font-family: cursive;
-    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
     font-style: bold;
     margin-bottom: 5px;
 }
