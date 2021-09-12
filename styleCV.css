@@ -108,6 +108,7 @@ body {
 }
 
 .diplomes {
+    
     background-color: #fff;
     margin-right: 23px;
     border-radius: 10px;
@@ -116,15 +117,12 @@ body {
 }
 
 .diplomes .dipl {
-    margin-left: 14px;
+    font-size: 20px;
+    margin-left: 19px;
 }
 
 .etatcivil h1 {
     margin-bottom: 0;
-}
-
-.fab fa-linkedin {
-    font-size: 10px;
 }
 
 .experiencepro {
