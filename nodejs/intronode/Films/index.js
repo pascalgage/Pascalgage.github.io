@@ -24,4 +24,24 @@ app.get('/movies/subject/:sub', (req, res) => {
     res.json(json.data.filter(m => m.movie_subject == sub))
 })
 
+app.get('/movies/awards/:awards', (req, res) => {
+    let awards = req.params.awards.toLowerCase();
+    res.json(json.data.filter(m => m.movie_awards.toLowerCase() == awards))
+})
+
+app.get('/movies/year/:years', (req, res) => {
+    let years = req.params.years;
+    res.json(json.data.filter(m => m.movie_year == years))
+})
+
+
+app.get('/movies/awards/:awards/year/:year', (req, res) => {
+    let awards = req.params.awards.toLowerCase();
+    let years = req.params.year;
+    res.json(json.data.filter(m => m.movie_awards.toLowerCase() == awards && m.movie_year == years))
+})
+
+
+
+
 app.listen(80);
