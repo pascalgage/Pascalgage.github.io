@@ -1,10 +1,13 @@
+const cors = require('cors');
 const express = require('express');
 
 const app = express();
 
+app.use(cors());
+
 var json = require(__dirname + '/movies.json');
 
-app.get('/', function(req, res) {
+app.get('/movies', function(req, res) {
 
     res.setHeader('Content-Type', 'application/json;charset=utf-8')
     res.setHeader('X-toto', 'salut les copains');

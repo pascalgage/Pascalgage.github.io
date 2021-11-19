@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/vue.global.js"></script>
+    <script src="./assets/js/main.js" type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Movies</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" class="fa fa-home"></a></li>
+                <li><a href="#">Catégories</a></li>
+                <li><a href="#">Années</a></li>
+                <li><a href="#">Acteurs</a></li>
+                <li><a href="#">Films primés</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="app">
+        <h2>{{ title }}</h2>
+        <section class="movies">
+            <article v-for="movie of db.data">
+                <h3>{{ movie.movie_title }}</h3>
+                <ul>
+                    <li>Genre: {{ movie.movie_subject }}</li>
+                    <li>Année: {{ movie.movie_year }}</li>
+                    <li>Durée: {{ movie.movie_length }}</li>
+                    <li>Acteurs: {{ movie.movie_actor }}, {{ movie.movie_actress }}</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#">&copy; All rights reserved</a>
+    </footer>    
+</body>
+</html>
