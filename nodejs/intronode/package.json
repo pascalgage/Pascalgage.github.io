@@ -1,15 +1,15 @@
 {
-    "name": "intronode",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node index.js"
-    },
-    "author": "pgage",
-    "license": "MIT",
-    "dependencies": {
-        "express": "^4.17.1"
-    }
+  "name": "intronode",
+  "version": "1.0.0",
+  "description": "toto est un dévelopeur",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "mdevoldere <mdevoldere@arfp.asso.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/vue.global.js"></script>
+    <script src="./assets/js/main.js" type="module"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <h1>Movies</h1>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#" @click="tabClick" data-tab="all" class="fa fa-home"></a>
+                    </li>
+                    <li><a href="#" @click="tabClick" data-tab="cats">Catégories</a></li>
+                    <li><a href="#" @click="tabClick" data-tab="years">Années</a></li>
+                    <li><a href="#">Acteurs</a></li>
+                    <li><a href="#">Films primés</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>{{ title }}</h2>
+
+            <section v-if="page == 'all'" class="movies">
+                <h2>Tous les films</h2>
+                <movie v-for="mov of db.data" :info="mov"></movie>
+            </section>
+
+            <section v-if="page == 'cats'">
+                <h2>Catégories</h2>
+                <select @change="catSelect">
+                    <option value="">No category</option>
+                    <option v-for="category in categories" :value="category">{{ category }}</option>
+                </select>
+
+                <movie v-for="mov of db.data" :info="mov"></movie>
+            </section>
+
+            <section v-if="page=='years'">
+                <h2>Années</h2>
+                <ul>
+                    <li v-for="year of years">
+                        <a href="#" @click="yearSelect" :data-year="year">   {{ year }}  </a>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <a href="#">&copy; All rights reserved</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
