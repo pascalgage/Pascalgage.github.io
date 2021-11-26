@@ -7,6 +7,7 @@ const cerealApp = {
         return {
             db: new DbCereals('https://devoldere.net/api/cereals'),
             erasedLines: [],
+            nutriTab: []
         }
     },
     mounted() {
@@ -27,6 +28,10 @@ const cerealApp = {
          */
         eraseLine(event) {
             this.erasedLines.push(parseInt(event.target.dataset.id))
+        },
+
+        nutriSelect(event) {
+            this.nutriTab.push(input.target)
         }
     },
 
