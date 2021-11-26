@@ -1,0 +1,78 @@
+h2 {
+    background-color: grey;
+    color: honeydew;
+    text-align: center;
+    padding-left: 20%;
+}
+
+.n_A {
+    background-color: darkgreen;
+    color: white;
+}
+
+.n_B {
+    background-color: #009900CC;
+    color: white;
+}
+
+.n_C {
+    background-color: #CCCC00CC;
+    color: white;
+}
+
+.n_D {
+    background-color: #CC6600CC;
+    color: white;
+}
+
+.n_E {
+    background-color: #CC0000CC;
+    color: white;
+}
+
+.eraseButton {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchelements {
+    display: flex;
+}
+
+.filter {
+    display: flex;
+}
+
+.search {
+    display: flex;
+}
+
+.nutriscore {
+    display: flex;
+}
+
+table {
+    width: 100%;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    text-align: justify;
+}
+
+body {
+    background-color: gray;
+}
+
+th {
+    background-color: gray;
+    text-align: center;
+    color: darkgreen;
+}
+
+td {
+    text-align: center;
+}
