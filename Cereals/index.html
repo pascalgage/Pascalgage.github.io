@@ -23,8 +23,11 @@
                     <legend>Filtrer</legend>
                     <fieldset class="nutriscore">
                         <legend>Nutriscore</legend>
-                        A <input type="checkbox" @click="nutriSelect" name="A"> B <input type="checkbox" @click="nutriSelect" name="B"> C <input type="checkbox" @click="nutriSelect" name="C"> D <input type="checkbox" @click="nutriSelect" name="D"> E
-                        <input type="checkbox" @click="nutriSelect" name="E">
+                        A <input type="checkbox" @click="nutriSelect" data-name="A"> 
+                        B <input type="checkbox" @click="nutriSelect" data-name="B"> 
+                        C <input type="checkbox" @click="nutriSelect" data-name="C"> 
+                        D <input type="checkbox" @click="nutriSelect" data-name="D"> 
+                        E <input type="checkbox" @click="nutriSelect" data-name="E">
                     </fieldset>
                     <fieldset>
                         <legend>Catégorie</legend>
@@ -71,11 +74,7 @@
                     <td>{{ cereal.potass }}</td>
                     <td>{{ cereal.vitamins }}</td>
                     <td>{{ cereal.rating }}</td>
-                    <td v-if="cereal.rating > 80" class="n_A">A</td>
-                    <td v-else-if="cereal.rating < 80 && cereal.rating > 70" class="n_B">B</td>
-                    <td v-else-if="cereal.rating < 70 && cereal.rating > 55" class="n_C">C</td>
-                    <td v-else-if="cereal.rating < 55 && cereal.rating > 35" class="n_D">D</td>
-                    <td v-else-if="cereal.rating < 35" class="n_E">E</td>
+                    <td :class="db.getNutriscore(cereal)">{{ db.getNutriscore(cereal) }}</td>
                     <td><a :data-id="cereal.id" @click="eraseLine" class="eraseButton">❌</a></td>
                 </tr>
                 <tr>
@@ -94,3 +93,11 @@
 </body>
 
 </html>
+
+
+<!-- 
+<td v-if="cereal.rating > 80" class="n_A">A</td>
+<td v-else-if="cereal.rating > 70" class="n_B">B</td>
+<td v-else-if="cereal.rating > 55" class="n_C">C</td>
+<td v-else-if="cereal.rating > 35" class="n_D">D</td>
+<td v-else class="n_E">E</td>-->

@@ -16,9 +16,9 @@ const cerealApp = {
 
     computed: {
         cereals() {
-
             return this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id))
-        }
+        },
+
 
     },
 
@@ -31,7 +31,9 @@ const cerealApp = {
         },
 
         nutriSelect(event) {
-            this.nutriTab.push(input.target)
+            
+            this.nutriTab.push(event.target.dataset.name)
+            console.log(this.nutriTab)
         }
     },
 
