@@ -17,7 +17,7 @@
             <div class="searchelements">
                 <fieldset class="search">
                     <legend>Rechercher</legend>
-                    <input type="search" placeholder="Nom du céréale">
+                    <input @input="searchInput" type="search" placeholder="Nom du céréale">
                 </fieldset>
                 <fieldset class="filter">
                     <legend>Filtrer</legend>
@@ -32,10 +32,10 @@
                     <fieldset>
                         <legend>Catégorie</legend>
                         <select>
-                        <option value="all">Tous</option>
-                        <option value="sugarfree">Sans sucre</option>
-                        <option value="saltpoor">Pauvre en sel</option>
-                        <option value="boost">Boost</option>
+                        <option value="1">Tous</option>
+                        <option value="2">Sans sucre</option>
+                        <option value="3">Pauvre en sel</option>
+                        <option value="4">Boost</option>
                         </select>
                     </fieldset>
                 </fieldset>

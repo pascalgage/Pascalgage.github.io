@@ -19,17 +19,26 @@ class DbCereals extends Db
         }
     }
 
-    
-        
-            
- 
-       
+    isSugarFree(cereal) {
+        return (cereal.sugars <= 1);
+    }
 
+    isPoorSalt(cereal){
+        return(cereal.potass<=50);
+    }
+
+    isBoost(cereal){
+        return(cereal.vitamins>=25 && cereal.fiber>=10);
+    }
+    
+    trySearch(_cereal){
+        return this.data.filter(
+            cereal => (cereal.name).toLowerCase().includes(_cereal.toLowerCase())
+        );
+    }
+    
+ 
     
 }
-
-
-
-
 
 export { DbCereals }
