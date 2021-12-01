@@ -17,18 +17,18 @@ const cerealApp = {
 
     computed: {
         cereals() {
-            let results = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id))
+            let result = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id))
 
             if(this.nutriTab.length > 0) {
-                results = results.filter(cereal=> this.nutriTab.includes(this.db.getNutriscore(cereal)))
+                result = results.filter(cereal=> this.nutriTab.includes(this.db.getNutriscore(cereal)))
             }
             
             if(this.results.length>0){
-                results=results.filter(cereal=> this.results.includes(this.db.trySearch()))
+                result = results.filter(cereal=> this.results.includes(this.db.trySearch(cereal)))
             }
             
 
-            return results;
+            return result;
             
         }
 
