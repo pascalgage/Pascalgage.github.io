@@ -17,7 +17,10 @@
             <div class="searchelements">
                 <fieldset class="search">
                     <legend>Rechercher</legend>
-                    <input @input="searchInput" type="search" placeholder="Nom du céréale">
+                    <input @input="searchInput" type="search" placeholder="Nom du céréale" list="lol">
+                    <datalist id="lol">
+                        <option v-for="cereal in cereals" :value="cereal">
+                    </datalist>
                 </fieldset>
                 <fieldset class="filter">
                     <legend>Filtrer</legend>
