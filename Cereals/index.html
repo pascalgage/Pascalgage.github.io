@@ -15,13 +15,17 @@
         <header>
             <h2>CEREALS</h2>
             <div class="searchelements">
+                <section v-if="page =='cereals'"></section>
                 <fieldset class="search">
                     <legend>Rechercher</legend>
+                    
                     <input @input="searchInput" type="search" placeholder="Nom du céréale" list="lol">
                     <datalist id="lol">
-                        <option v-for="cereal in cereals" :value="cereal">
+                        <option v-for="cereal in cereales" :value="cereal">
                     </datalist>
+                    <cereal v-for="cere in resultas" :info="cere"></cereal>
                 </fieldset>
+            </section>
                 <fieldset class="filter">
                     <legend>Filtrer</legend>
                     <fieldset class="nutriscore">
