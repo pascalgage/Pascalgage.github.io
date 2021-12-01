@@ -33,8 +33,11 @@ class DbCereals extends Db
     
     trySearch(_cereal){
         return this.data.filter(
-            cereal => (cereal.name).toLowerCase().includes(_cereal.toLowerCase())
+            cereal => 
+            cereal.name.toLowerCase().includes(_cereal.toLowerCase()) 
+            
         );
+        
     }
     
  

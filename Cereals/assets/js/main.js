@@ -8,7 +8,7 @@ const cerealApp = {
             db: new DbCereals('https://devoldere.net/api/cereals'),
             erasedLines: [],
             nutriTab: [],
-            resultofSearch:[]
+            results:[]
         }
     },
     mounted() {
@@ -22,6 +22,11 @@ const cerealApp = {
             if(this.nutriTab.length > 0) {
                 results = results.filter(cereal=> this.nutriTab.includes(this.db.getNutriscore(cereal)))
             }
+            
+            if(this.results.length>0){
+                results=results.filter(cereal=> this.results.includes(this.db.trySearch()))
+            }
+            
 
             return results;
             
@@ -51,9 +56,10 @@ const cerealApp = {
         searchInput(event){
             let valeurRecherche=event.target.value;
 
-            if(valeurRecherche>2||valeurRecherche<1){
-                this.resultofSearch=this.db.trySearch(valeurRecherche);
+            if(valeurRecherche>2){
+                this.results=this.db.trySearch(valeurRecherche);
             }
+            console.log(valeurRecherche);
         },
     }
 
