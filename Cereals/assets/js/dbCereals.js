@@ -21,17 +21,22 @@ class DbCereals extends Db
         }
     }
 
-    isSugarFree(cereal) {
-        return (cereal.sugars <= 1);
+    isGoodHealth(cereal) {
+        if(cereal.sugars <= 1){
+            return parseInt(1);
+    }else if(cereal.potass<=50){
+            return parseInt(2);
+    }else if(cereal.vitamins>=25 && cereal.fiber>=10){
+            return parseInt(3);}
     }
 
-    isPoorSalt(cereal){
+    /*isPoorSalt(cereal){
         return(cereal.potass<=50);
     }
 
     isBoost(cereal){
         return(cereal.vitamins>=25 && cereal.fiber>=10);
-    }
+    }*/
     
     /*
     getCerealByName(_cereal){

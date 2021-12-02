@@ -21,22 +21,28 @@ const cerealApp = {
 
     computed: {
         cereals() {
-            
+            let chooseCat=0;
             let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id)); // OK pas touche
             
-            //console.log(superTab);      
+                  
          
             superTab = superTab.filter(cereal => this.nutriTab.includes(this.db.getNutriscore(cereal))); // OK pas touche
             
-            //console.log(superTab);
+            
             
             if(this.search.length>2){
                 superTab = superTab.filter(cereal=> cereal.name.toLowerCase().includes(this.search.toLowerCase()));
             }
 
-
-            //dans le if penser à chooseCat > 0
-            //console.log(superTab);
+            if(chooseCat==1){
+                superTab=superTab.filter(cereal=>(this.db.isGoodHealth(cereal)));
+            }else if(chooseCat==2){
+                superTab=superTab.filter(cereal=>(this.db.isGoodHealth(cereal)));
+            }else if(chooseCat==3){
+                superTab=superTab.filter(cereal=>(this.db.isGoodHealth(cereal)));
+            }
+            
+            
 
 
               
@@ -83,9 +89,8 @@ const cerealApp = {
          */
         changeCat(event){
             let chooseCat=event.target.selectedIndex;
-            console.log(chooseCat);
-
-            
+            return chooseCat;
+ 
         }
     }
 
