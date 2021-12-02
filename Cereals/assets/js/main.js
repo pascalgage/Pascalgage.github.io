@@ -6,10 +6,10 @@ const cerealApp = {
     data() {
         return {
             db: new DbCereals('https://devoldere.net/api/cereals'),
-            page:"all",
+            
             erasedLines: [],
             nutriTab: [],
-            resultas:[]
+            resultats:[]
         }
     },
     mounted() {
@@ -23,19 +23,16 @@ const cerealApp = {
             if(this.nutriTab.length > 0) {
                 results = results.filter(cereal=> this.nutriTab.includes(this.db.getNutriscore(cereal)))
             }
-            if(this.resultas.length>0){
-                results = results.filter(cereal=>this.resultas.includes(this.db.trySearch()))
+            if(this.resultats.length > 0){
+                results = results.filter(cereal=> this.resultats.includes(this.db.getCerealByName(cereal)))
             }  
-            
             
             return results;
             
         }
 
     },
-        cereales(){
-            return this.db.getCereals();
-        },
+        
 
     methods: {
         /*
@@ -57,10 +54,11 @@ const cerealApp = {
         },
 
         searchInput(event){
+
             let valeurRecherche=event.target.value;
 
-            if(valeurRecherche>2){
-                this.resultas=this.db.trySearch(valeurRecherche);
+            if(valeurRecherche.length<1||valeurRecherche.length>2){
+                this.resultats=this.db.getCerealByName(valeurRecherche);
             }
             console.log(valeurRecherche);
         },

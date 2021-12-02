@@ -15,17 +15,15 @@
         <header>
             <h2>CEREALS</h2>
             <div class="searchelements">
-                <section v-if="page =='cereals'"></section>
+                
                 <fieldset class="search">
                     <legend>Rechercher</legend>
                     
-                    <input @input="searchInput" type="search" placeholder="Nom du céréale" list="lol">
-                    <datalist id="lol">
-                        <option v-for="cereal in cereales" :value="cereal">
-                    </datalist>
-                    <cereal v-for="cere in resultas" :info="cere"></cereal>
+                    <input @input="searchInput" type="search" placeholder="Nom du céréale"/>
+                    
+                    
                 </fieldset>
-            </section>
+            
                 <fieldset class="filter">
                     <legend>Filtrer</legend>
                     <fieldset class="nutriscore">
@@ -69,7 +67,7 @@
             </thead>
 
             <tbody>
-                <tr v-for="cereal of cereals">
+                <tr v-for="cereal of resultats">
                     <td>{{ cereal.id }}</td>
                     <td>{{ cereal.name }}</td>
                     <td>{{ cereal.calories }}</td>

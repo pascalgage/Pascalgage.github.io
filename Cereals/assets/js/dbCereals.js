@@ -3,21 +3,7 @@ import { Db } from './Db.js';
 class DbCereals extends Db 
 {
 
-    getCereals() {
- 
-        let cereals = [];
-
-        this.data.forEach(cereal => {
-            // movie.movie_actor
-            cereals.push(cereal.name);
-            
-        });
-
-        let result = [...new Set(cereals)].sort();
-
-        return result;
-
-    }
+    
     
     getNutriscore(cereal) {
 
@@ -46,19 +32,16 @@ class DbCereals extends Db
         return(cereal.vitamins>=25 && cereal.fiber>=10);
     }
     
-    trySearch(_cereal){
-
-        
+    getCerealByName(_cereal){
         return this.data.filter(
             cereal => 
-            cereal.name.toLowerCase().includes(_cereal.toLowerCase()) 
+            cereal.name.includes(_cereal) 
             
         );
-       
     }
     
  
     
 }
 
-export { DbCereals }
+export { DbCereals, Db}
