@@ -28,19 +28,19 @@
                     <legend>Filtrer</legend>
                     <fieldset class="nutriscore">
                         <legend>Nutriscore</legend>
-                        A <input type="checkbox" @click="nutriSelect" data-name="A"> 
-                        B <input type="checkbox" @click="nutriSelect" data-name="B"> 
-                        C <input type="checkbox" @click="nutriSelect" data-name="C"> 
-                        D <input type="checkbox" @click="nutriSelect" data-name="D"> 
-                        E <input type="checkbox" @click="nutriSelect" data-name="E">
+                        A <input type="checkbox" @click="nutriSelect" data-name="A" checked> 
+                        B <input type="checkbox" @click="nutriSelect" data-name="B" checked> 
+                        C <input type="checkbox" @click="nutriSelect" data-name="C" checked> 
+                        D <input type="checkbox" @click="nutriSelect" data-name="D" checked> 
+                        E <input type="checkbox" @click="nutriSelect" data-name="E" checked>
                     </fieldset>
                     <fieldset>
                         <legend>Catégorie</legend>
-                        <select>
-                        <option value="1">Tous</option>
-                        <option value="2">Sans sucre</option>
-                        <option value="3">Pauvre en sel</option>
-                        <option value="4">Boost</option>
+                        <select @change="changeCat">
+                            <option value="1">Tous</option>
+                            <option value="2">Sans sucre</option>
+                            <option value="3">Pauvre en sel</option>
+                            <option value="4">Boost</option>
                         </select>
                     </fieldset>
                 </fieldset>
@@ -67,7 +67,7 @@
             </thead>
 
             <tbody>
-                <tr v-for="cereal of resultats">
+                <tr v-for="cereal of cereals">
                     <td>{{ cereal.id }}</td>
                     <td>{{ cereal.name }}</td>
                     <td>{{ cereal.calories }}</td>

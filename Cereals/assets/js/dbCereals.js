@@ -6,6 +6,7 @@ class DbCereals extends Db
     
     
     getNutriscore(cereal) {
+        
 
         if(cereal.rating > 80) {
             return 'A';
@@ -32,6 +33,7 @@ class DbCereals extends Db
         return(cereal.vitamins>=25 && cereal.fiber>=10);
     }
     
+    /*
     getCerealByName(_cereal){
         return this.data.filter(
             cereal => 
@@ -39,7 +41,7 @@ class DbCereals extends Db
             
         );
     }
-    
+    */
  
     
 }

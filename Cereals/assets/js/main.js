@@ -8,26 +8,40 @@ const cerealApp = {
             db: new DbCereals('https://devoldere.net/api/cereals'),
             
             erasedLines: [],
-            nutriTab: [],
-            resultats:[]
+            nutriTab: ['A', 'B', 'C', 'D', 'E'],
+            search: "",
+            
         }
     },
     mounted() {
-        this.db.loadData().then(() => console.log(this.db));
+        this.db.loadData().then(() => { 
+            this.resultats = this.db.data;
+        });
     },
 
     computed: {
         cereals() {
-            let results = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id))
-
-            if(this.nutriTab.length > 0) {
-                results = results.filter(cereal=> this.nutriTab.includes(this.db.getNutriscore(cereal)))
-            }
-            if(this.resultats.length > 0){
-                results = results.filter(cereal=> this.resultats.includes(this.db.getCerealByName(cereal)))
-            }  
             
-            return results;
+            let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id)); // OK pas touche
+            
+            //console.log(superTab);      
+         
+            superTab = superTab.filter(cereal => this.nutriTab.includes(this.db.getNutriscore(cereal))); // OK pas touche
+            
+            //console.log(superTab);
+            
+            if(this.search.length>2){
+                superTab = superTab.filter(cereal=> cereal.name.toLowerCase().includes(this.search.toLowerCase()));
+            }
+
+
+            //dans le if penser à chooseCat > 0
+            //console.log(superTab);
+
+
+              
+            
+            return superTab;
             
         }
 
@@ -58,10 +72,21 @@ const cerealApp = {
             let valeurRecherche=event.target.value;
 
             if(valeurRecherche.length<1||valeurRecherche.length>2){
-                this.resultats=this.db.getCerealByName(valeurRecherche);
+                this.search = valeurRecherche.trim();
             }
-            console.log(valeurRecherche);
+            //console.log(valeurRecherche);
         },
+
+        /**
+         * @todo  
+         * @param {*} event 
+         */
+        changeCat(event){
+            let chooseCat=event.target.selectedIndex;
+            console.log(chooseCat);
+
+            
+        }
     }
 
 }
