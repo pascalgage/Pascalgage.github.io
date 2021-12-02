@@ -11,6 +11,7 @@ const cerealApp = {
             nutriTab: ['A', 'B', 'C', 'D', 'E'],
             search: "",
             
+            
         }
     },
     mounted() {
@@ -20,8 +21,10 @@ const cerealApp = {
     },
 
     computed: {
+
+        
         cereals() {
-            let chooseCat=0;
+            
             let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id)); // OK pas touche
             
                   
@@ -34,30 +37,42 @@ const cerealApp = {
                 superTab = superTab.filter(cereal=> cereal.name.toLowerCase().includes(this.search.toLowerCase()));
             }
 
-            if(chooseCat==1){
-                superTab=superTab.filter(cereal=>(this.db.isGoodHealth(cereal)));
-            }else if(chooseCat==2){
-                superTab=superTab.filter(cereal=>(this.db.isGoodHealth(cereal)));
-            }else if(chooseCat==3){
-                superTab=superTab.filter(cereal=>(this.db.isGoodHealth(cereal)));
-            }
             
             
-
+            
+            console.log(superTab);
 
               
             
             return superTab;
             
-        }
+        },
 
+        isGoodHealth(superTab) {
+            let sugarfree=[];
+            let poorsalted=[];
+            let boost=[];
+    
+                superTab.forEach(cereal => {
+                    if(cereal.sugars <= 1){
+                        sugarfree.push(cereal);
+                    }else if(cereal.potass<=50){
+                        poorsalted.push(cereal);
+                    }else if(cereal.vitamins>=25 && cereal.fiber>=10){
+                        boost.push(cereal);}
+                });
+
+               return boost;
+        }
     },
-        
+          
 
     methods: {
         /*
          *au click ajoute l'id de la céréale à effacer dans un tableau erasedLines  
          */
+
+        
         eraseLine(event) {
             this.erasedLines.push(parseInt(event.target.dataset.id))
         },
@@ -89,9 +104,23 @@ const cerealApp = {
          */
         changeCat(event){
             let chooseCat=event.target.selectedIndex;
-            return chooseCat;
- 
-        }
+            
+            console.log(chooseCat);
+            return chooseCat; 
+        },
+
+        
+            
+                
+            
+            
+            
+    
+            
+    
+            
+        
+        
     }
 
 }

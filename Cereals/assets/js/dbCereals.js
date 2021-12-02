@@ -21,14 +21,7 @@ class DbCereals extends Db
         }
     }
 
-    isGoodHealth(cereal) {
-        if(cereal.sugars <= 1){
-            return parseInt(1);
-    }else if(cereal.potass<=50){
-            return parseInt(2);
-    }else if(cereal.vitamins>=25 && cereal.fiber>=10){
-            return parseInt(3);}
-    }
+   
 
     /*isPoorSalt(cereal){
         return(cereal.potass<=50);
