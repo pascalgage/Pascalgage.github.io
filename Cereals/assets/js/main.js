@@ -6,12 +6,9 @@ const cerealApp = {
     data() {
         return {
             db: new DbCereals('https://devoldere.net/api/cereals'),
-            
             erasedLines: [],
             nutriTab: ['A', 'B', 'C', 'D', 'E'],
             search: "",
-            chooseCat:'',
-            resultats:[],
             boost:"",
         }
     },
@@ -28,11 +25,11 @@ const cerealApp = {
         cereals() {
             
             
-            let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id)); // OK pas touche
+            let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id));
             
                   
          
-            superTab = superTab.filter(cereal => this.nutriTab.includes(this.db.getNutriscore(cereal))); // OK pas touche
+            superTab = superTab.filter(cereal => this.nutriTab.includes(this.db.getNutriscore(cereal)));
             
             
             
@@ -41,7 +38,7 @@ const cerealApp = {
             }
 
 
-            //let boost=1;
+            
             if(this.boost==1){
                 let cereal= this.db.data;
                 superTab = (this.getCategorySalt(cereal));
@@ -72,10 +69,6 @@ const cerealApp = {
           
 
     methods: {
-        /*
-         *au click ajoute l'id de la céréale à effacer dans un tableau erasedLines  
-         */
-        
         
         eraseLine(event) {
             this.erasedLines.push(parseInt(event.target.dataset.id))
@@ -88,7 +81,7 @@ const cerealApp = {
                 this.nutriTab = this.nutriTab.filter(item => item !== event.target.dataset.name);
             }
             
-            //console.log(this.nutriTab)
+            
            
         },
 
@@ -99,13 +92,10 @@ const cerealApp = {
             if(valeurRecherche.length<1||valeurRecherche.length>2){
                 this.search = valeurRecherche.trim();
             }
-            //console.log(valeurRecherche);
+            
         },
 
-        /**
-         * @todo  
-         * @param {*} event 
-         */
+        
         changeCat(event){
 
             let chooseCat = event.target.selectedIndex;
@@ -142,7 +132,7 @@ const cerealApp = {
 
         getCategoryBoost(cerealTab){
             let tabx=[];
-            // (taux de vitamines supérieur ou égal à 25 + taux de fibres supérieur ou égal à 10)
+            
                 cerealTab.forEach(element => {
                     if(element.vitamins>=25 && element.fiber>=10){
                         tabx.push(element);
