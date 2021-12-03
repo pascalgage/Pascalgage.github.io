@@ -39,12 +39,12 @@ const cerealApp = {
 
 
             
-            if(this.boost==1){
+            if(this.boost==2){
                 let cereal= this.db.data;
                 superTab = (this.getCategorySalt(cereal));
             }
 
-            if(this.boost==2){
+            if(this.boost==1){
                 let cereal= this.db.data;
                 superTab = (this.getCategorySugar(cereal));
             }
