@@ -10,7 +10,8 @@ const cerealApp = {
             erasedLines: [],
             nutriTab: ['A', 'B', 'C', 'D', 'E'],
             search: "",
-            
+            chooseCat:"",
+            resultats:[]
             
         }
     },
@@ -18,12 +19,14 @@ const cerealApp = {
         this.db.loadData().then(() => { 
             this.resultats = this.db.data;
         });
+
     },
 
     computed: {
 
         
         cereals() {
+            let chooseCat=2;
             
             let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id)); // OK pas touche
             
@@ -37,6 +40,11 @@ const cerealApp = {
                 superTab = superTab.filter(cereal=> cereal.name.toLowerCase().includes(this.search.toLowerCase()));
             }
 
+            if(chooseCat==2){
+                let cereal= this.db.data;
+                superTab = (this.getCategory(cereal));
+            }
+            
             
             
             
@@ -48,22 +56,7 @@ const cerealApp = {
             
         },
 
-        isGoodHealth(superTab) {
-            let sugarfree=[];
-            let poorsalted=[];
-            let boost=[];
-    
-                superTab.forEach(cereal => {
-                    if(cereal.sugars <= 1){
-                        sugarfree.push(cereal);
-                    }else if(cereal.potass<=50){
-                        poorsalted.push(cereal);
-                    }else if(cereal.vitamins>=25 && cereal.fiber>=10){
-                        boost.push(cereal);}
-                });
-
-               return boost;
-        }
+        
     },
           
 
@@ -71,7 +64,7 @@ const cerealApp = {
         /*
          *au click ajoute l'id de la céréale à effacer dans un tableau erasedLines  
          */
-
+        
         
         eraseLine(event) {
             this.erasedLines.push(parseInt(event.target.dataset.id))
@@ -103,26 +96,37 @@ const cerealApp = {
          * @param {*} event 
          */
         changeCat(event){
-            let chooseCat=event.target.selectedIndex;
+
+            let chooseCat = event.target.selectedIndex;
             
-            console.log(chooseCat);
-            return chooseCat; 
+             console.log(chooseCat);
+             return parseInt(chooseCat);
         },
 
-        
+        getCategory(cerealTab){
+
+            let chooseCat=2;
+            let tabx=[];
+
+            if(chooseCat==1){
+                cerealTab.forEach(element => {
+                    if(element.sugars<1){
+                        tabx.push(element);}
+                    
+
+            else if(chooseCat==2){
+                cerealTab.forEach(element => {
+                    if(element.potass<=50){
+                        tabx.push(element);}
+                    });
+                    return tabx;
+                }  
             
-                
+             
+            }
+                     
             
-            
-            
-    
-            
-    
-            
-        
         
     }
-
-}
 
 Vue.createApp(cerealApp).mount('#app');
