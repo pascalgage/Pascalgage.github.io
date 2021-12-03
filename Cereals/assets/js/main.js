@@ -10,9 +10,9 @@ const cerealApp = {
             erasedLines: [],
             nutriTab: ['A', 'B', 'C', 'D', 'E'],
             search: "",
-            chooseCat:"",
-            resultats:[]
-            
+            chooseCat:'',
+            resultats:[],
+            boost:"",
         }
     },
     mounted() {
@@ -26,7 +26,7 @@ const cerealApp = {
 
         
         cereals() {
-            let chooseCat=3;
+            
             
             let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id)); // OK pas touche
             
@@ -40,17 +40,19 @@ const cerealApp = {
                 superTab = superTab.filter(cereal=> cereal.name.toLowerCase().includes(this.search.toLowerCase()));
             }
 
-            if(chooseCat==1){
+
+            //let boost=1;
+            if(this.boost==1){
                 let cereal= this.db.data;
                 superTab = (this.getCategorySalt(cereal));
             }
 
-            if(chooseCat==2){
+            if(this.boost==2){
                 let cereal= this.db.data;
                 superTab = (this.getCategorySugar(cereal));
             }
             
-            if(chooseCat==3){
+            if(this.boost==3){
                 let cereal= this.db.data;
                 superTab = (this.getCategoryBoost(cereal));
             }
@@ -107,9 +109,8 @@ const cerealApp = {
         changeCat(event){
 
             let chooseCat = event.target.selectedIndex;
+            this.boost=chooseCat;
             
-             console.log(chooseCat);
-             return parseInt(chooseCat);
         },
 
         getCategorySugar(cerealTab){
