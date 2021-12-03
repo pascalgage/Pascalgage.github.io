@@ -26,7 +26,7 @@ const cerealApp = {
 
         
         cereals() {
-            let chooseCat=2;
+            let chooseCat=3;
             
             let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id)); // OK pas touche
             
@@ -40,11 +40,20 @@ const cerealApp = {
                 superTab = superTab.filter(cereal=> cereal.name.toLowerCase().includes(this.search.toLowerCase()));
             }
 
+            if(chooseCat==1){
+                let cereal= this.db.data;
+                superTab = (this.getCategorySalt(cereal));
+            }
+
             if(chooseCat==2){
                 let cereal= this.db.data;
-                superTab = (this.getCategory(cereal));
+                superTab = (this.getCategorySugar(cereal));
             }
             
+            if(chooseCat==3){
+                let cereal= this.db.data;
+                superTab = (this.getCategoryBoost(cereal));
+            }
             
             
             
@@ -103,30 +112,46 @@ const cerealApp = {
              return parseInt(chooseCat);
         },
 
-        getCategory(cerealTab){
+        getCategorySugar(cerealTab){
 
-            let chooseCat=2;
+            
             let tabx=[];
-
-            if(chooseCat==1){
+            
                 cerealTab.forEach(element => {
                     if(element.sugars<1){
-                        tabx.push(element);}
-                    
-
-            else if(chooseCat==2){
+                        tabx.push(element);
+                    }
+                });
+                return tabx;
+            
+        },
+        getCategorySalt(cerealTab){
+            
+            let tabx=[];
+            
                 cerealTab.forEach(element => {
                     if(element.potass<=50){
-                        tabx.push(element);}
-                    });
-                    return tabx;
-                }  
+                        tabx.push(element);
+                    }
+                });
+                return tabx;
             
-             
-            }
-                     
-            
+                 
+        },
+
+        getCategoryBoost(cerealTab){
+            let tabx=[];
+            // (taux de vitamines supérieur ou égal à 25 + taux de fibres supérieur ou égal à 10)
+                cerealTab.forEach(element => {
+                    if(element.vitamins>=25 && element.fiber>=10){
+                        tabx.push(element);
+                    }
+                });
+                return tabx;
+        },
+    
         
     }
+}
 
 Vue.createApp(cerealApp).mount('#app');
