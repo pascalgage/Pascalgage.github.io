@@ -24,21 +24,14 @@ const cerealApp = {
         
         cereals() {
             
-            
             let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id));
             
-                  
-         
             superTab = superTab.filter(cereal => this.nutriTab.includes(this.db.getNutriscore(cereal)));
-            
-            
             
             if(this.search.length>2){
                 superTab = superTab.filter(cereal=> cereal.name.toLowerCase().includes(this.search.toLowerCase()));
             }
 
-
-            
             if(this.boost==2){
                 let cereal= this.db.data;
                 superTab = (this.getCategorySalt(cereal));
@@ -54,17 +47,10 @@ const cerealApp = {
                 superTab = (this.getCategoryBoost(cereal));
             }
             
-            
-            
-            console.log(superTab);
-
-              
-            
             return superTab;
             
         },
 
-        
     },
           
 
@@ -81,8 +67,6 @@ const cerealApp = {
                 this.nutriTab = this.nutriTab.filter(item => item !== event.target.dataset.name);
             }
             
-            
-           
         },
 
         searchInput(event){
@@ -95,7 +79,6 @@ const cerealApp = {
             
         },
 
-        
         changeCat(event){
 
             let chooseCat = event.target.selectedIndex;
@@ -105,7 +88,6 @@ const cerealApp = {
 
         getCategorySugar(cerealTab){
 
-            
             let tabx=[];
             
                 cerealTab.forEach(element => {
@@ -126,8 +108,7 @@ const cerealApp = {
                     }
                 });
                 return tabx;
-            
-                 
+   
         },
 
         getCategoryBoost(cerealTab){
@@ -141,7 +122,6 @@ const cerealApp = {
                 return tabx;
         },
     
-        
     }
 }
 
