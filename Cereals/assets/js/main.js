@@ -85,7 +85,6 @@ const cerealApp = {
             this.boost=chooseCat;
             
         },
-
         getCategorySugar(cerealTab){
 
             let tabx=[];
@@ -108,9 +107,9 @@ const cerealApp = {
                     }
                 });
                 return tabx;
-   
+    
         },
-
+    
         getCategoryBoost(cerealTab){
             let tabx=[];
             
@@ -120,7 +119,8 @@ const cerealApp = {
                     }
                 });
                 return tabx;
-        },
+        }
+        
     
     }
 }

@@ -21,32 +21,8 @@ class DbCereals extends Db
         }
     }
 
+   
 
-    
-
-    
-
-
-
-
-    /*isPoorSalt(cereal){
-        return(cereal.potass<=50);
-    }
-
-    isBoost(cereal){
-        return(cereal.vitamins>=25 && cereal.fiber>=10);
-    }*/
-    
-    /*
-    getCerealByName(_cereal){
-        return this.data.filter(
-            cereal => 
-            cereal.name.includes(_cereal) 
-            
-        );
-    }
-    */
- 
     
 }
 
