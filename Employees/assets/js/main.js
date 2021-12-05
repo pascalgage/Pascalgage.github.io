@@ -4,14 +4,14 @@ const employeeApp = {
 
     data(){
         return{
-            db: new DbEmployees('http://dummy.restapiexample.com/api/v1/employees'),
-
+            db: new DbEmployees ('http://dummy.restapiexample.com/api/v1/employees'),
+            resultats=[],
         }
     },
 
     mounted(){
         this.db.loadData().then(() =>{
-            this.db.data;
+            this.resultats=this.db.data;
         });
 
     },
@@ -19,7 +19,8 @@ const employeeApp = {
     computed: {
 
         employees(){
-
+            let superTab = this.db.data.filter(employee =>(this.employees));;
+            return superTab;
         },
     },
 
