@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPcereals</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/main.js" type="module"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h2>EMPLOYEES</h2>
+            <h4>This is the current list of employees</h4>
+        </header>
+        <table>
+
+            <thead>
+                <tr>
+                    <th>EID</th>
+                    <th>FULL NAME</th>
+                    <th>EMAIL</th>
+                    <th>MONTHLY SALARY</th>
+                    <th>YEAR of BIRTH</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr v-for="employee of employees">
+                    <td>{{ employee.employee_id }}</td>
+                    <td>{{ employee.employee_lastname }}</td>
+                    <td>{{ employee_email }}</td>
+                    <td>{{ employee_salarybymonth }}</td>
+                    <td>{{ employee_dateofbirth }}</td>
+                    <td><a :data-id="cereal.id" @click="eraseLine" class="eraseButton">❌</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+
+
+        </table>
+
+
+
+    </div>
+</body>
+
+</html>
