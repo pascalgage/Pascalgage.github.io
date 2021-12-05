@@ -37,7 +37,7 @@
                 <tr v-for="employee of employees">
                     <td>{{ employee.id }}</td>
                     <td>{{ employee.employee_name }}</td>
-                    <td></td>
+                    <td :class="db.getMail(employee)">{{db.getMail(employee)}}</td>
                     <td>{{ employee.employee_salary }}</td>
                     <td :class="db.getSalary(employee)">{{db.getSalary(employee)}}</td>
                     <td>{{ employee.employee_age }}</td>
