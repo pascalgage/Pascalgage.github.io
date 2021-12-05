@@ -42,7 +42,10 @@
                     <td :class="db.getSalary(employee)">{{db.getSalary(employee)}}</td>
                     <td>{{ employee.employee_age }}</td>
                     <td :class="db.getYear(employee)">{{db.getYear(employee)}}</td>
-                    <td>{{ employee.profil_image}}</td>
+                    <td>
+                        <button placeholder="Duplicate">Duplicate</button>
+                        <button placeholder="Delete">Delete</button>
+                    </td>
                     
                 </tr>
                 
