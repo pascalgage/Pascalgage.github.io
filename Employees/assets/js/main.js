@@ -11,7 +11,7 @@ const employeeApp = {
 
     mounted(){
         this.db.loadData().then(() =>{
-            this.resultats=this.db.data;
+            this.db.data;
         });
 
     },
