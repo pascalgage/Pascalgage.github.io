@@ -24,9 +24,12 @@
                 <tr>
                     <th>EID</th>
                     <th>COMPLETE NAME</th>
+                    <th>EMAIL</th>
                     <th>SALARY_YEAR</th>
+                    <th>SALARY_MONTHLY</th>
                     <th>AGE</th>
-                    <th>PHOTO</th>
+                    <th>YEAR OF BIRTH</th>
+                    <th>ACTIONS</th>                    
                 </tr>
             </thead>
 
@@ -34,7 +37,9 @@
                 <tr v-for="employee of employees">
                     <td>{{ employee.id }}</td>
                     <td>{{ employee.employee_name }}</td>
+                    <td></td>
                     <td>{{ employee.employee_salary }}</td>
+                    <td></td>
                     <td>{{ employee.employee_age }}</td>
                     <td>{{ employee.profil_image}}</td>
                     
