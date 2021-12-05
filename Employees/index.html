@@ -33,12 +33,12 @@
 
             <tbody>
                 <tr v-for="employee of employees">
-                    <td>{{ employee.employee_id }}</td>
-                    <td>{{ employee.employee_lastname }}</td>
-                    <td>{{ employee_email }}</td>
-                    <td>{{ employee_salarybymonth }}</td>
-                    <td>{{ employee_dateofbirth }}</td>
-                    <td><a :data-id="cereal.id" @click="eraseLine" class="eraseButton">❌</a></td>
+                    <td>{{ employee.id }}</td>
+                    <td>{{ employee.employee_name }}</td>
+                    <td>{{ employee.employee_salary }}</td>
+                    <td>{{ employee.employee_age }}</td>
+                    <td>{{ employee.profil_image}}</td>
+                    
                 </tr>
                 <tr>
                     <td></td>
