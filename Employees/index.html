@@ -39,7 +39,7 @@
                     <td>{{ employee.employee_name }}</td>
                     <td></td>
                     <td>{{ employee.employee_salary }}</td>
-                    <td></td>
+                    <td :class="db.getSalary(employee)">{{db.getSalary(employee)}}</td>
                     <td>{{ employee.employee_age }}</td>
                     <td>{{ employee.profil_image}}</td>
                     
