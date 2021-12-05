@@ -102,7 +102,7 @@ const cerealApp = {
             let tabx=[];
             
                 cerealTab.forEach(element => {
-                    if(element.potass<=50){
+                    if(element.sodium<=50){
                         tabx.push(element);
                     }
                 });
