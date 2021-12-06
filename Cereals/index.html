@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TPcereals</title>
     <link rel="stylesheet" href="./assets/css/main.css">
-    <script src="./assets/js/vue.global3.2.22.js"></script>
+    <script src="./assets/js/vue.global3.2.22.js" defer></script>
     <script src="./assets/js/main.js" type="module"></script>
 </head>
 
@@ -70,7 +70,7 @@
                 <tr v-for="cereal of cereals">
                     <td>{{ cereal.id }}</td>
                     <td>{{ cereal.name }}</td>
-                    <td>{{ cereal.calories }}</td>
+                    <td id="cal">{{ cereal.calories }}</td>
                     <td>{{ cereal.protein }}</td>
                     <td>{{ cereal.sodium }}</td>
                     <td>{{ cereal.fiber }}</td>
@@ -88,7 +88,13 @@
                     <td></td>
                 </tr>
             </tbody>
-
+            <tfoot>
+                <!--On souhaite ajouter une ligne de calcul pour le total des éléments-->
+                <tr>
+                    <td colspan="2">{{total}}</td>
+                    <td>{{calorie}}</td>
+                </tr>
+            </tfoot>
 
         </table>
 

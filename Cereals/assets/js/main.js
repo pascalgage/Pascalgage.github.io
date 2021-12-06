@@ -10,6 +10,7 @@ const cerealApp = {
             nutriTab: ['A', 'B', 'C', 'D', 'E'],
             search: "",
             boost:"",
+            
         }
     },
     mounted() {
@@ -20,8 +21,20 @@ const cerealApp = {
     },
 
     computed: {
-
+        total(){
+            return this.cereals.length + " Eléments";
+        },
         
+        calorie(){
+            let i = 0;
+            for(let cereal of this.cereals) {
+                i += cereal.calories;
+            }
+
+            return Math.round(i/this.cereals.length);
+        },
+
+
         cereals() {
             
             let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id));
@@ -50,6 +63,8 @@ const cerealApp = {
             return superTab;
             
         },
+
+        
 
     },
           
