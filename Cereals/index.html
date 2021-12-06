@@ -82,17 +82,14 @@
                     <td :class="db.getNutriscore(cereal)">{{ db.getNutriscore(cereal) }}</td>
                     <td><a :data-id="cereal.id" @click="eraseLine" class="eraseButton">❌</a></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                
             </tbody>
             <tfoot>
                 <!--On souhaite ajouter une ligne de calcul pour le total des éléments-->
                 <tr>
                     <td colspan="2">{{total}}</td>
                     <td>{{calorie}}</td>
+                    <td colspan="10"></td>
                 </tr>
             </tfoot>
 

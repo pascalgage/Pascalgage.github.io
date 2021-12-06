@@ -37,19 +37,31 @@
                 <tr v-for="employee of employees">
                     <td>{{ employee.id }}</td>
                     <td>{{ employee.employee_name }}</td>
-                    <td :class="db.getMail(employee)">{{db.getMail(employee)}}</td>
+                    <td>{{db.getMail(employee)}}</td>
                     <td>{{ employee.employee_salary }}</td>
-                    <td :class="db.getSalary(employee)">{{db.getSalary(employee)}}</td>
+                    <td>{{db.getSalary(employee)}}</td>
                     <td>{{ employee.employee_age }}</td>
-                    <td :class="db.getYear(employee)">{{db.getYear(employee)}}</td>
+                    <td>{{db.getYear(employee) }}</td>
                     <td>
                         <button placeholder="Duplicate">Duplicate</button>
-                        <button placeholder="Delete">Delete</button>
+                        <button placeholder="Delete" :data-id="employee.id" @click="eraseEmployee">Delete</button>
                     </td>
                     
                 </tr>
                 
             </tbody>
+            <tfoot>
+                <!--On souhaite ajouter une ligne de calcul pour le total des éléments-->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>{{totalMonthly}}</td>
+                    
+                    
+                </tr>
+            </tfoot>
 
 
         </table>

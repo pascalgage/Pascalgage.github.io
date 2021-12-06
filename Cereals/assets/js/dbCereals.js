@@ -4,7 +4,6 @@ class DbCereals extends Db
 {
 
     
-    
     getNutriscore(cereal) {
         
 

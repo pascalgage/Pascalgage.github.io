@@ -6,11 +6,12 @@ const cerealApp = {
     data() {
         return {
             db: new DbCereals('https://devoldere.net/api/cereals'),
+            resultats:[],
             erasedLines: [],
             nutriTab: ['A', 'B', 'C', 'D', 'E'],
             search: "",
             boost:"",
-            
+            superTab:[],
         }
     },
     mounted() {
@@ -44,7 +45,7 @@ const cerealApp = {
             if(this.search.length>2){
                 superTab = superTab.filter(cereal=> cereal.name.toLowerCase().includes(this.search.toLowerCase()));
             }
-
+               
             if(this.boost==2){
                 let cereal= this.db.data;
                 superTab = (this.getCategorySalt(cereal));
@@ -93,7 +94,7 @@ const cerealApp = {
             }
             
         },
-
+        
         changeCat(event){
 
             let chooseCat = event.target.selectedIndex;
