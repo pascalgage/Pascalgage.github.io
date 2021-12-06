@@ -11,7 +11,7 @@ const cerealApp = {
             nutriTab: ['A', 'B', 'C', 'D', 'E'],
             search: "",
             boost:"",
-            superTab:[],
+           
         }
     },
     mounted() {
@@ -35,10 +35,16 @@ const cerealApp = {
             return Math.round(i/this.cereals.length);
         },
 
+        eraseTest(){
+            
+            
+        },
+
+
 
         cereals() {
             
-            let superTab = this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id));
+            let superTab=this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id));
             
             superTab = superTab.filter(cereal => this.nutriTab.includes(this.db.getNutriscore(cereal)));
             
