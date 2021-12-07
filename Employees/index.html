@@ -39,7 +39,7 @@
                     <td>{{ employee.employee_name }}</td>
                     <td>{{ db.getMail(employee) }}</td>
                     <td>{{ employee.employee_salary }}</td>
-                    <td>{{ employeeSalMonthly }}</td>
+                    <td>{{ Math.round(employee.employee_salary/12) }}</td>
                     <td>{{ employee.employee_age }}</td>
                     <td>{{ db.getYear(employee) }}</td>
                     <td>

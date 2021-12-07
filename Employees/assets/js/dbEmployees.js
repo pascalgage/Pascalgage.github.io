@@ -31,10 +31,8 @@ class DbEmployees extends Db
         return namePart1+"."+namePart2+"@email.com";
         
     }
-    findSalaryMonthly(){
-        let test=this.data.employee_salary;
-        console.log(test);
-        return (test);
+    removeEmploye(_id) {
+        this.data = this.data.filter(item=>item.id != _id);
     }
    
 

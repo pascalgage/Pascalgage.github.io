@@ -21,7 +21,7 @@ const employeeApp = {
         employees(){
             let superTab = this.db.data;
 
-            //superTab=this.db.data.filter(employee=>!this.erasedEmp.includes(employee.id));
+            superTab=this.db.data.filter(employee=>!this.erasedEmp.includes(employee.id));
 
             
 
@@ -31,7 +31,7 @@ const employeeApp = {
         totalMonthly(){
             let i=0;
             for(let employee of this.employees){
-                 i+=employee.employee_salary;
+                 i+=Math.round(employee.employee_salary/12);
             }
             return i;
         },
@@ -46,10 +46,14 @@ const employeeApp = {
 
     methods: {
 
-        eraseEmployee(event){
+        /*eraseEmployee(event){
             this.erasedEmp.push(parseInt(event.target.dataset.id));
+        },*/
+        eraseEmployee(event) {
+            let test = event.target.dataset.id;
+            this.db.removeEmploye(test);
+            
         },
-        
         
 
     }
