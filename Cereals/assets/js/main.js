@@ -1,3 +1,4 @@
+import { Cereal } from "./Cereal.js";
 import { DbCereals } from "./dbCereals.js";
 //import { movieComponent } from "./components/cereal.js";
 
@@ -6,18 +7,14 @@ const cerealApp = {
     data() {
         return {
             db: new DbCereals('https://devoldere.net/api/cereals'),
-            resultats:[],
-            erasedLines: [],
             nutriTab: ['A', 'B', 'C', 'D', 'E'],
             search: "",
             boost:"",
-           
+            test:''
         }
     },
     mounted() {
-        this.db.loadData().then(() => { 
-            this.resultats = this.db.data;
-        });
+        this.db.loadData();
 
     },
 
@@ -28,43 +25,30 @@ const cerealApp = {
         
         calorie(){
             let i = 0;
+            let length = this.cereals.length;
             for(let cereal of this.cereals) {
                 i += cereal.calories;
             }
 
-            return Math.round(i/this.cereals.length);
+            return length > 0 ? Math.round(i/length) : 0;
         },
-
-        eraseTest(){
-            
-            
-        },
-
 
 
         cereals() {
             
-            let superTab=this.db.data.filter(cereal => !this.erasedLines.includes(cereal.id));
-            
-            superTab = superTab.filter(cereal => this.nutriTab.includes(this.db.getNutriscore(cereal)));
+            let superTab = this.db.data.filter(cereal => this.nutriTab.includes(this.db.getNutriscore(cereal)));
             
             if(this.search.length>2){
                 superTab = superTab.filter(cereal=> cereal.name.toLowerCase().includes(this.search.toLowerCase()));
             }
                
             if(this.boost==2){
-                let cereal= this.db.data;
-                superTab = (this.getCategorySalt(cereal));
-            }
-
-            if(this.boost==1){
-                let cereal= this.db.data;
-                superTab = (this.getCategorySugar(cereal));
-            }
-            
-            if(this.boost==3){
-                let cereal= this.db.data;
-                superTab = (this.getCategoryBoost(cereal));
+                superTab = (this.getCategorySalt(superTab));
+            } else if(this.boost==1){
+                superTab = (this.getCategorySugar(superTab));
+                
+            } else if(this.boost==3){
+                superTab = (this.getCategoryBoost(superTab));
             }
             
             return superTab;
@@ -78,9 +62,15 @@ const cerealApp = {
 
     methods: {
         
+
         eraseLine(event) {
-            this.erasedLines.push(parseInt(event.target.dataset.id))
+            let test = event.target.dataset.id;
+            
+            this.db.removeCereal(test);
+            
         },
+
+        
 
         nutriSelect(event) {
             if(event.target.checked) {
@@ -112,7 +102,7 @@ const cerealApp = {
             let tabx=[];
             
                 cerealTab.forEach(element => {
-                    if(element.sugars<1){
+                    if(element.sugars<1 && element.sugars != -1){
                         tabx.push(element);
                     }
                 });

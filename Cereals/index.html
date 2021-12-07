@@ -79,7 +79,7 @@
                     <td>{{ cereal.potass }}</td>
                     <td>{{ cereal.vitamins }}</td>
                     <td>{{ cereal.rating }}</td>
-                    <td :class="db.getNutriscore(cereal)">{{ db.getNutriscore(cereal) }}</td>
+                    <td :class="cereal.nutriscore">{{ cereal.nutriscore }}</td>
                     <td><a :data-id="cereal.id" @click="eraseLine" class="eraseButton">❌</a></td>
                 </tr>
                 

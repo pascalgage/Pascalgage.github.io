@@ -1,8 +1,16 @@
+import { Cereal } from './Cereal.js';
 import { Db } from './Db.js';
 
 class DbCereals extends Db 
 {
-
+    loadData(){
+        return super.loadData().then(data => {
+            for(let index in data){
+                this.data[index]=new Cereal(this.data[index]);
+            }
+            return this.data;
+        })
+    }
     
     getNutriscore(cereal) {
         
@@ -20,7 +28,9 @@ class DbCereals extends Db
         }
     }
 
-   
+    removeCereal(_id) {
+            this.data = this.data.filter(item=>item.id != _id);
+        }
 
     
 }
