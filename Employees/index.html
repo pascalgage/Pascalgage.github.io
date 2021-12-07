@@ -23,13 +23,13 @@
             <thead>
                 <tr>
                     <th>EID</th>
-                    <th>COMPLETE NAME</th>
-                    <th>EMAIL</th>
-                    <th>SALARY_YEAR</th>
-                    <th>SALARY_MONTHLY</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Yearly_Salary</th>
+                    <th>Monthly_Salary</th>
                     <th>AGE</th>
-                    <th>YEAR OF BIRTH</th>
-                    <th>ACTIONS</th>                    
+                    <th>Year Of Birth</th>
+                    <th>Actions</th>                    
                 </tr>
             </thead>
 
@@ -39,7 +39,7 @@
                     <td>{{ employee.employee_name }}</td>
                     <td>{{ db.getMail(employee) }}</td>
                     <td>{{ employee.employee_salary }}</td>
-                    <td>{{ Math.round(employee.employee_salary/12) }}</td>
+                    <td>{{ Math.fround(employee.employee_salary/12) }}</td>
                     <td>{{ employee.employee_age }}</td>
                     <td>{{ db.getYear(employee) }}</td>
                     <td>
@@ -53,7 +53,7 @@
             <tfoot>
                 <!--On souhaite ajouter une ligne de calcul pour le total des éléments-->
                 <tr>
-                    <td></td>
+                    <td>{{ totalEmp }}</td>
                     <td></td>
                     <td></td>
                     <td></td>

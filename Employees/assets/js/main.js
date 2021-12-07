@@ -6,7 +6,6 @@ const employeeApp = {
     data(){
         return{
             db: new DbEmployees ('http://dummy.restapiexample.com/api/v1/employees'),
-            erasedEmp:[],
             superTab:[],
         }
     },
@@ -20,39 +19,35 @@ const employeeApp = {
 
         employees(){
             let superTab = this.db.data;
-
-            superTab=this.db.data.filter(employee=>!this.erasedEmp.includes(employee.id));
-
-            
-
-
             return superTab;
         },
+
         totalMonthly(){
             let i=0;
             for(let employee of this.employees){
-                 i+=Math.round(employee.employee_salary/12);
+                 i+=Math.fround(employee.employee_salary/12,2);
             }
             return i;
         },
+
         employeeSalMonthly(){
             console.log(this.db.findSalaryMonthly());
-            return this.db.findSalaryMonthly();
-            
-            
+            return this.db.findSalaryMonthly();  
+        },
+
+        totalEmp(){
+            let totalEmp=this.db.length;
+            console.log(totalEmp);
+            return this.employees.length;
         }
         
     },
 
     methods: {
 
-        /*eraseEmployee(event){
-            this.erasedEmp.push(parseInt(event.target.dataset.id));
-        },*/
         eraseEmployee(event) {
             let test = event.target.dataset.id;
             this.db.removeEmploye(test);
-            
         },
         
 
