@@ -32,9 +32,9 @@ class DbEmployees extends Db
         
     }
     findSalaryMonthly(){
-        let test=this.data;
-        
-        return (test.employee_salary);
+        let test=this.data.employee_salary;
+        console.log(test);
+        return (test);
     }
    
 

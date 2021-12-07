@@ -21,7 +21,10 @@ const employeeApp = {
         employees(){
             let superTab = this.db.data;
 
-            superTab=this.db.data.filter(employee=>!this.erasedEmp.includes(employee.id));
+            //superTab=this.db.data.filter(employee=>!this.erasedEmp.includes(employee.id));
+
+            
+
 
             return superTab;
         },
