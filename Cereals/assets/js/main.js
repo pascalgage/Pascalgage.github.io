@@ -2,28 +2,30 @@ import { Cereal } from "./Cereal.js";
 import { DbCereals } from "./dbCereals.js";
 //import { movieComponent } from "./components/cereal.js";
 
-
+/**
+ * la constante cerealApp est l'objet principal de l'application...
+ */
 const cerealApp = {
-    data() {
+    data() { // ceux sont les variables manipulables de l'application...
         return {
             db: new DbCereals('https://devoldere.net/api/cereals'),
             nutriTab: ['A', 'B', 'C', 'D', 'E'],
             search: "",
             boost:"",
-            test:''
+            
         }
     },
-    mounted() {
+    mounted() { // évènement du cycle de vie de l'application...
         this.db.loadData();
 
     },
 
-    computed: {
-        total(){
+    computed: {  //c'est l'ensemble des données calculées....
+        totalElements(){
             return this.cereals.length + " Eléments";
         },
-        
-        calorie(){
+                    //c'est la variable de fin de colonne calories...
+        calorieMoy(){
             let i = 0;
             let length = this.cereals.length;
             for(let cereal of this.cereals) {
@@ -33,7 +35,7 @@ const cerealApp = {
             return length > 0 ? Math.round(i/length) : 0;
         },
 
-
+                //ceux sont les filtres de l'application...
         cereals() {
             
             let superTab = this.db.data.filter(cereal => this.nutriTab.includes(this.db.getNutriscore(cereal)));
@@ -61,17 +63,19 @@ const cerealApp = {
           
 
     methods: {
-        
-
+                                //ma méthode eraseline permet de supprimer un élément du tableau
         eraseLine(event) {
             let test = event.target.dataset.id;
-            
             this.db.removeCereal(test);
             
         },
 
         
-
+        /**
+         * 
+         * @param {*} event permet de selectionner selon le nutriscore....et d'obtenir les céréales filtrées 
+         * selon le nutriscore....
+         */
         nutriSelect(event) {
             if(event.target.checked) {
                 this.nutriTab.push(event.target.dataset.name)
@@ -81,6 +85,11 @@ const cerealApp = {
             
         },
 
+        /**
+         * 
+         * @param {*} event permet d'entrer une chaîne de caractères pour rechercher des céréales dans le tableau
+         * contenant dans leur nom tout ou partie de cette chaîne de caractères....
+         */
         searchInput(event){
 
             let valeurRecherche=event.target.value;
@@ -90,13 +99,14 @@ const cerealApp = {
             }
             
         },
-        
+                            //permet de choisir une catégorie de céréales...
         changeCat(event){
 
             let chooseCat = event.target.selectedIndex;
             this.boost=chooseCat;
             
         },
+                            //fonctions de tri des céréales selon catégorie...
         getCategorySugar(cerealTab){
 
             let tabx=[];
@@ -114,7 +124,7 @@ const cerealApp = {
             let tabx=[];
             
                 cerealTab.forEach(element => {
-                    if(element.sodium<=50){
+                    if(element.sodium<=50 && element.sodium != -1){
                         tabx.push(element);
                     }
                 });
@@ -138,3 +148,4 @@ const cerealApp = {
 }
 
 Vue.createApp(cerealApp).mount('#app');
+//fin du code cerealApp....
