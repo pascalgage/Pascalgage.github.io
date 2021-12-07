@@ -1,7 +1,16 @@
 import { Db } from './Db.js';
+import { Employe } from './employe.js';
 
 class DbEmployees extends Db 
 {
+    loadData(){
+        return super.loadData().then(data => {
+            for(let index in data){
+                this.data[index]=new Employe(this.data[index]);
+            }
+            return this.data;
+        })
+    }
 
     getSalary(employee){
         let salary=employee.employee_salary/12;
@@ -22,7 +31,11 @@ class DbEmployees extends Db
         return namePart1+"."+namePart2+"@email.com";
         
     }
-
+    findSalaryMonthly(){
+        let test=this.data;
+        
+        return (test.employee_salary);
+    }
    
 
     

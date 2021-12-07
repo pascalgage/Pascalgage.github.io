@@ -1,4 +1,5 @@
 import { DbEmployees } from "./dbEmployees.js";
+//import { Employe } from './employe.js';
 
 const employeeApp = {
 
@@ -6,15 +7,13 @@ const employeeApp = {
         return{
             db: new DbEmployees ('http://dummy.restapiexample.com/api/v1/employees'),
             erasedEmp:[],
-            
+            superTab:[],
         }
     },
 
     mounted(){
-        this.db.loadData().then(() =>{
-            this.db.data;
-        });
-
+        this.db.loadData();
+        
     },
 
     computed: {
@@ -29,9 +28,15 @@ const employeeApp = {
         totalMonthly(){
             let i=0;
             for(let employee of this.employees){
-                i+=employee.employee_salary;
+                 i+=employee.employee_salary;
             }
             return i;
+        },
+        employeeSalMonthly(){
+            console.log(this.db.findSalaryMonthly());
+            return this.db.findSalaryMonthly();
+            
+            
         }
         
     },
