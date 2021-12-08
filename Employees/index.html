@@ -22,11 +22,11 @@
 
             <thead>
                 <tr>
-                    <th>EID</th>
+                    <th>EID<button @click="columnClick" data-column="employee.id">Tri</button></th>
                     <th>Full Name</th>
                     <th>Email</th>
                     <th>Yearly_Salary</th>
-                    <th>Monthly_Salary<button @click="columnClick" data-column="">Tri</button></th>
+                    <th>Monthly_Salary<button @click="columnClick" data-column="employee_monthlySalary">Tri</button></th>
                     <th>AGE</th>
                     <th>Year Of Birth</th>
                     <th>Actions</th>                    
@@ -39,8 +39,7 @@
                     <td>{{ employee.employee_name }}</td>
                     <td>{{ employee.getMail() }}</td>
                     <td>{{ employee.employee_salary }}</td>
-                    <td>{{ employee.employee_monthlySalary }}</td>
-                    <!--<td>{{ db.findSalaryMonthly }}</td>-->
+                    <td>{{ employee.employee_monthlySalary.toFixed(2) }}</td>
                     <td>{{ employee.employee_age }}</td>
                     <td>{{ employee.getYear() }}</td>
                     <td>

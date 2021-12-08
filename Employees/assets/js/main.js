@@ -7,12 +7,14 @@ const employeeApp = {
         return{
             db: new DbEmployees ('/employee.json'),
             superTab:[],
+            column: {name:'employee.id', asc: true }
         }
     },
 
     mounted(){
         this.db.loadData().then(()=>{
             this.superTab = this.db.data;
+            console.log('etat initial column : ' + this.column.name + ' : ' + this.column.asc)
         });
         
     },
@@ -20,8 +22,16 @@ const employeeApp = {
     computed: {
 
         employees(){
+            let superTab=this.db.data;
             
+            if(this.column.asc){
+                superTab.sort((a,b)=>a[this.column.name]-b[this.column.name])
+            }else{
+                superTab.sort((a,b)=>a[this.column.name]-b[this.column.name]).reverse()
+            }
+
             return this.superTab;
+
         },
 
         totalMonthly(){
@@ -31,16 +41,6 @@ const employeeApp = {
             }
             return (Number.parseFloat(i).toPrecision(8));
         },
-
-        /*employeeSalMonthly(){
-            console.log(this.db.findSalaryMonthly());
-            return this.db.findSalaryMonthly();  
-        },
-
-        findSalaryMonthly(){
-            console.log(this.db.employee_salary);
-            return (this.db.employee_salary)/12;
-        },*/
 
         totalEmp(){
             return this.employees.length;
@@ -55,6 +55,16 @@ const employeeApp = {
             this.db.removeEmploye(test);
         },
         
+        columnClick(event){
+            let columnClicked=event.target.dataset.column;
+            
+            if(this.column.name!=columnClicked){
+                this.column.name=columnClicked;
+                this.column.asc=true;
+            }else{
+                 this.column.asc=!this.column.asc;
+            }
+        }
 
     }
 
