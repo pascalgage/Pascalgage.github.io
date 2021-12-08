@@ -37,12 +37,12 @@
                 <tr v-for="employee of employees">
                     <td>{{ employee.id }}</td>
                     <td>{{ employee.employee_name }}</td>
-                    <td>{{ employee.employee_email }}</td>
+                    <td>{{ employee.getMail() }}</td>
                     <td>{{ employee.employee_salary }}</td>
                     <td>{{ employee.employee_monthlySalary }}</td>
                     <!--<td>{{ db.findSalaryMonthly }}</td>-->
                     <td>{{ employee.employee_age }}</td>
-                    <td>{{ employee.employee_yearOfBirth }}</td>
+                    <td>{{ employee.getYear() }}</td>
                     <td>
                         <button placeholder="Duplicate">Duplicate</button>
                         <button placeholder="Delete" :data-id="employee.id" @click="eraseEmployee">Delete</button>
@@ -66,8 +66,6 @@
 
 
         </table>
-
-
 
     </div>
 </body>

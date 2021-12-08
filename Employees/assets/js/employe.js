@@ -7,8 +7,6 @@ class Employe
             this.employee_age=parseInt(_Employe.employee_age ?? 0);
             this.profile_image=_Employe.profile_image ??"";
             this.employee_monthlySalary=Math.fround(this.employee_salary/12);
-            this.employee_email = this.getMail();
-            this.employee_yearOfBirth = this.getYear();
     }
 
     getMail(){
