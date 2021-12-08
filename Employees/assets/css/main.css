@@ -20,4 +20,6 @@ td {
 body{
     background-color: darkslategrey;
 }
-
+h2,h4{
+    color: dodgerblue;
+}

@@ -1,5 +1,5 @@
 import { DbEmployees } from "./dbEmployees.js";
-//import { Employe } from './employe.js';
+import { Employe } from './employe.js';
 
 const employeeApp = {
 
@@ -22,7 +22,7 @@ const employeeApp = {
     computed: {
 
         employees(){
-            let superTab=this.db.data;
+            let superTab=this.superTab;
             
             if(this.column.asc){
                 superTab.sort((a,b)=>a[this.column.name]-b[this.column.name]);
@@ -52,7 +52,8 @@ const employeeApp = {
 
         eraseEmployee(event) {
             let test = event.target.dataset.id;
-            this.db.removeEmploye(test);
+            console.log(test);
+            this.data.removeEmploye(test);
         },
         
         columnClick(event){
