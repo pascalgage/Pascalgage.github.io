@@ -12,7 +12,7 @@ const employeeApp = {
 
     mounted(){
         this.db.loadData().then(()=>{
-            console.log("mounted", this.db.data);
+            this.superTab = this.db.data;
         });
         
     },
@@ -20,8 +20,8 @@ const employeeApp = {
     computed: {
 
         employees(){
-            let superTab = this.db.data;
-            return superTab;
+            
+            return this.superTab;
         },
 
         totalMonthly(){
