@@ -16,7 +16,7 @@ class DbEmployees extends Db
         let salary=employee.employee_salary/12;
         return Math.round(salary);
     }
-    getYear(employee){
+    /*getYear(employee){
         let madate=new Date();
         let year=(madate.getFullYear())-(employee.employee_age);
         return year;
@@ -30,11 +30,14 @@ class DbEmployees extends Db
 
         return namePart1+"."+namePart2+"@email.com";
         
-    }
+    }*/
     removeEmploye(_id) {
         this.data = this.data.filter(item=>item.id != _id);
     }
-   
+    
+    findSalaryMonthly(){
+        return this.data.employee_salary/12;
+    }
 
     
 }

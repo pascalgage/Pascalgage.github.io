@@ -12,11 +12,14 @@ const cerealApp = {
             nutriTab: ['A', 'B', 'C', 'D', 'E'],
             search: "",
             boost:"",
+            column: { name: 'id', asc: true }//quand les données reactives changent alors les méthodes de computed
+            //et notamment cereals est ré-appelée...
             
         }
     },
     mounted() { // évènement du cycle de vie de l'application...
         this.db.loadData();
+        console.log('etat initial column : ' + this.column.name + ' : ' + this.column.asc)
 
     },
 
@@ -52,7 +55,13 @@ const cerealApp = {
             } else if(this.boost==3){
                 superTab = (this.getCategoryBoost(superTab));
             }
-            
+                
+            //sort ne renvoie pas une copie comme filter, ça modifie directement le tableau 
+            if(this.column.asc){
+                superTab.sort((a,b)=>a[this.column.name]-b[this.column.name])
+            }else{
+                superTab.sort((a,b)=>a[this.column.name]-b[this.column.name]).reverse()
+            }
             return superTab;
             
         },
@@ -106,6 +115,33 @@ const cerealApp = {
             this.boost=chooseCat;
             
         },
+
+        /**
+         * Function which is called when the user click on the column header
+         * @param {*} event 
+         */
+        columnClick(event) {
+            // récupérer le nom de la colonne : developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
+            let columnClickedName = event.target.dataset.column;
+            // modifier l'état de l'application plus particulièrement l'état de la donnée réactive "column"
+                // si je clique sur une autre colonne que la colonne courante alors je met le nom de la nouvelle
+                //colonne dans this.column.name
+                if(this.column.name!=columnClickedName){
+                    this.column.name=columnClickedName;
+                    this.column.asc=true;
+                }else{
+                     // else je clique sur la même colonne que la colonne actuelle alors this.column.asc prend la valeur inverse de ce qu'il y a actuellement dans this.column.asc
+                     this.column.asc=!this.column.asc;
+                }
+
+                //console.log(this.column)
+               
+
+            
+        },
+
+
+
                             //fonctions de tri des céréales selon catégorie...
         getCategorySugar(cerealTab){
 

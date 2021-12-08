@@ -31,7 +31,10 @@ class DbCereals extends Db
     removeCereal(_id) {
             this.data = this.data.filter(item=>item.id != _id);
         }
-
+    
+    inOrderTabByCalorie(){
+        
+    }
     
 }
 

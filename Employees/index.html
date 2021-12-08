@@ -26,7 +26,7 @@
                     <th>Full Name</th>
                     <th>Email</th>
                     <th>Yearly_Salary</th>
-                    <th>Monthly_Salary</th>
+                    <th>Monthly_Salary<button @click="columnClick" data-column="">Tri</button></th>
                     <th>AGE</th>
                     <th>Year Of Birth</th>
                     <th>Actions</th>                    
@@ -37,11 +37,12 @@
                 <tr v-for="employee of employees">
                     <td>{{ employee.id }}</td>
                     <td>{{ employee.employee_name }}</td>
-                    <td>{{ db.getMail(employee) }}</td>
+                    <td>{{ employee.employee_email }}</td>
                     <td>{{ employee.employee_salary }}</td>
-                    <td>{{ Math.fround(employee.employee_salary/12) }}</td>
+                    <td>{{ employee.employee_monthlySalary }}</td>
+                    <!--<td>{{ db.findSalaryMonthly }}</td>-->
                     <td>{{ employee.employee_age }}</td>
-                    <td>{{ db.getYear(employee) }}</td>
+                    <td>{{ employee.employee_yearOfBirth }}</td>
                     <td>
                         <button placeholder="Duplicate">Duplicate</button>
                         <button placeholder="Delete" :data-id="employee.id" @click="eraseEmployee">Delete</button>

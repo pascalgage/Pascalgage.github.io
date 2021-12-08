@@ -50,7 +50,9 @@ header {
 .search {
     display: flex;
 }
-
+.calorie{
+    cursor:pointer;
+}
 .nutriscore {
     display: flex;
 }

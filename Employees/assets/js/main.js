@@ -1,17 +1,19 @@
 import { DbEmployees } from "./dbEmployees.js";
-//import { Employe } from './employe.js';
+import { Employe } from './employe.js';
 
 const employeeApp = {
 
     data(){
         return{
-            db: new DbEmployees ('http://dummy.restapiexample.com/api/v1/employees'),
+            db: new DbEmployees ('/employee.json'),
             superTab:[],
         }
     },
 
     mounted(){
-        this.db.loadData();
+        this.db.loadData().then(()=>{
+            console.log("mounted", this.db.data);
+        });
         
     },
 
@@ -25,19 +27,22 @@ const employeeApp = {
         totalMonthly(){
             let i=0;
             for(let employee of this.employees){
-                 i+=Math.fround(employee.employee_salary/12,2);
+                 i+=Math.fround(employee.employee_salary/12);
             }
-            return i;
+            return (Number.parseFloat(i).toPrecision(8));
         },
 
-        employeeSalMonthly(){
+        /*employeeSalMonthly(){
             console.log(this.db.findSalaryMonthly());
             return this.db.findSalaryMonthly();  
         },
 
+        findSalaryMonthly(){
+            console.log(this.db.employee_salary);
+            return (this.db.employee_salary)/12;
+        },*/
+
         totalEmp(){
-            let totalEmp=this.db.length;
-            console.log(totalEmp);
             return this.employees.length;
         }
         

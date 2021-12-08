@@ -50,17 +50,17 @@
 
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>NOM</th>
-                    <th>CALORIES</th>
-                    <th>PROTEINES</th>
-                    <th>SEL</th>
-                    <th>FIBRES</th>
-                    <th>GLUCIDES</th>
-                    <th>SUCRE</th>
-                    <th>POTASSIUM</th>
-                    <th>VITAMINES</th>
-                    <th>EVALUATION</th>
+                    <th @click="columnClick" data-column="id">ID</th>
+                    <th @click="columnClick" data-column="name">NOM</th>
+                    <th @click="columnClick" data-column="calories" class="calorie">CALORIES</th>
+                    <th @click="columnClick" data-column="protein">PROTEINES</th>
+                    <th @click="columnClick" data-column="sodium">SEL</th>
+                    <th @click="columnClick" data-column="fiber">FIBRES</th>
+                    <th @click="columnClick" data-column="carbo">GLUCIDES</th>
+                    <th @click="columnClick" data-column="sugars">SUCRE</th>
+                    <th @click="columnClick" data-column="potass">POTASSIUM</th>
+                    <th @click="columnClick" data-column="vitamins">VITAMINES</th>
+                    <th @click="columnClick" data-column="rating">EVALUATION</th>
                     <th>NS</th>
                     <th>DEL</th>
                 </tr>
