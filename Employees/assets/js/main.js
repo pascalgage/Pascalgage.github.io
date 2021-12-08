@@ -5,16 +5,16 @@ const employeeApp = {
     data(){
         return{
             db: new DbEmployees ('/employee.json'),
-            //superTab:[],
+            
             column: {name:'id', asc: true }
         }
     },
 
     mounted(){
-        this.db.loadData();  /*.then(()=>{
-            this.superTab = this.db.data;*/
+        this.db.loadData();
+            
             console.log('etat initial column : ' + this.column.name + ' : ' + this.column.asc)
-        /*});*/
+        
         
     },
 
