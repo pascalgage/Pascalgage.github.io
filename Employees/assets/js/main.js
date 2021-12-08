@@ -1,28 +1,27 @@
-import { DbEmployees } from "./dbEmployees.js";
 import { Employe } from './employe.js';
-
+import { DbEmployees } from "./dbEmployees.js";
 const employeeApp = {
 
     data(){
         return{
-            db: new DbEmployees ('/employee.json'),
-            superTab:[],
+            db: new DbEmployees ('http://dummy.restapiexample.com/api/v1/employees'),
+            //superTab:[],
             column: {name:'id', asc: true }
         }
     },
 
     mounted(){
-        this.db.loadData().then(()=>{
-            this.superTab = this.db.data;
+        this.db.loadData();  /*.then(()=>{
+            this.superTab = this.db.data;*/
             console.log('etat initial column : ' + this.column.name + ' : ' + this.column.asc)
-        });
+        /*});*/
         
     },
 
     computed: {
 
         employees(){
-            let superTab=this.superTab;
+            let superTab=this.db.data;
             
             if(this.column.asc){
                 superTab.sort((a,b)=>a[this.column.name]-b[this.column.name]);
@@ -30,7 +29,7 @@ const employeeApp = {
                 superTab.sort((a,b)=>a[this.column.name]-b[this.column.name]).reverse();
             }
 
-            return this.superTab;
+            return superTab;
 
         },
 
@@ -53,7 +52,7 @@ const employeeApp = {
         eraseEmployee(event) {
             let test = event.target.dataset.id;
             console.log(test);
-            this.data.removeEmploye(test);
+            this.db.removeEmploye(test);
         },
         
         columnClick(event){
