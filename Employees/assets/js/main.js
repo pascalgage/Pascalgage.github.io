@@ -1,5 +1,5 @@
 import { DbEmployees } from "./dbEmployees.js";
-import { Employe } from './employe.js';
+//import { Employe } from './employe.js';
 
 const employeeApp = {
 
@@ -7,7 +7,7 @@ const employeeApp = {
         return{
             db: new DbEmployees ('/employee.json'),
             superTab:[],
-            column: {name:'employee.id', asc: true }
+            column: {name:'id', asc: true }
         }
     },
 
@@ -25,9 +25,9 @@ const employeeApp = {
             let superTab=this.db.data;
             
             if(this.column.asc){
-                superTab.sort((a,b)=>a[this.column.name]-b[this.column.name])
+                superTab.sort((a,b)=>a[this.column.name]-b[this.column.name]);
             }else{
-                superTab.sort((a,b)=>a[this.column.name]-b[this.column.name]).reverse()
+                superTab.sort((a,b)=>a[this.column.name]-b[this.column.name]).reverse();
             }
 
             return this.superTab;
