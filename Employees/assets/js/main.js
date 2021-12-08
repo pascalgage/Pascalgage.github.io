@@ -4,7 +4,7 @@ const employeeApp = {
 
     data(){
         return{
-            db: new DbEmployees ('http://dummy.restapiexample.com/api/v1/employees'),
+            db: new DbEmployees ('/employee.json'),
             //superTab:[],
             column: {name:'id', asc: true }
         }
