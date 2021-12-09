@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP_ZIPCODE</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/vue.global3.2.22.js" defer></script>
     <script src="./assets/js/main.js" type="module"></script>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <input @input="searchInput" type="search" name="search" value="" list="communes"/>
 
         <datalist id="communes">
-            <option v-for="commune in communes" :value="commune">{{      }}</option>
+            <option v-for="commune in communes" :value="commune"></option>
         </datalist>
 
 

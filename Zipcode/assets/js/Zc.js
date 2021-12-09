@@ -10,7 +10,8 @@ class Zc {
             .then((response) => {
                 return response.json();
             }).then((json) => {
-                return json.data;
+                this.data = json;
+                return json;
             });
     }
 }
