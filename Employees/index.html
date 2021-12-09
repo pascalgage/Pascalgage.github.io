@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TPemployees</title>
     <link rel="stylesheet" href="./assets/css/main.css">
-    
     <script src="./assets/js/vue.global3.2.22.js" defer></script>
-    
     <script src="./assets/js/main.js" type="module"></script>
 </head>
 
@@ -46,10 +44,9 @@
                         <button placeholder="Duplicate">Duplicate</button>
                         <button placeholder="Delete" :data-id="employee.id" @click="eraseEmployee">Delete</button>
                     </td>
-                    
                 </tr>
-                
             </tbody>
+
             <tfoot>
                 <!--On souhaite ajouter une ligne de calcul pour le total des éléments-->
                 <tr>
@@ -57,16 +54,10 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>{{ totalMonthly }}</td>
-                    
-                    
+                    <td>{{ totalMonthly }}</td>  
                 </tr>
             </tfoot>
-
-
         </table>
-
     </div>
 </body>
-
 </html>
