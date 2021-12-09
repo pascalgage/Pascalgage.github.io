@@ -6,7 +6,7 @@ class DbEmployees extends Db
     loadData(){
         return super.loadData().then(data => {
             for(let index in data){
-                this.data[index]=new Employe (this.data[index]);
+                this.data[index]=new Employe (data[index]);
             }
             return this.data;
         })

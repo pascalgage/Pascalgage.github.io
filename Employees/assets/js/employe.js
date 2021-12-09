@@ -11,11 +11,12 @@ class Employe
 
     getMail(){
         
+
             let completeName=this.employee_name;
             let name=completeName.split(' ');
     
-            let namePart1=name[0].charAt(0).toLowerCase();
-            let namePart2=name[1].toLowerCase();
+            let namePart1 = name[0].charAt(0).toLowerCase();
+            let namePart2 = name[1].toLowerCase();
     
             return namePart1 + "." + namePart2 + "@email.com";
         

@@ -14,8 +14,8 @@ class Db {
             .then((response) => {
                 return response.json();
             }).then((json) => {
-                this.data = json.data;
-                return this.data;
+               // this.data = json.data;
+                return json.data;
             });
     }
 }
