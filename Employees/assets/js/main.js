@@ -4,18 +4,13 @@ const employeeApp = {
 
     data(){
         return{
-            db: new DbEmployees ('/employee.json'),
-            
+            db: new DbEmployees ('/employee.json'), 
             column: {name:'id', asc: true }
         }
     },
 
     mounted(){
-        this.db.loadData();
-            
-            console.log('etat initial column : ' + this.column.name + ' : ' + this.column.asc)
-        
-        
+        this.db.loadData();   
     },
 
     computed: {
