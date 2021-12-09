@@ -53,9 +53,26 @@ const employeeApp = {
         duplicatEmployee(event){
             let id=event.target.dataset.id;
             let employe=this.getEmployeeById(id);
+            employe = new Employe(employe);
+           // employe.employee_salary*=3;
+            employe.id=this.returnHighestId();
+            
             console.log(employe);
+            
             this.db.data.push(employe);
             
+        },
+
+        returnHighestId(){
+            
+            let i = 0;
+            
+            for(let employe of this.db.data) {
+                if(employe.id > i) {
+                    i=employe.id;
+                }
+            }
+            return i+1;
         },
 
         getEmployeeById(_id){
