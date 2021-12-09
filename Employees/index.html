@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <script src="./assets/js/vue.global3.2.22.js" defer></script>
     <script src="./assets/js/main.js" type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 <body>
     <div id="app">
         <header>
             <h2>EMPLOYEES</h2>
+            
             <h4>This is the current list of employees</h4>
         </header>
         <table>
 
             <thead>
                 <tr>
-                    <th>EID<button @click="columnClick" data-column="id">Tri</button></th>
+                    <th>EID<button class="triId" @click="columnClick" data-column="id"><i class="fa fa-arrows-v"></i></button></th>
                     <th>Full Name</th>
                     <th>Email</th>
                     <th>Yearly_Salary</th>
-                    <th>Monthly_Salary<button @click="columnClick" data-column="employee_monthlySalary">Tri</button></th>
+                    <th>Monthly_Salary<button class="triSal" @click="columnClick" data-column="employee_monthlySalary"><i class="fa fa-arrows-v"></i></button></th>
                     <th>AGE</th>
                     <th>Year Of Birth</th>
                     <th>Actions</th>                    
@@ -41,8 +43,8 @@
                     <td>{{ employee.employee_age }}</td>
                     <td>{{ employee.getYear() }}</td>
                     <td>
-                        <button placeholder="Duplicate">Duplicate</button>
-                        <button placeholder="Delete" :data-id="employee.id" @click="eraseEmployee">Delete</button>
+                        <button class="duplicate" :data-id="employee.id" @click="duplicatEmployee">Duplicate</button>
+                        <button class="delete" :data-id="employee.id" @click="eraseEmployee">Delete</button>
                     </td>
                 </tr>
             </tbody>

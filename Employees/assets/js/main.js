@@ -10,7 +10,8 @@ const employeeApp = {
     },
 
     mounted(){
-        this.db.loadData();   
+        this.db.loadData(); 
+          
     },
 
     computed: {
@@ -45,9 +46,21 @@ const employeeApp = {
     methods: {
 
         eraseEmployee(event) {
-            let test = event.target.dataset.id;
-            console.log(test);
-            this.db.removeEmploye(test);
+            let id = event.target.dataset.id;
+            this.db.removeEmploye(id);
+        },
+
+        duplicatEmployee(event){
+            let id=event.target.dataset.id;
+            let employe=this.getEmployeeById(id);
+            console.log(employe);
+            this.db.data.push(employe);
+            
+        },
+
+        getEmployeeById(_id){
+            return this.db.data.find(item=>item.id==_id);
+            
         },
         
         columnClick(event){

@@ -11,7 +11,9 @@ th {
     text-align: center;
     color: yellowgreen;
 }
-
+tr:hover{
+    background-color: fuchsia;
+}
 td {
     text-align: center;
     border-bottom: 1px solid grey;
@@ -22,4 +24,19 @@ body{
 }
 h2,h4{
     color: dodgerblue;
+}
+.duplicate{
+    margin: 10px;
+    border-radius: 5px;
+    background-color:dodgerblue;
+}
+.delete{
+    background-color: red;
+    border-radius: 5px;
+}
+.triId{
+    margin-left: 10px;
+}
+.triSal{
+    margin-left: 10px;
 }
