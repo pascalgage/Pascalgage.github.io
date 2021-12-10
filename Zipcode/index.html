@@ -18,15 +18,7 @@
         <datalist id="communes">
             <option v-for="commune in communes":value="commune.nomCommune">{{ commune.codePostal }} {{commune.nomCommune}} {{libelleAcheminement}}</option>
         </datalist>
-        <section v-if="clicked == 'commune.codePostal'" class="communes">
-            <h2>COMMUNE RECHERCHEE</h2>
-            
-        </section>
-
-        <!--<span>{{commune.codePostal}}</span>
-        <span>{{commune.libelleAcheminement}}</span>-->
-
-        
+ 
     </div>
 </body>
 </html>
