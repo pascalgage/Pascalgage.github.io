@@ -28,9 +28,11 @@ const ZipcodesApp={
         searchInput(event) { 
             let val =(event.target.value); // attribut "value" de l'input search
                 if(val.length>3){
-                        this.results = this.zc.giveZipCode(val); 
+                        this.results = this.zc.giveZipCode(val);
+                        console.log("by nom", val); 
                 }else if(val.length>3 && Number.isInteger(val)){
                         this.results=this.zc.giveCommunes(val);
+                        console.log("by numCode", val);
                 }
               
         },
