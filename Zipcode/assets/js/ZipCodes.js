@@ -2,11 +2,11 @@ import { Zc } from './Zc.js';
 
 class ZipCodes extends Zc
 {
-    getCommunes(_codepostal){
-        return this.data.filter(item=>item.codePostal.includes(_codepostal));
+    giveCommunes(_codepostal){
+        return this.data.filter(item=>item.codePostal==_codepostal);
     }
 
-    getByZipCode(_nomCommune){
+    giveZipCode(_nomCommune){
         
         return this.data.filter(item=>item.nomCommune.includes(_nomCommune));
     }
