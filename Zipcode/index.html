@@ -13,11 +13,19 @@
         <header>
             <h2>ZIPCODES</h2>
         </header>
-        <input @input="searchInput" type="search" name="search" value="" list="communes"/>
+        <input @input="searchInput" @change="communeClick" type="search" name="search" value="" list="communes" data-tab="commune.codePostal"/>
 
         <datalist id="communes">
-            <option v-for="commune in communes" :value="commune.codePostal">{{ commune.nomCommune }}</option>
+            <option v-for="commune in communes" :value="commune.codePostal" >{{ commune.nomCommune }} {{commune.libelleAcheminement}}</option>
         </datalist>
+        <section v-if="clicked == 'commune.codePostal'" class="communes">
+            <h2>COMMUNE RECHERCHEE</h2>
+            
+        </section>
+
+        <!--<span>{{commune.codePostal}}</span>
+        <span>{{commune.libelleAcheminement}}</span>-->
+
         
     </div>
 </body>

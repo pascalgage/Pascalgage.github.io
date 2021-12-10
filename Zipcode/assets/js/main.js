@@ -6,7 +6,8 @@ const ZipcodesApp={
         return{
             zc: new ZipCodes ('/Zipcodes.json'), 
             results:[],
-            nomCommune:""
+            nomCommune:"",
+            clicked: "",
         }
     },
     mounted(){
@@ -18,8 +19,7 @@ const ZipcodesApp={
 
         communes() {
                 return this.results;
-            if(this.results.length<500){
-            }       
+                
             
         },
         
@@ -30,8 +30,16 @@ const ZipcodesApp={
 
             if( val.length > 3) {
                 this.results = this.zc.getCommunes(val);
-                console.log(val, this.results);
+        
             }
+            if(val.length > 3){
+                this.results=this.zc.getZipCode(val);
+            }
+        },
+        communeClick(event){
+            let clicked = event.target.dataset.tab;
+            
+            console.log(clicked);
         }
 
 
