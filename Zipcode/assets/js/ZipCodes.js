@@ -8,7 +8,7 @@ class ZipCodes extends Zc
 
     giveZipCode(_nomCommune){
         
-        return this.data.filter(item=>item.nomCommune.includes(_nomCommune));
+        return this.data.filter(item=>item.nomCommune==_nomCommune);
     }
 
 

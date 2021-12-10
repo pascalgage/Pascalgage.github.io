@@ -18,7 +18,7 @@ const ZipcodesApp={
     computed: {
 
         communes() {
-                return this.results;
+                return this.results=this.zc.data;
                 
             
         },
@@ -27,19 +27,12 @@ const ZipcodesApp={
     methods: {
         searchInput(event) { 
             let val =(event.target.value); // attribut "value" de l'input search
-            
-            if(val.length>4) {
-                console.log("that's it",val);
-                this.results=this.zc.giveCommunes(val);
-                
-            }else if (5<val.length>6){
-                console.log("ok", val);
-                this.results = this.zc.giveZipCode(val);
-            
-            }
-            
-            
-               
+                if(val.length>3){
+                        this.results = this.zc.giveZipCode(val); 
+                }else if(val.length>3 && Number.isInteger(val)){
+                        this.results=this.zc.giveCommunes(val);
+                }
+              
         },
         communeClick(event){
             let clicked = event.target.innerText.value;
