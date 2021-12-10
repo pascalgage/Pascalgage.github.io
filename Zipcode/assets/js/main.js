@@ -30,17 +30,13 @@ const ZipcodesApp={
                 if(val.length>3){
                         this.results = this.zc.giveZipCode(val);
                         console.log("by nom", val); 
-                }else if(val.length>3 && Number.isInteger(val)){
+                }else if(val.length>2 && Number.isInteger(val)){
                         this.results=this.zc.giveCommunes(val);
                         console.log("by numCode", val);
                 }
               
         },
-        communeClick(event){
-            let clicked = event.target.innerText.value;
-            
-            console.log(clicked);
-        }
+       
 
 
     },

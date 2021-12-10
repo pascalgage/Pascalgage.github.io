@@ -13,10 +13,10 @@
         <header>
             <h2>ZIPCODES</h2>
         </header>
-        <input @input="searchInput" @change="communeClick" type="search" name="search" value="" list="communes" data-tab="commune.codePostal" class="affichage"/>
+        <input @input="searchInput" type="search" name="search" value="" list="communes" data-tab="commune.codePostal" class="affichage"/>
 
         <datalist id="communes">
-            <option v-for="commune in communes":value="commune.nomCommune">{{ commune.codePostal }} {{commune.nomCommune}} {{libelleAcheminement}}</option>
+            <option v-for="commune in communes":value="commune.codePostal">{{ commune.codePostal }} {{commune.nomCommune}} {{libelleAcheminement}}</option>
         </datalist>
  
     </div>
