@@ -16,24 +16,9 @@
         <input @input="searchInput" type="search" name="search" value="" list="communes"/>
 
         <datalist id="communes">
-            <option v-for="commune in communes" :value="commune"></option>
+            <option v-for="commune in communes" :value="commune.codePostal">{{ commune.nomCommune }}</option>
         </datalist>
-
-
-
-
-        <!--<section v-if="page == 'actors'">
-            <input @input="searchInput" type="search" name="search" value="" list="lol">
-            <datalist id="lol">
-                <option v-for="actor in actors" :value="actor">
-            </datalist>
-            <movie v-for="mov in results" :info="mov"></movie>
-        </section>-->
-
-
-
-
+        
     </div>
-    
 </body>
 </html>

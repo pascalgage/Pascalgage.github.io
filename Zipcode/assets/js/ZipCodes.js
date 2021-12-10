@@ -6,6 +6,10 @@ class ZipCodes extends Zc
         return this.data.filter(commune=>commune.codePostal.includes(_codepostal));
     }
 
+    getCommuneByZipcode(_zipcode){
+        _zipcode=parseInt(_zipcode);
+        return this.data.filter(item=>item.codePostal==_zipcode);
+    }
 
 
 
