@@ -12,7 +12,7 @@ const ZipcodesApp={
     },
     mounted(){
         this.zc.loadData(); 
-          
+        
     },
 
     computed: {
@@ -36,6 +36,14 @@ const ZipcodesApp={
                 }
               
         },
+        click(event) {
+            let options = event.target.options;
+            let val = options[options.selectedIndex];
+            
+            this.clicked = val.value
+            console.log(this.clicked);
+
+        }
        
 
 

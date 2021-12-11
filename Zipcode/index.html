@@ -15,10 +15,10 @@
         </header>
         <input @input="searchInput" type="search" name="search" value="" list="communes" data-tab="commune.codePostal" class="affichage"/>
 
-        <datalist id="communes">
-            <option v-for="commune in communes":value="commune.codePostal">{{ commune.codePostal }} {{commune.nomCommune}} {{libelleAcheminement}}</option>
+        <datalist id="communes" >
+            <option v-for="commune in communes":value="commune.codePostal" @click="click">{{ commune.codePostal }} {{commune.nomCommune}} {{libelleAcheminement}}</option>
         </datalist>
- 
+        
     </div>
 </body>
 </html>
