@@ -11,6 +11,9 @@ class ZipCodes extends Zc
         return this.data.filter(item=>item.nomCommune==_nomCommune);
     }
 
+    communeByZip(_codepostal){
+        return this.data.filter(item=>item.codePostal===_codepostal);
+    }
 
 
 
