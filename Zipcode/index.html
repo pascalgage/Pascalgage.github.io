@@ -18,7 +18,7 @@
        
         <datalist id="communes" :data-id="commune.codePostal">
             
-            <option v-for="commune in communes" :value="commune.nomCommune">
+            <option v-for="commune in communes" :value="commune.codePostal">
             {{ commune.codePostal }} {{commune.nomCommune}} {{commune.libelleAcheminement}}
             </option>
             
