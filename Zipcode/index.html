@@ -29,11 +29,11 @@
         <table v-for="commune in resultats" :value="commune.codePostal">
             <tr>
                 <td>
-                    <span> {{commune.nomCommune}} </span><br/>
-                    <span> {{commune.codePostal}} </span><br/>
-                    <span> {{commune.libelleAcheminement}} </span><br/>
-                    <span> {{commune.codeCommune}} </span><br/>
-                    
+                    <span>Nom de la Commune : {{commune.nomCommune}} </span><br/>
+                    <span>Code postal : {{commune.codePostal}} </span><br/>
+                    <span>Acheminement : {{commune.libelleAcheminement}} </span><br/>
+                    <span>Code adm. : {{commune.codeCommune}} </span><br/>
+                    <span>********************</span>
                 </td>
             </tr>
         </table>
