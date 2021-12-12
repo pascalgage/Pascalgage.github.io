@@ -7,7 +7,7 @@ const ZipcodesApp={
             zc: new ZipCodes ('/Zipcodes.json'), 
             results:[],
             commune:"",
-            
+            resultComm:[],
             zipCode: ""
         }
     },
@@ -44,8 +44,11 @@ const ZipcodesApp={
                 }
               
         },
-        clickValidation(e) {
+        clickValidation() {
             //console.log(e.target.dataset.code)
+            let input=document.getElementById('test').value;
+            console.log(input);
+            this.resultComm=this.zc.giveCommunes(input);
             
         }
        

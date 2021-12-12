@@ -18,15 +18,24 @@
        
         <datalist id="communes" :data-id="commune.codePostal">
             
-            <option v-for="commune in communes" :value="commune.codePostal">
+            <option v-for="commune in communes" :value="commune.nomCommune">
             {{ commune.codePostal }} {{commune.nomCommune}} {{commune.libelleAcheminement}}
-
-            
             </option>
             
         </datalist>
         <button @click="clickValidation">VALIDATION</button>
         <table v-for="commune in resultats" :value="commune.codePostal">
+            <tr>
+                <td>
+                    <span>Nom de la Commune : {{commune.nomCommune}} </span><br/>
+                    <span>Code postal : {{commune.codePostal}} </span><br/>
+                    <span>Acheminement : {{commune.libelleAcheminement}} </span><br/>
+                    <span>Code adm. : {{commune.codeCommune}} </span><br/>
+                    <span>********************</span>
+                </td>
+            </tr>
+        </table>
+        <table v-for="commune in resultComm" :value="commune.nomCommune">
             <tr>
                 <td>
                     <span>Nom de la Commune : {{commune.nomCommune}} </span><br/>
