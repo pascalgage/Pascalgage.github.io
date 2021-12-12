@@ -13,7 +13,8 @@
         <header>
             <h2>ZIPCODES</h2>
         </header>
-        <input @input="searchInput" type="search" name="search" value="68420" list="communes" data-tab="commune.codePostal" class="affichage" id="test"/>
+        <input @input="searchInput" type="search" name="search" value="" list="communes" 
+        data-code="commune.codePostal" class="affichage" id="test"/>
        
         <datalist id="communes" :data-id="commune.codePostal">
             
@@ -24,11 +25,15 @@
             </option>
             
         </datalist>
-        <button @click="click">VALIDATION</button>
-        <table :value="commune.codePostal">
+        <button @click="clickValidation">VALIDATION</button>
+        <table v-for="commune in resultats" :value="commune.codePostal">
             <tr>
                 <td>
-                    {{commune.nomCommune}}
+                    <span> {{commune.nomCommune}} </span><br/>
+                    <span> {{commune.codePostal}} </span><br/>
+                    <span> {{commune.libelleAcheminement}} </span><br/>
+                    <span> {{commune.codeCommune}} </span><br/>
+                    
                 </td>
             </tr>
         </table>

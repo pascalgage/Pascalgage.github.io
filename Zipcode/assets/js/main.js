@@ -6,9 +6,9 @@ const ZipcodesApp={
         return{
             zc: new ZipCodes ('/Zipcodes.json'), 
             results:[],
-            commune:""
+            commune:"",
             
-            
+            zipCode: ""
         }
     },
     mounted(){
@@ -24,11 +24,16 @@ const ZipcodesApp={
         },
         communeByZip(clicked){
             return this.zc.communeByZip(clicked);
+        },
+
+        resultats(){
+            return this.zc.giveCommunes(this.zipCode);
         }
         
     },
     methods: {
         searchInput(event) { 
+            this.zipCode = event.target.value
             let val =(event.target.value); // attribut "value" de l'input search
                 if(val.length>3){
                         this.results = this.zc.giveZipCode(val);
@@ -39,9 +44,8 @@ const ZipcodesApp={
                 }
               
         },
-        click() {
-            var input = document.getElementById("test").value;
-            console.log(input);
+        clickValidation(e) {
+            //console.log(e.target.dataset.code)
             
         }
        
