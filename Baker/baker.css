@@ -24,7 +24,7 @@
     
 }
 .commandesEncours, tr{
-    
+    margin-top: -18px;
     
 
 }
@@ -102,4 +102,8 @@ td{
 }
 tr{
    
+}
+
+.lignehead, td{
+    
 }
