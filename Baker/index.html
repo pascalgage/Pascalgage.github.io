@@ -6,7 +6,7 @@
         <title>Baker</title>
         <link rel="stylesheet" href="baker.css">
         <script src="https://unpkg.com/vue@next" defer></script>
-        <script src="baker.js" type="module" defer></script>
+        <script src="baker.js" type="module"></script>
     </head>
 
     <body>
@@ -15,29 +15,32 @@
 
         <div class="boulangerie">
             <h1>Boulangerie</h1>
-            <button class="opening">OUVRIR LA BOULANGERIE</button>
+            
+            <button v-if="isOpen" class="opening"  @click="openClose">FERMER LA BOULANGERIE</button>
+            <button v-else class="opening"  @click="openClose">OUVRIR LA BOULANGERIE</button>
+            
             <img src="./assets/baker.jpg" class="img"/>
             <div class="boulangerie-data">
                 <table>
                     <tr>
-                        <td>NIVEAU</td><td>vvv</td><td class="lightning">🗲</td><td>vvv</td><td>vvv</td><td>vvv</td>
+                        <td>NIVEAU</td><td>XX{{}}</td><td class="lightning">🗲</td><td><button class="plus">➕</button></td><td>XX{{}}</td><td>💰</td>
                     </tr>
                     <tr>
-                        <td>MOULINS</td><td>vvv</td><td><img src="./assets/mill.png" class="mill"></td><td>vvv</td><td>vvv</td><td>vvv</td>
+                        <td>MOULINS</td><td>XX{{XXX}}</td><td><img src="./assets/mill.png" class="mill"></td><td><button class="plus">➕</button></td><td>XX{{}}</td><td>💰</td>
                     </tr>
                     <tr>
-                        <td>OR</td><td>vvv</td><td>💰</td><td>vvv</td><td>vvv</td><td>vvv</td>
+                        <td>OR</td><td>XX{{XXX}}</td><td>💰</td><td colspan="3"></td>
                     </tr>
                     <tr>
-                        <td>FARINE</td><td>vvv</td><td>🥌</td><td>vvv</td><td>⏲</td><td>vvv</td>
+                        <td>FARINE</td><td>XX{{XXX}}</td><td>🥌</td><td colspan="3"></td>
                     </tr>
                     <tr>   
-                        <td>BAGUETTES</td><td>vvv</td><td>🥖</td><td>📲</td><td>🗣</td><td>vvv</td>
+                        <td>BAGUETTES</td><td>XX{{XXX}}</td><td>🥖</td><td colspan="3"></td>
                     </tr>  
                 </table>
             </div>
         </div>
-
+        <--⏲,🗣,📲 -->
 
         </main>
 

@@ -24,6 +24,7 @@ h1{
 }
 
 .opening{
+    
     margin-top: -58px;
     margin-right: 30px;
     display: flex;
@@ -36,6 +37,7 @@ h1{
     vertical-align: center;
     padding-top: 6px;
 }
+
 .img{
     width: 250px;
     height: 250px;
@@ -46,6 +48,10 @@ h1{
 .mill{
     height: 23px;
     width: 23px;
+}
+.plus{
+    cursor: pointer;
+    border-radius: 45px;
 }
 .lightning{
     color: gold;
@@ -64,9 +70,9 @@ footer{
 
 table{
     
-    border: 1px solid hotpink;
+    border: 1px solid #5b5d66;
 }
 td{
     padding: 5px;
-    border: 1px solid hotpink;
+    border: 1px solid #5b5d66;
 }
