@@ -33,14 +33,16 @@ const ZipcodesApp={
     },
     methods: {
         searchInput(event) { 
+
             this.zipCode = event.target.value
-            let val =(event.target.value); // attribut "value" de l'input search
-                if(val.length>3){
+
+            let val = parseInt(event.target.value); // attribut "value" de l'input search
+                if(val.length>3 && !Number.isInteger(val)){
                         this.results = this.zc.giveZipCode(val);
-                         
+                        console.log("if n1", val);
                 }else if(val.length>2 && Number.isInteger(val)){
                         this.results=this.zc.giveCommunes(val);
-                        
+                        console.log("if n2", val);
                 }
               
         },

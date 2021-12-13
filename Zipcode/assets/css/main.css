@@ -4,10 +4,16 @@ h2{
 }
 body{
     background-color: burlywood;
+    
 }
 #communes{
     margin-top: 100px;
 }
 .affichage{
-    margin-left: 560px;
+    width: 300px;
+    justify-content: center;
+}
+#app{
+    
+    text-align: center;
 }
