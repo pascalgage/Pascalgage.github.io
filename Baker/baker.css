@@ -19,6 +19,25 @@
     background-color: #5b5d66;
     border: 2px solid black;
 }
+.commandesEncours{
+    width: 100%;
+    
+}
+.commandesEncours, tr{
+    border: 1px solid gold;
+    
+
+}
+
+
+
+
+thead{
+    width: 80%;
+    border: 1px solid hotpink;
+}
+
+
 h1{
     display: flex;
     background-color: #292a2e;
@@ -69,8 +88,8 @@ footer{
 .boulangerie-data{
     display: flex;
     float: right;
-    margin-top: 60px;
-    margin-right: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 table{
@@ -80,4 +99,7 @@ table{
 td{
     padding: 5px;
     border: 1px solid #5b5d66;
+}
+tr{
+   
 }
