@@ -11,4 +11,22 @@
 * {
     box-sizing: border-box;
 }
+body{
+    background-color: #5b5d66;
+}
+h1{
+    display: flex;
+    background-color: #5b5d66;
+    color:#FFFFFF;
+    border: 2px solid black;
+}
+
+.opening{
+    display: flex;
+    float: right;
+}
+.img{
+    width: 250px;
+    height: 250px;
+}
 
