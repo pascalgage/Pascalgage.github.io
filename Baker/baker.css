@@ -16,7 +16,21 @@
     border: 2px solid black;
     margin-bottom: 4px;
 }
-
+.boulanger{
+    background-color: #5b5d66;
+}
+.baker{
+    color: white;
+    font-style: italic;
+    font-size: large;
+    border: 1px solid black;
+    margin-left: 50%;
+    margin-right: 480px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    display: flex;
+    text-align: center;
+}
 
 thead{
     width: 80%;
