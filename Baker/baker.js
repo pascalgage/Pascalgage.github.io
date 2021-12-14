@@ -1,3 +1,5 @@
+import { Boulanger } from "./boulanger";
+
 const myBaker = {
     
     data(){
