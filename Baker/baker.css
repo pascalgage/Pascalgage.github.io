@@ -14,22 +14,8 @@
 .boulangerie{
     background-color: #5b5d66;
     border: 2px solid black;
+    margin-bottom: 4px;
 }
-.commandes{
-    background-color: #5b5d66;
-    border: 2px solid black;
-}
-.commandesEncours{
-    width: 100%;
-    
-}
-.commandesEncours, tr{
-    margin-top: -18px;
-    
-
-}
-
-
 
 
 thead{
@@ -100,10 +86,34 @@ td{
     padding: 5px;
     border: 1px solid #5b5d66;
 }
-tr{
-   
+
+
+.commandes{
+    background-color: #5b5d66;
+    border: 2px solid black;
+    height: 650px;
 }
 
-.lignehead, td{
+
+.command{
+    
+    width: 100%;
+    text-align: center;
+    margin-top: -18px;
     
 }
+.command thead tr td{
+    
+    background-color:  #292a2e;
+}
+.odd{
+    
+    background-color: #5b5d66;
+    height: 50px;
+}
+.even{
+    
+    background-color: darkgrey;
+    height: 50px;
+}
+
