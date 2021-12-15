@@ -8,17 +8,13 @@ const myBaker = {
         return {
             bak:new Baker('./boulanger.js'),
             bakry:new Bakery('./boulangerie.js'),
-            isOpen: false
+            isOpen: false,
             
         }
     },
     
     mounted(){
-        if(this.isOpen){
-            setInterval(this.produceBaguette,1000);
-            setInterval(this.increase,1000);
-        }
-        console.log(this.isOpen);
+        
     },
 
     computed:{
@@ -26,25 +22,45 @@ const myBaker = {
     },
 
     methods:{
-        //on souhaite changer le text du bouton! quand clické le texte passe de OUVRIR LA BOULANGERIE à FERMER lA BOULANGERIE
+        
         openClose(){
             
             this.isOpen = !this.isOpen;
             
+
+            if(this.isOpen){
+                this.startToProduce();
+                
+            }else{
+                this.stopToProduce();
+            }
             
         },
         
-        increase(){
-            this.bakry.gold++;
+        startToProduce(){
+            let BaguetteOne=0;
+            let GoldOne=0;
+
+            if(this.isOpen){
+                this.BaguetteOne= setInterval(this.produceBaguette,1000);
+                this.GoldOne= setInterval(this.increase,1000);
+            }
+            console.log(this.isOpen);
+        },
+
+        stopToProduce(){
+            clearInterval(this.BaguetteOne);
+            clearInterval(this.GoldOne);
         },
         
-
         produceBaguette(){
             this.bakry.flour-=2;
             this.bakry.baguette++;
+            
+        },
+        increase(){
+            this.bakry.gold++;
         }
-
-        
         
         
     }
