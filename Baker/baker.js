@@ -1,22 +1,20 @@
-import { Boulanger } from "./boulanger";
+import { Baker } from "./boulanger.js";
+import{ Bakery } from "./boulangerie.js";
 
 const myBaker = {
     
     data(){
+
         return {
+            bak:new Baker('./boulanger.js'),
+            bakry:new Bakery('./boulangerie.js'),
             isOpen: false,
-            niv:'0',
-            moulins:'0',
-            goldlevel:'5',
-            farine:'400',
-            baguette:'0',
-            b1gold:'0',
-            b2gold:'0'
+            
         }
     },
     
     mounted(){
-
+        
     },
 
     computed:{
@@ -34,7 +32,7 @@ const myBaker = {
             
         },
         increase(){
-            this.goldlevel++;
+            this.bakry.gold++;
         }
         
     }
