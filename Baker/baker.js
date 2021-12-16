@@ -28,11 +28,9 @@ const myBaker = {
         openClose(){
             
             this.isOpen = !this.isOpen;
-            
 
             if(this.isOpen){
                 this.startToProduce();
-                
             }else{
                 this.stopToProduce();
             }
@@ -47,9 +45,7 @@ const myBaker = {
                     this.bakry.millmaintenance();
 
                 },1000);
-                
-
-                
+               
             }
             console.log(this.isOpen);
         },
