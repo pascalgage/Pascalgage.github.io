@@ -10,6 +10,9 @@ const myBaker = {
             bakry:new Bakery('./boulangerie.js'),
             isOpen: false,
             baguetteproduction:0,
+            timerEnabled: true,
+            timerCount: 30,
+            value:true,
 
         }
     },
@@ -18,9 +21,33 @@ const myBaker = {
         
     },
 
-    computed:{
-        
+    
+    watch: {
+
+            timerEnabled(value) {
+                if (value) {
+                    setTimeout(() => {
+                        this.timerCount--;
+                    }, 1000);
+                }
+            },
+    
+            timerCount: {
+                handler(value) {
+    
+                    if (value > 0 && this.timerEnabled) {
+                        setTimeout(() => {
+                            this.timerCount--;
+                        }, 1000);
+                    }
+    
+                },
+                immediate: true 
+            }
+    
     },
+        
+    
 
     methods:{
 
@@ -59,7 +86,13 @@ const myBaker = {
         },
         buyamill1(){
             this.bakry.buyamill();
-        }
+        },
+
+        play() {
+            this.timerEnabled = !this.timerEnabled;
+        },
+
+        
         
         
         
