@@ -40,10 +40,10 @@
             <div class="boulangerie-data">
                 <table>
                     <tr>
-                        <td>NIVEAU</td><td>{{ bakry.level }}</td><td class="lightning">🗲</td><td><button @click="" class="plus">➕</button></td><td>{{ bakry.levelgold }}</td><td>💰</td>
+                        <td>NIVEAU</td><td>{{ bakry.level }}</td><td class="lightning">🗲</td><td><button @click="uplevel1" class="plus">➕</button></td><td>{{ bakry.levelgold }}</td><td>💰</td>
                     </tr>
                     <tr>
-                        <td>MOULINS</td><td>{{ bakry.mill }}</td><td><img src="./assets/mill.png" class="mill"></td><td><button @click="" class="plus">➕</button></td><td>{{ bakry.millgold }}</td><td>💰</td>
+                        <td>MOULINS</td><td>{{ bakry.mill }}</td><td><img src="./assets/mill.png" class="mill"></td><td><button @click="buyamill1" class="plus">➕</button></td><td>{{ bakry.millgold }}</td><td>💰</td>
                     </tr>
                     <tr>
                         <td>OR</td><td>{{ bakry.gold }}</td><td>💰</td><td colspan="3"></td>

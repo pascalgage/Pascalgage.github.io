@@ -9,7 +9,8 @@ const myBaker = {
             bak:new Baker('./boulanger.js'),
             bakry:new Bakery('./boulangerie.js'),
             isOpen: false,
-            
+            baguetteproduction:0,
+
         }
     },
     
@@ -22,7 +23,8 @@ const myBaker = {
     },
 
     methods:{
-        
+
+        //OUVRIR ou FERMER la boulangerie
         openClose(){
             
             this.isOpen = !this.isOpen;
@@ -36,31 +38,33 @@ const myBaker = {
             }
             
         },
-        
+        //Lancer la production de baguette: diminution du niveau de farine; augmentation du nombre de baguettes
         startToProduce(){
-            let BaguetteOne=0;
-            let GoldOne=0;
-
+           
             if(this.isOpen){
-                this.BaguetteOne= setInterval(this.produceBaguette,1000);
-                this.GoldOne= setInterval(this.increase,1000);
+                this.baguetteproduction= setInterval(() => {
+                    this.bakry.produceBaguette();
+                    this.bakry.millmaintenance();
+
+                },1000);
+                
+
+                
             }
             console.log(this.isOpen);
         },
 
         stopToProduce(){
-            clearInterval(this.BaguetteOne);
-            clearInterval(this.GoldOne);
+            clearInterval(this.baguetteproduction);
+            clearInterval(this.millmaint);
         },
-        
-        produceBaguette(){
-            this.bakry.flour-=2;
-            this.bakry.baguette++;
-            
+        uplevel1(){
+            this.bakry.uplevel();
         },
-        increase(){
-            this.bakry.gold++;
+        buyamill1(){
+            this.bakry.buyamill();
         }
+        
         
         
     }
