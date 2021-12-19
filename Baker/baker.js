@@ -1,5 +1,6 @@
 import { Baker } from "./boulanger.js";
 import{ Bakery } from "./boulangerie.js";
+import{Commande} from "./commandes.js";
 
 const myBaker = {
     
@@ -8,12 +9,13 @@ const myBaker = {
         return {
             bak:new Baker('./boulanger.js'),
             bakry:new Bakery('./boulangerie.js'),
+            comm:new Commande(),
             isOpen: false,
             baguetteproduction:0,
             timerEnabled: true,
-            timerCount: 30,
+            timerCount: 60,
             value:true,
-
+            call:0,
         }
     },
     

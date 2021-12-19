@@ -1,7 +1,7 @@
 class Commande
 {
     constructor(){
-        
+        this.call=10;
 
     }
 
@@ -11,3 +11,4 @@ class Commande
     
 
 }
+export{ Commande}
