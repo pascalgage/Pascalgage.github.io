@@ -1,5 +1,5 @@
 import { Baker } from './boulanger.js';
-
+import{Commande} from "./commandes.js";
 class Bakery
 {
     constructor(){
@@ -9,7 +9,8 @@ class Bakery
         this.flour=400;
         this.baguette=0;
         this.levelgold=15;
-        this.millgold=80
+        this.millgold=80;
+        
     }
 
     produceBaguette(){

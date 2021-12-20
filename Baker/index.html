@@ -75,35 +75,17 @@
                         </thead>
 
                         <tbody>
-                            <tr class="odd">
-                                <td>{{comm.call}}</td><td>{{qty}}</td><td>xxx</td><td>xxx</td><td>{{ timerCount }}</td><td>xxx</td>
-                            </tr>
-                            <tr class="even">
-                                <td>{{call}}</td><td>{{qty}}</td><td>xxx</td><td>xxx</td><td>xxx</td><td>xxx</td>
-                            </tr>
-                            <tr class="odd">
-                                <td>{{call}}</td><td>{{qty}}</td><td>xxx</td><td>xxx</td><td>xxx</td><td>xxx</td>
-                            </tr>
-                            <tr class="even">
-                                <td>{{call}}</td><td>{{qty}}</td><td>xxx</td><td>xxx</td><td>xxx</td><td>xxx</td>
-                            </tr>
-                            <tr class="odd">
-                                <td>{{call}}</td><td>{{qty}}</td><td>xxx</td><td>xxx</td><td>xxx</td><td>xxx</td>
-                            </tr>
-                            <tr class="even">
-                                <td>{{call}}</td><td>{{qty}}</td><td>xxx</td><td>xxx</td><td>xxx</td><td>xxx</td>
-                            </tr>
-                            <tr class="odd">
-                                <td>{{call}}</td><td>{{qty}}</td><td>xxx</td><td>xxx</td><td>xxx</td><td>xxx</td>
-                            </tr>
-                            <tr class="even">
-                                <td>{{call}}</td><td>{{qty}}</td><td>xxx</td><td>xxx</td><td>xxx</td><td>xxx</td>
-                            </tr>
-                            <tr class="odd">
-                                <td>{{call}}</td><td>{{qty}}</td><td>xxx</td><td>xxx</td><td>xxx</td><td>xxx</td>
-                            </tr>
-                            <tr class="even">
-                                <td>{{call}}</td><td>{{qty}}</td><td>xxx</td><td>xxx</td><td>xxx</td><td>xxx</td>
+                            
+                            <tr v-for="commande in commandes">
+                            <td>{{commande.id}}</td>
+                            <td>{{commande.qty}}</td>
+                            <td>{{commande.unitPrice}}</td>
+                            <td>{{commande.amount}}</td>
+                            <td>{{ timerCount }}</td>
+                            <td>
+                                <button>YES</button>
+                                <button @click="eraseLine">NO</button>
+                            </td>
                             </tr>
                         </tbody>
 

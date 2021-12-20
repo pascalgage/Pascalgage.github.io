@@ -10,19 +10,28 @@ const myBaker = {
             bak:new Baker('./boulanger.js'),
             bakry:new Bakery('./boulangerie.js'),
             comm:new Commande(),
+            commandes:[],
             isOpen: false,
             baguetteproduction:0,
-            timerEnabled: true,
+            timerEnabled: false,
             timerCount: 60,
             value:true,
             call:0,
+            
         }
     },
     
     mounted(){
+
+        for(let i=0;i<10;i++){
+            this.commandes.push(new Commande());
+        }
+        console.log(commandes);
         
     },
-
+    computed(){
+        
+    },
     
     watch: {
 
@@ -94,6 +103,9 @@ const myBaker = {
             this.timerEnabled = !this.timerEnabled;
         },
 
+        eraseLine(event){
+            
+        }
         
         
         
