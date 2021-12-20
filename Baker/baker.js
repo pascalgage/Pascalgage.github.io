@@ -9,8 +9,8 @@ const myBaker = {
         return {
             bak:new Baker('./boulanger.js'),
             bakry:new Bakery('./boulangerie.js'),
-            comm:new Commande(),
-            commandes:[],
+            
+            commandes:[],//Tableau de commandes
             isOpen: false,
             baguetteproduction:0,
             timerEnabled: false,
@@ -26,7 +26,7 @@ const myBaker = {
         for(let i=0;i<10;i++){
             this.commandes.push(new Commande());
         }
-        console.log(commandes);
+        console.log(this.commandes);
         
     },
     computed(){
