@@ -104,7 +104,8 @@ const myBaker = {
         },
 
         eraseLine(event){
-            
+            let test=(event.target.dataset.id);
+            this.commandes=this.commandes.filter(item=>item.id !=test);
         }
         
         

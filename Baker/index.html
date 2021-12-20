@@ -77,7 +77,7 @@
 
                         <tbody>
                             
-                            <tr v-for="commande in commandes">
+                            <tr v-for="commande in commandes" >
                             <td>{{commande.id}}</td>
                             <td>{{commande.qty}}</td>
                             <td>{{commande.unitPrice}}</td>
@@ -85,7 +85,7 @@
                             <td>{{ timerCount }}</td>
                             <td>
                                 <button>YES</button>
-                                <button @click="eraseLine">NO</button>
+                                <button @click="eraseLine" :data-id="commande.id">NO</button>
                             </td>
                             </tr>
 
