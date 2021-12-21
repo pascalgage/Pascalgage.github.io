@@ -118,6 +118,7 @@ const myBaker = {
             if(this.bakry.baguette >= value2){
                 this.bakry.gold +=value1;
                 this.bakry.baguette-=value2;
+                this.commandes=this.commandes.filter(item=>item.id !=test);
                 console.log('test');
             }
 
