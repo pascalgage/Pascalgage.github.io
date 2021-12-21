@@ -63,7 +63,7 @@
         <div class="commandes">
             <h1>Commandes</h1>
                 <table class="command">
-                    
+
                         <thead>
                             <tr>
                                 <td>📲</td>
@@ -84,7 +84,7 @@
                             <td>{{commande.amount}}</td>
                             <td>{{ timerCount }}</td>
                             <td>
-                                <button>YES</button>
+                                <button @click="goldincome" :data-id="commande.id">YES</button>
                                 <button @click="eraseLine" :data-id="commande.id">NO</button>
                             </td>
                             </tr>

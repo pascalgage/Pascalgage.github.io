@@ -9,7 +9,7 @@ const myBaker = {
         return {
             bak:new Baker('./boulanger.js'),
             bakry:new Bakery('./boulangerie.js'),
-            
+
             commandes:[],//Tableau de commandes
             isOpen: false,
             baguetteproduction:0,
@@ -106,8 +106,24 @@ const myBaker = {
         eraseLine(event){
             let test=(event.target.dataset.id);
             this.commandes=this.commandes.filter(item=>item.id !=test);
+        },
+
+        goldincome(event){
+            let test=event.target.dataset.id;
+            test=parseInt(test);
+
+            let value1=this.commandes.find(c => c.id == test).amount;//somme en OR de la commande
+            let value2=this.commandes.find(c => c.id == test).qty;//quantité de baguettes commandées
+
+            if(this.bakry.baguette >= value2){
+                this.bakry.gold +=value1;
+                this.bakry.baguette-=value2;
+                console.log('test');
+            }
+
+            console.log(value1, value2);
         }
-        
+
         
         
         

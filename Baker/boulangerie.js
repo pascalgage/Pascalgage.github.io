@@ -5,7 +5,7 @@ class Bakery
     constructor(){
         this.level=1;
         this.mill=1;
-        this.gold=1000;
+        this.gold=100;
         this.flour=400;
         this.baguette=0;
         this.levelgold=15;
@@ -15,7 +15,7 @@ class Bakery
 
     produceBaguette(){
         this.flour-=2;
-        this.baguette=this.baguette+(this.level);
+        this.baguette += (this.level);
         
     }
     millmaintenance(){
