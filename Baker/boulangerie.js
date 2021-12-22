@@ -5,19 +5,27 @@ class Bakery
     constructor(){
         this.level=1;
         this.mill=1;
-        this.gold=100;
+        this.gold=1000;
         this.flour=400;
         this.baguette=0;
         this.levelgold=15;
         this.millgold=80;
-        
+        this.bagproduced=0;
+        this.wheatproduced=0;
     }
 
     produceBaguette(){
         this.flour-=2;
         this.baguette += (this.level);
-        
+        this.bagproduced+=(this.level);
     }
+    produceFlour(){
+        this.flour+=(this.mill*1);
+        this.wheatproduced+=(this.level*1);
+    }
+
+
+
     millmaintenance(){
          return Math.round(this.gold-=(0.5*this.level*this.mill));
     }

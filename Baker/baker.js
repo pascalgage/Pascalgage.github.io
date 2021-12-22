@@ -33,7 +33,7 @@ const myBaker = {
         
     },
     
-    watch: {
+    /*watch: {
 
             timerEnabled(value) {
                 if (value) {
@@ -56,7 +56,7 @@ const myBaker = {
                 immediate: true 
             }
     
-    },
+    },*/
         
     
 
@@ -81,7 +81,7 @@ const myBaker = {
                 this.baguetteproduction= setInterval(() => {
                     this.bakry.produceBaguette();
                     this.bakry.millmaintenance();
-
+                    this.bakry.produceFlour();
                 },1000);
                
             }
