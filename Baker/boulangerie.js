@@ -12,6 +12,7 @@ class Bakery
         this.millgold=80;
         this.bagproduced=0;
         this.wheatproduced=0;
+        this.goldwon=this.gold;
     }
 
     produceBaguette(){
@@ -38,6 +39,10 @@ class Bakery
         this.mill++;
         this.gold-=this.millgold;
         this.millgold=Math.round(this.millgold*1.5);
+    }
+
+    balanceGold(){
+        
     }
     
 }
