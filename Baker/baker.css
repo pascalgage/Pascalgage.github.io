@@ -18,18 +18,24 @@
 }
 .boulanger{
     background-color: #5b5d66;
+    color: #FFFFFF;
 }
 .baker{
     color: white;
     font-style: italic;
     font-size: large;
-    
+    font-family: verdana;
     margin-left: 50%;
     margin-right: 480px;
     margin-bottom: 5px;
     margin-top: -10px;
     display: flex;
     text-align: center;
+}
+
+.baker,tr,td{
+    color: #FFFFFF;
+    
 }
 
 thead{
@@ -91,7 +97,10 @@ footer{
     margin-top: 20px;
     margin-right: 20px;
 }
-
+.boulangerie-data table{
+    color: #FFFFFF;
+    font-family: verdana;
+}
 table{
     
     border: 1px solid #5b5d66;
@@ -116,6 +125,13 @@ td{
     margin-top: -18px;
     
 }
+.command tbody{
+    color: #FFFFFF;
+    font-family: verdana;
+}
+
+
+
 .command thead tr td{
     
     background-color:  #292a2e;

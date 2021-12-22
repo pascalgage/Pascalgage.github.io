@@ -16,7 +16,7 @@ const myBaker = {
             timerEnabled: false,
             timerCount: 60,
             value:true,
-            call:0,
+            
             
         }
     },
@@ -33,7 +33,7 @@ const myBaker = {
         
     },
     
-    /*watch: {
+    watch: {
 
             timerEnabled(value) {
                 if (value) {
@@ -56,7 +56,7 @@ const myBaker = {
                 immediate: true 
             }
     
-    },*/
+    },
         
     
 
