@@ -22,10 +22,15 @@ const myBaker = {
     },
     
     mounted(){
-
-        for(let i=0;i<10;i++){
-            this.commandes.push(new Commande());
-        }
+        
+            
+                for(let i=0;i<10;i++){
+                    this.commandes.push(new Commande());
+                }
+            
+            
+            
+        
         console.log(this.commandes);
         
     },
@@ -86,7 +91,13 @@ const myBaker = {
                     this.bakry.produceBaguette();
                     this.bakry.millmaintenance();
                     this.bakry.produceFlour();
+                    if(this.commandes.length<10){
+                    this.commandes.push(new Commande());
+                    }
                 },1000);
+
+                
+                    
                
             }
             console.log(this.isOpen);
