@@ -7,7 +7,7 @@ const myBaker = {
     data(){
 
         return {
-            bak:new Baker('./boulanger.js'),
+            
             bakry:new Bakery('./boulangerie.js'),
 
             commandes:[],//Tableau de commandes
