@@ -13,6 +13,7 @@ class Bakery
         this.bagproduced=0;
         this.wheatproduced=0;
         this.goldwon=0;
+        this.goldspended=0;
     }
 
     produceBaguette(){
@@ -26,6 +27,7 @@ class Bakery
     }
 
     millmaintenance(){
+        
          return Math.round(this.gold-=(0.5*this.level*this.mill));
     }
 
@@ -39,7 +41,7 @@ class Bakery
         this.gold-=this.millgold;
         this.millgold=Math.round(this.millgold*1.5);
     }
-
+    
     
     
 }

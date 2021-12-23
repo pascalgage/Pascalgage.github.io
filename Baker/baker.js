@@ -16,7 +16,7 @@ const myBaker = {
             timerEnabled: false,
             timerCount: 60,
             value:true,
-            
+            goldspended:0,
             
         }
     },
@@ -30,6 +30,10 @@ const myBaker = {
         
     },
     computed(){
+        
+            
+            
+        
         
     },
     
@@ -118,12 +122,15 @@ const myBaker = {
             if(this.bakry.baguette >= value2){
                 this.bakry.gold +=value1;
                 this.bakry.baguette-=value2;
+                this.bakry.goldwon+=value1;
                 this.commandes=this.commandes.filter(item=>item.id !=test);
-                console.log('test');
+                
             }
 
-            console.log(value1, value2);
-        }
+            
+        },
+
+        
 
         
         
