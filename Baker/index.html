@@ -23,7 +23,7 @@
                 </tr>
                 <tr>
                     <td>{{ bakry.goldwon }}</td>
-                    <td>{{ bakry.goldspended }}</td>
+                    <td>{{ bakry.goldspent }}</td>
                     <td>{{ bakry.wheatproduced }}</td>
                     <td>{{ bakry.bagproduced }}</td>
                 </tr>
@@ -82,7 +82,7 @@
                             <td>{{commande.qty}}</td>
                             <td>{{commande.unitPrice}}</td>
                             <td>{{commande.amount}}</td>
-                            <td>{{ timerCount }}</td>
+                            <td>{{ commande.timerCount }}</td>
                             <td>
                                 <button @click="goldincome" :data-id="commande.id">YES</button>
                                 <button @click="eraseLine" :data-id="commande.id">NO</button>

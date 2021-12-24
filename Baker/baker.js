@@ -9,14 +9,15 @@ const myBaker = {
         return {
             
             bakry:new Bakery('./boulangerie.js'),
-
+            
             commandes:[],//Tableau de commandes
             isOpen: false,
             baguetteproduction:0,
             timerEnabled: false,
-            timerCount: 60,
+            //timerCount: 60,
+
             value:true,
-            goldspended:0,
+            goldspent:0,
             
         }
     },
@@ -91,6 +92,7 @@ const myBaker = {
                     this.bakry.produceBaguette();
                     this.bakry.millmaintenance();
                     this.bakry.produceFlour();
+                    
                     if(this.commandes.length<10){
                     this.commandes.push(new Commande());
                     }

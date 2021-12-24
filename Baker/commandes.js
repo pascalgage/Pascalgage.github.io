@@ -7,6 +7,7 @@ class Commande
         this.qty=this.getQuantity();
         this.unitPrice=0.75;
         this.amount=this.getAmount();
+        this.timerCount=60;
     }
     getAmount(){
         let amount;
@@ -23,6 +24,13 @@ class Commande
           }
           return getRandomInt();
           
+    }
+    delay(){
+
+        setInterval(()=>{
+            this.timerCount--,1000
+        });
+
     }
     
 
