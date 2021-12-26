@@ -7,7 +7,7 @@ class Commande
         this.qty=this.getQuantity();
         this.unitPrice=0.75;
         this.amount=this.getAmount();
-        this.timerCount=60;
+        this.timerCount=this.delay();
     }
     getAmount(){
         let amount;
@@ -26,11 +26,11 @@ class Commande
           
     }
     delay(){
-
-        setInterval(()=>{
-            this.timerCount--,1000
-        });
-
+        let time=60;
+       return setInterval(() => {
+           time--;
+       }, 1000);
+       
     }
     
 

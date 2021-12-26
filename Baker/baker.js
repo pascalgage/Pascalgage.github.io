@@ -10,6 +10,7 @@ const myBaker = {
             
             bakry:new Bakery('./boulangerie.js'),
             
+
             commandes:[],//Tableau de commandes
             isOpen: false,
             baguetteproduction:0,
