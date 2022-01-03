@@ -26,10 +26,7 @@ class Commande
           
     }
     delay(){
-        let time=60;
-       return setInterval(() => {
-           time--;
-       }, 1000);
+       
        
     }
     
