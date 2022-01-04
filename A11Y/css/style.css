@@ -1,0 +1,94 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+
+header{
+    background: linear-gradient(180deg, #1282A2 0%, rgba(18, 130, 162, 0) 100%);
+    display: flex;
+    align-items: center;
+    
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+header ul li{
+    display: flex;
+    cursor: pointer;
+    width: 200px;
+    margin: 5px;
+    margin-top: 10px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    list-style: none;
+    
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+.logoCentral{
+    
+    margin: auto;
+    
+
+}
+
+.buttonsearch{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.oldlady{
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.buttonaccessibility{
+    background-color: darkmagenta;
+    color: #ffffff;
+    
+    
+}
+.buttonaccessibility img{
+    vertical-align: middle;
+}
+
+main{
+    display: flex;
+    
+  
+}
+.access{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.access h1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.access p{
+    width: 50%;
+    text-align: center;
+    
+}
+
+.access button{
+    width: 25%;
+}
+.qui{
+    display: flex;
+    justify-content: center;
+}
