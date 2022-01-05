@@ -61,10 +61,15 @@ header ul li a {
 .buttonaccessibility img{
     vertical-align: middle;
 }
-
+.buttondeclaration{
+    background-color: darkmagenta;
+    height: 60px;
+    color: #ffffff;
+    cursor: pointer;
+}
 main{
     display: flex;
-    
+    flex-direction: column;
   
 }
 .access{
@@ -88,7 +93,37 @@ main{
 .access button{
     width: 25%;
 }
-.qui{
+.qui {
+    text-align: center;
+    
+}
+.photos{
     display: flex;
-    justify-content: center;
+    margin: 100px;
+    justify-content: space-evenly;
+}
+.photos img{
+    border: 1px solid black;
+    padding: 10px;
+}
+.elementmain1{
+    display: flex;
+}
+
+.reseau{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkviolet;
+    font-size: large;
+    margin-left: 200px;
+}
+.reglementation{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkviolet;
+    font-size: large;
+    margin-left: 200px;
+}
+
+footer{
+    display: flex;
+    background: linear-gradient(180deg, #1282A2 0%, rgba(18, 130, 162, 0) 100%);
 }
