@@ -103,8 +103,9 @@ main{
     justify-content: space-evenly;
 }
 .photos img{
-    border: 1px solid black;
+    border: 3px solid darkviolet;
     padding: 10px;
+    border-radius: 5px;
 }
 .elementmain1{
     display: flex;
@@ -120,7 +121,19 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     color: darkviolet;
     font-size: large;
-    margin-left: 200px;
+    margin-left: 1000px;
+}
+.reglementation ul li{
+    list-style-type: none;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin: 5px;
+    text-align: center;
+}
+.reglementation ul li a{
+    text-decoration: none;
+    
+    
 }
 
 footer{
