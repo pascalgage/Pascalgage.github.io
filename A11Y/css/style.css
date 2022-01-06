@@ -65,6 +65,7 @@ header ul li a {
     background-color: darkmagenta;
     height: 60px;
     color: #ffffff;
+    font-size: large;
     cursor: pointer;
 }
 main{
@@ -138,5 +139,5 @@ main{
 
 footer{
     display: flex;
-    background: linear-gradient(180deg, #1282A2 0%, rgba(18, 130, 162, 0) 100%);
+    background: linear-gradient(360deg, #1282A2 0%, rgba(18, 130, 162, 0) 100%);
 }
