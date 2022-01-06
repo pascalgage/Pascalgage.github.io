@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
     <title>A11Ynow</title>
 </head>
 <body>
@@ -51,7 +52,42 @@
                 </figure>
             </div>
         </div>
-    <button class="buttondeclaration">Déclarer un incident ▼</button>
+    <button class="buttondeclaration" onclick="toggleForm()" id="on">Déclarer un incident ▼</button>
+    <form>
+    <div class="etatcivil" id="etatcivil">
+        
+    <table>
+        <tr>
+            <td><label for="nom">Nom :</label><input type="text" id="nom"></td>
+            <td><label for="prenom">Prénom :</label><input type="text" id="prenom"></td>
+        </tr>
+        <tr>
+            <td><label for="mail">Mail :</label><input type="email" id="mail"></td>
+            <td><label for="mailsite">Adresse site :</label><input type="email" id="mailsite"></td>
+        </tr>
+        <tr>
+            <td>Vous utilisez plutôt ce site...(plusieurs réponses possibles)</td>
+        </tr>
+        <tr>
+            <td><label for="travail"><input type="checkbox" id="travail">pour le travail</label></td>
+            <td><label for="loisirs"><input type="checkbox" id="loisirs">pour les loisirs</label></td>
+        </tr>
+        <tr>
+            <td><label for="quotidien"><input type="checkbox" id="quotidien">pour le quotidien</label></td>
+            <td><label for="autre"><input type="checkbox" id="autre">pour quelqu'un d'autre</label></td>
+        </tr>
+        <tr>
+            <td><label for="incident">Date de l'incident :<input type="date" id="incident"></label></td>
+        </tr>
+        <tr>
+            <td><label for="plainte">Détails de l'incident :</label></td>
+            <td><textarea rows="10" cols="50" id="plainte"></textarea></td>
+            <td><button class="buttonsend">ENVOYER</button></td>
+        </tr>
+        
+    </table>
+    </div>
+    </form>
     <footer>
     <div class="reseau">
         <p>Réseaux sociaux</p>

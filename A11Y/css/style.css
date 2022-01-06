@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin:0;
     padding:0;
@@ -135,6 +139,23 @@ main{
     text-decoration: none;
     
     
+}
+.etatcivil{
+    display: none;
+    flex-direction: column;
+    width: 1000px;
+    margin-left: 580px;
+    transition-property: all;
+    transition-duration: 5s;
+    
+}
+
+.buttonsend{
+    background-color: darkviolet;
+    height:90px;
+    width: 250px;
+    color: #ffffff;
+    font-size: large;
 }
 
 footer{
