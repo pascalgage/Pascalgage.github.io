@@ -145,10 +145,11 @@ main{
     flex-direction: column;
     width: 1000px;
     margin-left: 580px;
-    transition-property: all;
+    transition-property: all 3s;
     transition-duration: 5s;
     
 }
+
 
 .buttonsend{
     background-color: darkviolet;

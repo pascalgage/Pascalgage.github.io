@@ -29,7 +29,7 @@
             <h1>Accessibilité pour tous</h1>
             <p>Nous vous accompagnons dans vos démarches liées à l’accessibilité numérique.
             Si vous rencontrez des difficultés pour accéder à un site web ou une application mobile, contactez-nous!</p>
-            <button class="buttonaccessibility">Accessibilité numérique ?<img src="ressources/clarity_accessibility-2-solid.svg" alt="bonhomme du handicap"></button>
+            <button class="buttonaccessibility">Accessibilité numérique ?<img src="ressources/clarity_accessibility-2-solid.svg" alt=""></button>
         </div>
         </section>
 
@@ -52,11 +52,11 @@
                 </figure>
             </div>
         </div>
-    <button class="buttondeclaration" onclick="toggleForm()" id="on">Déclarer un incident ▼</button>
+    <button class="buttondeclaration" onclick="toggleForm()" id="on" aria-expanded="false" aria-label="formulaire à remplir">Déclarer un incident ▼</button>
     <form>
-    <div class="etatcivil" id="etatcivil">
+    <div class="etatcivil" id="etatcivil">          
         
-    <table>
+    <table role="presentation">
         <tr>
             <td><label for="nom">Nom :</label><input type="text" id="nom"></td>
             <td><label for="prenom">Prénom :</label><input type="text" id="prenom"></td>
