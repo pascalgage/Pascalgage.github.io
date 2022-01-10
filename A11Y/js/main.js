@@ -15,6 +15,7 @@ function toggleForm(){
             monform.style.display='none';
             
             button.innerHTML='Déclarer un incident ▼';
+            button.setAttribute('aria-expanded',false);
         }
     };
 
