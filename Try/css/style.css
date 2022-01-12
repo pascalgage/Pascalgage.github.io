@@ -9,6 +9,8 @@ nav{
     display: flex;
     flex-direction: row-reverse;
     margin: 20px;
+    align-self: center;
+    justify-content: center;
     background-color: blueviolet;
 }
 .scooper{
@@ -58,6 +60,21 @@ nav{
     width: 10%;
     height: 20px;
     float: right;
-    
-    
+}
+.inscriptionOK{
+    height: 200px;
+    width: 200px;
+    display: none;
+    background-color: red;
+    align-self: center;
+    justify-content: center;
+}
+
+.active2{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    align-self: center;
+    justify-content: center;
 }
