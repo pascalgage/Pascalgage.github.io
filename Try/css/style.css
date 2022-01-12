@@ -1,7 +1,14 @@
-
-
+* {
+    margin: 0;
+}
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+    background-color: blueviolet;
+}
 .scooper{
-    margin-top: 50px;
+    top: 50px;
     padding: 0;
     display: flex;    
     flex-direction: column;
@@ -17,7 +24,7 @@
 }
 
 .active{
-    margin-top: 50px;
+    top: 50px;
     padding: 0;
     display: flex;    
     flex-direction: column;
@@ -45,6 +52,7 @@
 }
 .inscription{
     width: 10%;
+    height: 20px;
     float: right;
     
     
