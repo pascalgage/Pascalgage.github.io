@@ -4,6 +4,7 @@
 
 body{
     background-color: blueviolet;
+    justify-content: center;
 }
 nav{
     display: flex;
@@ -62,19 +63,28 @@ nav{
     float: right;
 }
 .inscriptionOK{
-    height: 200px;
+    height: 20px;
     width: 200px;
     display: none;
     background-color: red;
     align-self: center;
-    justify-content: center;
+    justify-content: right;
+    text-align: center;
+    
+}
+
+p{
+    font-size: 10px;
+    
 }
 
 .active2{
     display: flex;
-    height: 200px;
+    height: 20px;
     width: 200px;
     background-color: red;
     align-self: center;
-    justify-content: center;
+    justify-content: right;
+    border-radius: 5px;
+    margin: auto;
 }
