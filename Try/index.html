@@ -8,21 +8,26 @@
     <title>TRY</title>
 </head>
 <body>
-    <nav>
-        <button class="inscription" onclick="toggle()">S'INSCRIRE</button>
-        <main class="scooper" id="main">
-            <div class="up">
-                <p class="text">MON MAIN</p>
-                <button class="upright" id="stop" onclick="toggleClose()">X</button>
-            </div>
+    <button class="inscription" onclick="toggle()">S'INSCRIRE</button>
+        <nav>
+            <div class="ajout">
 
-            <button class="btn-valid" onclick="validation()">VALIDEZ</button>
-        </main>
-        
-    </nav>
+            </div>
+            <main class="scooper" id="main">
+                <div class="up">
+                    <p class="text">MON MAIN</p>
+                    <button class="upright" id="stop" onclick="toggleClose()">X</button>
+                </div>
+
+                <button class="btn-valid" onclick="validation()">VALIDEZ</button>
+            </main>
+            <div class="ajout2">
+
+            </div>
+        </nav>
     <div class="inscriptionOK" id="inscriptionOKAY">
             <p>Inscription réalisée avec succés !</p>
-            <button class="upright2" id="stop" onclick="toggleClose()">X</button>
+            <button class="upright2" id="stop" onclick="CloseInscriptionSuccess()">X</button>
     </div>
 </body>
 </html>

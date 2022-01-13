@@ -1,6 +1,7 @@
 var nav = document.getElementById('main');
 var navSub=document.getElementById('inscriptionOKAY');
 
+
 function toggleClose(){
     nav.classList.remove('scooper');
     nav.classList.add('active');
@@ -14,6 +15,11 @@ function toggle(){
 function validation(){
     toggleClose();
     navSub.classList.remove('inscriptionOK');
-    navSub.classList.add('active2');
+    navSub.classList.add('active3');
+}
+
+function CloseInscriptionSuccess(){
+    navSub.classList.remove('active3');
+    navSub.classList.add('inscriptionOK');
 }
 

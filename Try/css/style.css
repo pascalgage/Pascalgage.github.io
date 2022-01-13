@@ -5,6 +5,8 @@
 body{
     background-color: blueviolet;
     justify-content: center;
+    text-align: center;
+    
 }
 nav{
     display: flex;
@@ -24,9 +26,10 @@ nav{
     height: 500px;
     width: 800px;
     margin: auto;
+    left: 60px;
     align-items: baseline;
     opacity: 1;
-    transition-duration: 3s;
+    transition-duration: 2s;
     
 }
 
@@ -42,7 +45,7 @@ nav{
     margin: auto;
     align-items: baseline;
     opacity:0;
-    transition-duration: 3s;
+    transition-duration: 2s;
 }
 .up{
     width: 100%;
@@ -60,17 +63,33 @@ nav{
 .inscription{
     width: 10%;
     height: 20px;
-    float: right;
+    margin: auto;
+    align-items: center;
 }
 .inscriptionOK{
     height: 20px;
     width: 200px;
-    display: none;
+    display: flex;
     background-color: red;
     align-self: center;
     justify-content: right;
     text-align: center;
+    margin: auto;
+    opacity: 0;
+    transition-duration: 2s;
     
+}
+.active3{
+    height: 20px;
+    width: 200px;
+    display: flex;
+    background-color: red;
+    align-self: center;
+    justify-content: right;
+    text-align: center;
+    margin: auto;
+    opacity: 1;
+    transition-duration: 2s;
 }
 
 p{
@@ -87,4 +106,18 @@ p{
     justify-content: right;
     border-radius: 5px;
     margin: auto;
+}
+
+.ajout{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px solid black;
+    background-color: aquamarine;
+}
+
+.ajout2{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px solid black;
+    background-color: aquamarine;
 }
