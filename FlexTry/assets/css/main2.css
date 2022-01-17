@@ -63,6 +63,6 @@ body{
     justify-content: center;
 }
 .validation :hover{
-    background-color: green;
+    background-color: rgb(70, 172, 70);
     transition-duration: 0.6s;
 }
