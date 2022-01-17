@@ -39,6 +39,12 @@ body{
 }
 .inactive{
     display: none;
+    background-color: darksalmon;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 .container-button{
     
