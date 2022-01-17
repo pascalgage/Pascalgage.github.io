@@ -5,18 +5,20 @@
 
 body{
     display: flex;
+    min-height: 100vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    background-color: grey;
 }
 
 .container{
     display: flex;
-    position: relative;
-    top: 100px;
-    flex-direction: row;
+    
+    gap: 100px;
+    flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
     align-content: stretch;
@@ -27,34 +29,28 @@ body{
 }
 
 .carrepink{
-    position: relative;
-    top: 10px;
-    left: 10px;
+    
     height: 100px;
     width: 100px;
     background-color: hotpink;
     
 }
 #carreblue{
-    position: relative;
-    top: 10px;
-    right: 10px;
+    
     height: 100px;
     width: 100px;
     background-color: blue;
 }
 .carregreen{
-    position: relative;
-    top: 10px;
-    left: 10px;
+  
+    margin-left: auto;
     height: 100px;
     width: 100px;
     background-color: green;
 }
 .carreyellow{
-    position: relative;
-    top: 10px;
-    left: 10px;
+    
+    margin-left: auto;
     height: 100px;
     width: 100px;
     background-color: yellow;
