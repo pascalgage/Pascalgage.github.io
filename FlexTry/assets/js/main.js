@@ -1,6 +1,6 @@
-var form=document.getElementById('contains');
+var fo=document.getElementById('conn');
 
 function closing(){
-    form.classList.remove('container');
-    form.classList.add('inactive');
+    fo.classList.remove('container');
+    fo.classList.add('inactive');
 }
