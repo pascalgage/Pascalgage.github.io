@@ -6,7 +6,7 @@
 body{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
@@ -16,7 +16,6 @@ body{
     display: flex;
     position: relative;
     top: 100px;
-    left: 200px;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
@@ -43,4 +42,20 @@ body{
     height: 100px;
     width: 100px;
     background-color: blue;
+}
+.carregreen{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+.carreyellow{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
 }
