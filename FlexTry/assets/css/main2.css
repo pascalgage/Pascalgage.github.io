@@ -11,7 +11,23 @@ body{
     justify-content: center;
     align-items: center;
 }
+.nom:focus{
+    background-color: rgb(185, 181, 181);
+    transition-duration: 0.6s;
 
+}
+.prenom:focus{
+    background-color: rgb(185, 181, 181);
+    transition-duration: 0.6s;
+}
+.adresse:focus{
+    background-color: rgb(185, 181, 181);
+    transition-duration: 0.6s;
+}
+.email:focus{
+    background-color: rgb(185, 181, 181);
+    transition-duration: 0.6s;
+}
 .container{
     background-color: darksalmon;
     padding: 10px;
@@ -29,6 +45,7 @@ body{
 }
 .container-button :hover{
     background-color: red;
+    transition-duration: 0.6s;
 }
 .central{
     font-family: Arial, Helvetica, sans-serif;
@@ -47,4 +64,5 @@ body{
 }
 .validation :hover{
     background-color: green;
+    transition-duration: 0.6s;
 }
