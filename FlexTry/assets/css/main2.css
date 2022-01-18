@@ -22,6 +22,10 @@ h2{
     width: 100%;
 
 }
+
+
+
+
 input:focus{
     background-color: rgb(185, 181, 181);
     transition-duration: 0.6s;
@@ -30,6 +34,8 @@ input:focus{
 .container{
     display: flex;
     background-color: darksalmon;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     height: auto;
     width: auto;
@@ -63,7 +69,7 @@ input:focus{
 .validate{
     display: block;
     width: 50%;
-    margin: 12px auto 0;
+    margin: 24px auto 0;
     cursor: pointer;
 }
 .validate:hover{
