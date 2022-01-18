@@ -22,24 +22,11 @@ h2{
     width: 100%;
 
 }
+input:focus{
+    background-color: rgb(185, 181, 181);
+    transition-duration: 0.6s;
+}
 
-.nom:focus{
-    background-color: rgb(185, 181, 181);
-    transition-duration: 0.6s;
-
-}
-.prenom:focus{
-    background-color: rgb(185, 181, 181);
-    transition-duration: 0.6s;
-}
-.adresse:focus{
-    background-color: rgb(185, 181, 181);
-    transition-duration: 0.6s;
-}
-.email:focus{
-    background-color: rgb(185, 181, 181);
-    transition-duration: 0.6s;
-}
 .container{
     display: flex;
     background-color: darksalmon;
