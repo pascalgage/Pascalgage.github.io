@@ -1,0 +1,72 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    color: #FFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(230,75,60);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 240, 240);
+}
+p{
+    background-color: #FFFF;
+    padding: 10px;
+    margin-top: 0;
+    height: 220px;
+    margin-bottom: 0;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: left;
+    color: rgb(230,75,60);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFF;
+}
+main{
+    width: auto;
+    height: 460px;
+    box-sizing: border-box;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.whiskey{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    background-color: #FFFF;
+    width: 180px;
+    height: auto;
+}
+.fluffy{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    background-color: #FFFF;
+    width: 180px;
+    height: auto;
+}
+.kitty{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    width: 180px;
+    height: auto;
+}

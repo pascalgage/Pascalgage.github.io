@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    height: 15%;
+    display: flex;
+    gap: 5px;
+}
+.head{
+    width: 80%;
+    background-color: lightblue;
+}
+.ads{
+    
+    width: 20%;
+    background-color: lightblue;
+}
+
+.bas{
+    display: flex;
+    gap: 5px;
+    height: 85%;
+    background-color: #fff;
+}
+
+nav{
+    
+    width: 20%;
+    background-color: lightblue;
+
+}
+
+.bas-droit{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+    background-color:#fff;
+}
+
+article{
+    display: flex;
+    height: 90%;
+    gap: 5px;
+    background-color: lightblue;
+}
+
+footer{
+    height: 10%;
+    background-color: lightblue;
+}
+
+.gauche{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    gap: 60px;
+    background-color: lightblue;
+}
+.droite{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    background-color: lightblue;
+}
+
+section{
+    width: 70%;
+    height: 120px;
+    background-color: #fff;
+}
+
+
+
