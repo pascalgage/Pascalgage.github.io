@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+    width: 400px;
+    padding: 10px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+.name{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    
+}
+.name input{
+    width: 60%;
+}
+.phone{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.phone input{
+    width: 60%;
+}
+.email{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.email input{
+    width: 60%;
+}
+
+.date{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.date input{
+    width: 60%;
+    margin-left: auto;
+}
+
+.place{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.place select{
+    width: 61%;
+}
+
+.needs{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.needs input{
+    width: 60%;
+}
+
+.instructions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.instructions input{
+    width: 60%;
+    height: 200%;
+}
+
+button{
+    height: 40px;
+    color: azure;
+    background-color: #333333;
+}
+
+.radioB{
+    display: flex;
+    justify-content: space-evenly;
+}
+.checkbut{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+

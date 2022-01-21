@@ -8,36 +8,54 @@
 </head>
 <body>
     <form action="POST">
-        <label for="name">Name</label><input type="text"><br>
-        <label for="phone">Phone</label><input type="text"><br>
-        <label for="email">Email</label><input type="email"><br>
+        <div class="name">
+        <label for="name">Name</label><input type="text">
+        </div>
+        <div class="phone">
+        <label for="phone">Phone</label><input type="text">
+        </div>
+        <div class="email">
+        <label for="email">Email</label><input type="email">
+        </div>
 
         <fieldset>
             <legend>Which service do you require ?</legend>
-            <input type="radio" name="service" id="service"><label for="service">Plumbing</label>
-            <input type="radio" name="service"><label for="service">Electricity</label>
-            <input type="radio" name="service"><label for="service">Painting</label>
+            <div class="radioB">
+            <input type="radio" name="service" id="plumbing"><label for="plumbing">Plumbing</label>
+            <input type="radio" name="service" id=""><label for="electricity">Electricity</label>
+            <input type="radio" name="service" id=""><label for="painting">Painting</label>
+            </div>
         </fieldset>
 
         <fieldset>
             <legend>Which other service do you need ?</legend>
+            <div class="checkbut">
             <input type="checkbox" name="architect" id="architect"><label for="architect">Architect</label>
             <input type="checkbox" name="disinfection" id="disinfection"><label for="disinfection">Disinfection</label>
             <input type="checkbox" name="extermination" id="extermination"><label for="extermination">Rat extermination</label>
+            </div>
         </fieldset>
 
-        <label for="date">Date / Time</label><input type="date"><br>
+        <div class="date">
+        <label for="date">Date / Time</label><input type="date">
+        </div>
+        <div class="place">
         <label for="place">Place</label>
+        
         <select name="place" id="place">
             <option value="">--Select One--</option>
             <option value="paris">Main office(Paris)</option>
             <option value="lille">Technical center(Lille)</option>
             <option value="amiens">Logistic center(Amiens)</option>
-        </select><br>
+        </select>
+        </div>
 
-        <label for="needs">Other needs</label><input type="text"><br>
-        <label for="needs">Special instructions</label><input type="text"><br>
-
+        <div class="needs">
+        <label for="needs">Other needs</label><input type="text">
+        </div>
+        <div class="instructions">
+        <label for="needs">Special instructions</label><input type="text">
+        </div>
         <button type="submit">Submit</button>
 
     </form>

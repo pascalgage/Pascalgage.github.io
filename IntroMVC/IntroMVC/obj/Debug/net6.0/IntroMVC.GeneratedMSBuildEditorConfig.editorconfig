@@ -8,61 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IntroMVC
 build_property.RootNamespace = IntroMVC
-build_property.ProjectDir = C:\1WEB_CDA\Pascalgage.github.io\IntroMVC\IntroMVC\
+build_property.ProjectDir = C:\1TP_WEB_NODE\IntroMVC\IntroMVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\1WEB_CDA\Pascalgage.github.io\IntroMVC\IntroMVC
+build_property.MSBuildProjectDirectory = C:\1TP_WEB_NODE\IntroMVC\IntroMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Home/Index.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Home/Privacy.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Legumos/Create.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Legumos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVndW1vc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Legumos/Delete.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Legumos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVndW1vc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Legumos/Details.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Legumos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVndW1vc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Legumos/Edit.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Legumos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVndW1vc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Legumos/Index.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Legumos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVndW1vc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Shared/Error.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Test/Barry.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Test/Barry.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxCYXJyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/_ViewImports.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/_ViewStart.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/IntroMVC/IntroMVC/Views/Shared/_Layout.cshtml]
+[C:/1TP_WEB_NODE/IntroMVC/IntroMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2eummqoinn
