@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "025db79c-9dad-41a3-8c85-4c28a1f6d70e": {
+      "ProjectGuid": "025db79c-9dad-41a3-8c85-4c28a1f6d70e",
+      "DisplayName": "FormMVC",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

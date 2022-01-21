@@ -20,31 +20,14 @@ form{
     background-color: aqua;
     border: 1px solid black;
 }
-.name{
+.etatcivil{
     display: flex;
     width: 100%;
     justify-content: space-between;
     
     
 }
-.name input{
-    width: 60%;
-}
-.phone{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-
-}
-.phone input{
-    width: 60%;
-}
-.email{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-.email input{
+.etatcivil input{
     width: 60%;
 }
 
@@ -83,7 +66,7 @@ form{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .instructions input{
