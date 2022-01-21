@@ -1,8 +1,161 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>FORM</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+    width: 400px;
+    padding: 10px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+.etatcivil{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    
+}
+.etatcivil input{
+    width: 60%;
+}
+
+.date{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.date input{
+    width: 60%;
+    margin-left: auto;
+}
+
+.place{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.place select{
+    width: 61%;
+}
+
+.needs{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.needs input{
+    width: 60%;
+}
+
+.instructions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.instructions input{
+    width: 60%;
+    height: 200%;
+}
+
+button{
+    height: 40px;
+    color: azure;
+    background-color: #333333;
+}
+
+.radioB{
+    display: flex;
+    justify-content: space-evenly;
+}
+.checkbut{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+</style>
+<body>
+    <form action="POST">
+        <div class="etatcivil">
+        <label for="name">Name</label><input type="text">
+        </div>
+        <div class="etatcivil">
+        <label for="phone">Phone</label><input type="text">
+        </div>
+        <div class="etatcivil">
+        <label for="email">Email</label><input type="email">
+        </div>
+
+        <fieldset>
+            <legend>Which service do you require ?</legend>
+            <div class="radioB">
+            <input type="radio" name="service" id="plumbing"><label for="plumbing">Plumbing</label>
+            <input type="radio" name="service" id="electricity"><label for="electricity">Electricity</label>
+            <input type="radio" name="service" id="painting"><label for="painting">Painting</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Which other service do you need ?</legend>
+            <div class="checkbut">
+            <input type="checkbox" name="architect" id="architect"><label for="architect">Architect</label>
+            <input type="checkbox" name="disinfection" id="disinfection"><label for="disinfection">Disinfection</label>
+            <input type="checkbox" name="extermination" id="extermination"><label for="extermination">Rat extermination</label>
+            </div>
+        </fieldset>
+
+        <div class="date">
+        <label for="date">Date / Time</label><input type="date">
+        </div>
+        <div class="place">
+        <label for="place">Place</label>
+        
+        <select name="place" id="place">
+            <option value="">--Select One--</option>
+            <option value="paris">Main office(Paris)</option>
+            <option value="lille">Technical center(Lille)</option>
+            <option value="amiens">Logistic center(Amiens)</option>
+        </select>
+        </div>
+
+        <div class="needs">
+        <label for="needs">Other needs</label><input type="text">
+        </div>
+        <div class="instructions">
+        <label for="needs">Special instructions</label><input type="text">
+        </div>
+        <button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>
