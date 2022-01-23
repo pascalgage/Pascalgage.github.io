@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.haut{
+    height: 50px;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bas{
+    height: 50px;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.red{
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+}
+.green{
+    height: 50px;
+    width: 50px;
+    background-color: darkgreen;
+}
+.blue{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+.yellow{
+    height: 50px;
+    width: 50px;
+    background-color: yellowgreen;
+}
