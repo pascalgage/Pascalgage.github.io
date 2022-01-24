@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\1WEB_CDA\\Pascalgage.github.io\\FormMVC\\FormMVC.csproj": {}
+    "C:\\1TP_WEB_NODE\\FormMVC\\FormMVC.csproj": {}
   },
   "projects": {
-    "C:\\1WEB_CDA\\Pascalgage.github.io\\FormMVC\\FormMVC.csproj": {
+    "C:\\1TP_WEB_NODE\\FormMVC\\FormMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\1WEB_CDA\\Pascalgage.github.io\\FormMVC\\FormMVC.csproj",
+        "projectUniqueName": "C:\\1TP_WEB_NODE\\FormMVC\\FormMVC.csproj",
         "projectName": "FormMVC",
-        "projectPath": "C:\\1WEB_CDA\\Pascalgage.github.io\\FormMVC\\FormMVC.csproj",
-        "packagesPath": "C:\\Users\\Stagiaire\\.nuget\\packages\\",
-        "outputPath": "C:\\1WEB_CDA\\Pascalgage.github.io\\FormMVC\\obj\\",
+        "projectPath": "C:\\1TP_WEB_NODE\\FormMVC\\FormMVC.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\1TP_WEB_NODE\\FormMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stagiaire\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
