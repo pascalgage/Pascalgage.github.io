@@ -30,9 +30,9 @@ namespace FormMVC.Controllers
         Intervention Rousseau=new Intervention()
         {
             InterventionId=2,
-            Name="Rouss",
+            Name="Rousseau",
             Phone="0389",
-            Mail="@gmail.com",
+            Mail="rousseau@gmail.com",
             Needs="Rien",
             Instructions="A voir réseau eau potable"
         };
