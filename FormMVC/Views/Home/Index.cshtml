@@ -1,5 +1,7 @@
-﻿@{
-    
+﻿@model FormMVC.Models.Intervention
+
+@{
+    ViewData["Title"] = "Formulaire";
 }
 
 <!DOCTYPE html>
@@ -25,7 +27,7 @@ body{
 
 form{
     display: flex;
-    margin-left:200px;
+    
     flex-direction: column;
     justify-content: space-evenly;
     height: 500px;
@@ -105,27 +107,28 @@ button{
 
 </style>
 <body>
-    <form action="POST">
+    <h1>INTERVENTION</h1>
+    <form asp-action="Create" asp-controller ="Interventions">
         <div class="etatcivil">
-        <label for="name">Name</label><input type="text">
+        <label asp-for="Name">Name</label><input asp-for="Name">
         </div>
         <div class="etatcivil">
-        <label for="phone">Phone</label><input type="text">
+        <label asp-for="Phone">Phone</label><input asp-for="Phone">
         </div>
         <div class="etatcivil">
-        <label for="email">Email</label><input type="email">
+        <label asp-for="Mail">Email</label><input asp-for="Mail">
         </div>
 
-        <fieldset>
+        @*<fieldset>
             <legend>Which service do you require ?</legend>
             <div class="radioB">
             <input type="radio" name="service" id="plumbing"><label for="plumbing">Plumbing</label>
             <input type="radio" name="service" id="electricity"><label for="electricity">Electricity</label>
             <input type="radio" name="service" id="painting"><label for="painting">Painting</label>
             </div>
-        </fieldset>
+        </fieldset>*@
 
-        <fieldset>
+        @*<fieldset>
             <legend>Which other service do you need ?</legend>
             <div class="checkbut">
             <input type="checkbox" name="architect" id="architect"><label for="architect">Architect</label>
@@ -146,15 +149,15 @@ button{
             <option value="lille">Technical center(Lille)</option>
             <option value="amiens">Logistic center(Amiens)</option>
         </select>
-        </div>
+        </div>*@
 
         <div class="needs">
-        <label for="needs">Other needs</label><input type="text">
+        <label asp-for="Needs">Other needs</label><input asp-for="Needs">
         </div>
         <div class="instructions">
-        <label for="needs">Special instructions</label><input type="text">
+        <label asp-for="Instructions">Special instructions</label><input asp-for="Instructions">
         </div>
-        <button type="submit">Submit</button>
+        <input type="submit" value="Create"></input>
 
     </form>
     
