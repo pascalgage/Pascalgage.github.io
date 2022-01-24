@@ -41,10 +41,6 @@ namespace FormMVC.Controllers
         interventions.Add(Rousseau);
         
         
-        
-        
-        
-        
         }
 
 
@@ -68,7 +64,7 @@ namespace FormMVC.Controllers
         }
 
         // POST: InterventionController/Create
-        [HttpPost]
+        
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("InterventionId,Name,Phone,Mail,Needs,Instructions")] Intervention interventions)
         {

@@ -6,8 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using FormMVC.Models;
 
 
-
-
 namespace FormMVC.Data
 {
     public class InterventionsDbContext : DbContext
@@ -17,7 +15,7 @@ namespace FormMVC.Data
         {
         }
 
-        public DbSet<FormMVC.Models.Intervention> interventions { get; set; }
+        public DbSet<FormMVC.Models.Intervention> Interventions { get; set; }
     }
 
     
