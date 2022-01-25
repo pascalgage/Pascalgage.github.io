@@ -15,7 +15,7 @@ namespace FormMVC.Data
         {
         }
 
-        public DbSet<FormMVC.Models.Intervention> Interventions { get; set; }
+        public DbSet<FormMVC.Models.Intervention>? Interventions { get; set; }
     }
 
     

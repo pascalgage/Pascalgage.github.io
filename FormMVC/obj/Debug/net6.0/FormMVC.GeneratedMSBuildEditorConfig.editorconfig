@@ -8,45 +8,45 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FormMVC
 build_property.RootNamespace = FormMVC
-build_property.ProjectDir = C:\1TP_WEB_NODE\FormMVC\
+build_property.ProjectDir = C:\1WEB_CDA\Pascalgage.github.io\FormMVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\1TP_WEB_NODE\FormMVC
+build_property.MSBuildProjectDirectory = C:\1WEB_CDA\Pascalgage.github.io\FormMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/1TP_WEB_NODE/FormMVC/Views/Home/Index.cshtml]
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1TP_WEB_NODE/FormMVC/Views/Home/Privacy.cshtml]
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1TP_WEB_NODE/FormMVC/Views/Interventions/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uc1xDcmVhdGUuY3NodG1s
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Intervention/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1TP_WEB_NODE/FormMVC/Views/Interventions/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uc1xJbmRleC5jc2h0bWw=
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Intervention/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1TP_WEB_NODE/FormMVC/Views/Shared/Error.cshtml]
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1TP_WEB_NODE/FormMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1TP_WEB_NODE/FormMVC/Views/_ViewImports.cshtml]
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1TP_WEB_NODE/FormMVC/Views/_ViewStart.cshtml]
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1TP_WEB_NODE/FormMVC/Views/Shared/_Layout.cshtml]
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-fnsnm9cw1k

@@ -1,4 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using FormMVC.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<InterventionsDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("InterventionsDbContext")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
