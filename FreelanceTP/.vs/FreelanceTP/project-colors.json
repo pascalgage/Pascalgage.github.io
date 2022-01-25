@@ -5,7 +5,22 @@
       "ProjectGuid": "ec2e5e1f-6e1a-413b-bd55-1b55a7725062",
       "DisplayName": "FreelanceTP",
       "ColorIndex": 0
+    },
+    "71fb227c-6dd4-4740-a1e5-e00c9b623ed1": {
+      "ProjectGuid": "71fb227c-6dd4-4740-a1e5-e00c9b623ed1",
+      "DisplayName": "FreelanceTP.DataAccessLayer",
+      "ColorIndex": 1
+    },
+    "2445780d-2cd2-40c1-b50d-f4bbed805cd4": {
+      "ProjectGuid": "2445780d-2cd2-40c1-b50d-f4bbed805cd4",
+      "DisplayName": "Freelance.DomainModel",
+      "ColorIndex": 2
+    },
+    "b3e8a622-d958-43e5-bd1f-0091b8e3c09b": {
+      "ProjectGuid": "b3e8a622-d958-43e5-bd1f-0091b8e3c09b",
+      "DisplayName": "FreelanceTP.DomainModel",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreelanceTP", "FreelanceTP.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceTP.DataAccessLayer", "..\FreelanceTP.DataAccessLayer\FreelanceTP.DataAccessLayer.csproj", "{71FB227C-6DD4-4740-A1E5-E00C9B623ED1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freelance.DomainModel", "..\Freelance.DomainModel\Freelance.DomainModel.csproj", "{B3E8A622-D958-43E5-BD1F-0091B8E3C09B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceTP.DomainModel", "..\Freelance.DomainModel\FreelanceTP.DomainModel.csproj", "{B3E8A622-D958-43E5-BD1F-0091B8E3C09B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
