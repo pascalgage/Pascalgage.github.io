@@ -23,12 +23,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Intervention/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uXENyZWF0ZS5jc2h0bWw=
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Interventions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Intervention/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uXEluZGV4LmNzaHRtbA==
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Interventions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Interventions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Interventions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Interventions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJ2ZW50aW9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/1WEB_CDA/Pascalgage.github.io/FormMVC/Views/Shared/Error.cshtml]

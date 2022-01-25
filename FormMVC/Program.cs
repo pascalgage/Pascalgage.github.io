@@ -4,8 +4,7 @@ using FormMVC.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<InterventionsDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("InterventionsDbContext")));
+builder.Services.AddDbContext<InterventionsDbContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -25,6 +24,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Interventions}/{action=Index}/{id?}");
 
 app.Run();

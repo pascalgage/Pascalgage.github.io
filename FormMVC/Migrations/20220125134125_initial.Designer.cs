@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FormMVC.Migrations
 {
     [DbContext(typeof(InterventionsDbContext))]
-    [Migration("20220125073009_initial")]
+    [Migration("20220125134125_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

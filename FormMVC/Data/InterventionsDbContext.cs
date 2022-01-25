@@ -10,13 +10,16 @@ namespace FormMVC.Data
 {
     public class InterventionsDbContext : DbContext
     {
-        public InterventionsDbContext(DbContextOptions<InterventionsDbContext> options)
-            : base(options)
+
+
+        //public DbSet<FormMVC.Models.Intervention>? Interventions { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;Initial Catalog=dbIntervention;Integrated Security=True");
         }
 
-        public DbSet<FormMVC.Models.Intervention>? Interventions { get; set; }
+        public DbSet<Intervention> Interventions { get; set; }
     }
 
-    
+
 }
