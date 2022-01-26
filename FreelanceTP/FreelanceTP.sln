@@ -5,9 +5,14 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreelanceTP", "FreelanceTP.csproj", "{EC2E5E1F-6E1A-413B-BD55-1B55A7725062}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceTP.DataAccessLayer", "..\FreelanceTP.DataAccessLayer\FreelanceTP.DataAccessLayer.csproj", "{71FB227C-6DD4-4740-A1E5-E00C9B623ED1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreelanceTP.DataAccessLayer", "..\FreelanceTP.DataAccessLayer\FreelanceTP.DataAccessLayer.csproj", "{71FB227C-6DD4-4740-A1E5-E00C9B623ED1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelanceTP.DomainModel", "..\Freelance.DomainModel\FreelanceTP.DomainModel.csproj", "{B3E8A622-D958-43E5-BD1F-0091B8E3C09B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreelanceTP.DomainModel", "..\Freelance.DomainModel\FreelanceTP.DomainModel.csproj", "{B3E8A622-D958-43E5-BD1F-0091B8E3C09B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EC8AAF5B-452F-477B-ABD1-BB4452175818}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
