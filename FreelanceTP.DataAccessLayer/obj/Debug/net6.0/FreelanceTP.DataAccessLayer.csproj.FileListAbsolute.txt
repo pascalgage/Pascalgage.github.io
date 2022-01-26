@@ -1,0 +1,17 @@
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\bin\Debug\net6.0\FreelanceTP.DataAccessLayer.deps.json
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\bin\Debug\net6.0\FreelanceTP.DataAccessLayer.runtimeconfig.json
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\bin\Debug\net6.0\FreelanceTP.DataAccessLayer.dll
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\bin\Debug\net6.0\ref\FreelanceTP.DataAccessLayer.dll
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\bin\Debug\net6.0\FreelanceTP.DataAccessLayer.pdb
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\bin\Debug\net6.0\FreelanceTP.DomainModel.dll
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\bin\Debug\net6.0\FreelanceTP.DomainModel.pdb
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\obj\Debug\net6.0\FreelanceTP.DataAccessLayer.csproj.AssemblyReference.cache
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\obj\Debug\net6.0\FreelanceTP.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\obj\Debug\net6.0\FreelanceTP.DataAccessLayer.AssemblyInfoInputs.cache
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\obj\Debug\net6.0\FreelanceTP.DataAccessLayer.AssemblyInfo.cs
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\obj\Debug\net6.0\FreelanceTP.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\obj\Debug\net6.0\FreelanceTP.DataAccessLayer.csproj.CopyComplete
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\obj\Debug\net6.0\FreelanceTP.DataAccessLayer.dll
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\obj\Debug\net6.0\ref\FreelanceTP.DataAccessLayer.dll
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\obj\Debug\net6.0\FreelanceTP.DataAccessLayer.pdb
+C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP.DataAccessLayer\obj\Debug\net6.0\FreelanceTP.DataAccessLayer.genruntimeconfig.cache

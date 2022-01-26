@@ -9,22 +9,31 @@ using System.Threading.Tasks;
 namespace FreelanceTP.DomainModel
 {
     [Table("Quotes")]
-    public class Quote
+    public class Quote:Model
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int QuoteId { get; set; }
+        
+
         [Column("quote_state")]
         [MaxLength(10)]
+        [Display(Name = "Quote state")]
         public char QuoteState { get; set; }
+
         [Column("quote_date")]
+        [Display(Name = "Quote date")]
         public DateTime QuoteDate { get; set; }
+
         [Column("quote_amount")]
+        [Display(Name = "Quote amount")]
         public int QuoteAmount { get; set; }
+
         [Column("quote_final_date")]
+        [Display(Name = "Quote final date")]
         public DateTime QuoteFinalDate { get; set; }
+
         [Column("quote_final_amount")]
+        [Display(Name = "Quote final amount")]
         public int QuoteFinalAmount { get; set; }
+
         [Column("job_id")]
         public Job Job { get; set; }
     }

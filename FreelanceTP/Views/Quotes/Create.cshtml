@@ -1,0 +1,50 @@
+﻿@model FreelanceTP.DomainModel.Quote
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Quote</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="QuoteState" class="control-label"></label>
+                <input asp-for="QuoteState" class="form-control" />
+                <span asp-validation-for="QuoteState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuoteDate" class="control-label"></label>
+                <input asp-for="QuoteDate" class="form-control" />
+                <span asp-validation-for="QuoteDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuoteAmount" class="control-label"></label>
+                <input asp-for="QuoteAmount" class="form-control" />
+                <span asp-validation-for="QuoteAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuoteFinalDate" class="control-label"></label>
+                <input asp-for="QuoteFinalDate" class="form-control" />
+                <span asp-validation-for="QuoteFinalDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuoteFinalAmount" class="control-label"></label>
+                <input asp-for="QuoteFinalAmount" class="form-control" />
+                <span asp-validation-for="QuoteFinalAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

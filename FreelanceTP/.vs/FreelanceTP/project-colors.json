@@ -20,6 +20,11 @@
       "ProjectGuid": "b3e8a622-d958-43e5-bd1f-0091b8e3c09b",
       "DisplayName": "FreelanceTP.DomainModel",
       "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Fichiers divers",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 4

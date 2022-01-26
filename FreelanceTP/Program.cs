@@ -1,5 +1,11 @@
+using FreelanceTP.DataAccessLayer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<FreelanceTPDbContext>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -22,6 +28,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Customers}/{action=Index}/{id?}");
 
 app.Run();

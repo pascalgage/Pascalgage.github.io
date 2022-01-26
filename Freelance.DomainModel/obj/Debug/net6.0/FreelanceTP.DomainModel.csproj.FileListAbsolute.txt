@@ -1,0 +1,14 @@
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\bin\Debug\net6.0\FreelanceTP.DomainModel.deps.json
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\bin\Debug\net6.0\FreelanceTP.DomainModel.runtimeconfig.json
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\bin\Debug\net6.0\FreelanceTP.DomainModel.dll
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\bin\Debug\net6.0\ref\FreelanceTP.DomainModel.dll
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\bin\Debug\net6.0\FreelanceTP.DomainModel.pdb
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\obj\Debug\net6.0\FreelanceTP.DomainModel.csproj.AssemblyReference.cache
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\obj\Debug\net6.0\FreelanceTP.DomainModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\obj\Debug\net6.0\FreelanceTP.DomainModel.AssemblyInfoInputs.cache
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\obj\Debug\net6.0\FreelanceTP.DomainModel.AssemblyInfo.cs
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\obj\Debug\net6.0\FreelanceTP.DomainModel.csproj.CoreCompileInputs.cache
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\obj\Debug\net6.0\FreelanceTP.DomainModel.dll
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\obj\Debug\net6.0\ref\FreelanceTP.DomainModel.dll
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\obj\Debug\net6.0\FreelanceTP.DomainModel.pdb
+C:\1WEB_CDA\Pascalgage.github.io\Freelance.DomainModel\obj\Debug\net6.0\FreelanceTP.DomainModel.genruntimeconfig.cache

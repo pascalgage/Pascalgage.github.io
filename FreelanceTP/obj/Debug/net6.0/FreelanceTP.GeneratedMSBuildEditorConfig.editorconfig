@@ -15,12 +15,92 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\1WEB_CDA\Pascalgage.github.io\FreelanceTP
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/CustomerCats/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJDYXRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/CustomerCats/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJDYXRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/CustomerCats/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJDYXRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/CustomerCats/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJDYXRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/CustomerCats/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJDYXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Customers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Customers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Customers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Jobs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Jobs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Jobs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Jobs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Jobs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Quotes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Quotes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Quotes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Quotes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Quotes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVvdGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/1WEB_CDA/Pascalgage.github.io/FreelanceTP/Views/Shared/Error.cshtml]

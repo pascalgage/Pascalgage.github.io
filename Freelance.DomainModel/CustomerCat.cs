@@ -9,16 +9,18 @@ using System.Threading.Tasks;
 namespace FreelanceTP.DomainModel
 {
     [Table("CustomersCats")]
-    public class CustomerCat
+    public class CustomerCat:Model
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Column("cat_id")]
-        public int CatId { get; set; }
+        
+
         [Required]
         [Column("cat_name")]
+        [MaxLength(50)]
+        [Display(Name = "Cat name")]
         public string CatName { get; set; }
+
         [Column("cat_description")]
+        [Display(Name = "Cat description")]
         [DataType(DataType.MultilineText)]
         public string CatDescription { get; set;}
     }

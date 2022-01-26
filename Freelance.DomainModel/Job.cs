@@ -10,12 +10,9 @@ using System.Threading.Tasks;
 namespace FreelanceTP.DomainModel
 {
     [Table("Jobs")]
-    public class Job
+    public class Job :Model
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Column("job_id")]
-        public int JobId { get; set; }
+        
         
         [Column("job_state")]
         [MaxLength(10)]
@@ -40,7 +37,11 @@ namespace FreelanceTP.DomainModel
         [Display(Name = "Job description")]
         public string JobDescription { get; set; }
 
-        [Column("customer_id")]
+        [ForeignKey("Customers")]
+        public int CustomerId { get; set; }
+
+
+        [ForeignKey("CustomerId")]
         public Customer Customer { get; set; }
 
 
