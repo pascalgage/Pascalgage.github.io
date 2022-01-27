@@ -16,7 +16,7 @@ namespace FreelanceTP.DomainModel
         [Column("quote_state")]
         [MaxLength(10)]
         [Display(Name = "Quote state")]
-        public char QuoteState { get; set; }
+        public string QuoteState { get; set; }
 
         [Column("quote_date")]
         [Display(Name = "Quote date")]

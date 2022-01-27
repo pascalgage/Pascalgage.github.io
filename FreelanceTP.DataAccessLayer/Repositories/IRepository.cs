@@ -13,6 +13,12 @@ namespace FreelanceTP.DataAccessLayer.Repositories
 
         T Update(T entity);
 
-        
+        IQueryable<T> GetAll();
+
+        T GetById(int id);
+
+        bool Delete(int id);
+
+        IQueryable<T> Search(Predicate<T> predicate);
     }
 }

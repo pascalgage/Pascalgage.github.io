@@ -49,7 +49,7 @@ namespace FreelanceTP.Controllers
         // GET: Jobs/Create
         public IActionResult Create()
         {
-            ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "CustomerEmail");
+            ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "CustomerName");
             return View();
         }
 
@@ -66,7 +66,7 @@ namespace FreelanceTP.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "CustomerEmail", job.CustomerId);
+            ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "CustomerName", job.CustomerId);
             return View(job);
         }
 
@@ -83,7 +83,7 @@ namespace FreelanceTP.Controllers
             {
                 return NotFound();
             }
-            ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "CustomerEmail", job.CustomerId);
+            ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "CustomerName", job.CustomerId);
             return View(job);
         }
 

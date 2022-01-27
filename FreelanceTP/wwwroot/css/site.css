@@ -8,6 +8,19 @@ html {
   }
 }
 
+header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav{
+    margin-top:30px;
+    width:70%;
+    border-radius:6px;
+}
+
+
 html {
   position: relative;
   min-height: 100%;
@@ -15,4 +28,24 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color:antiquewhite;
+}
+
+img{
+    width:50%;
+    
+}
+
+.pg-navbar{
+    justify-content: flex-end;
+    
+}
+
+.pg-itemclients{
+    margin-left:20px;
+    border: 3px solid black;
+    border-radius:5px;
+}
+.pg-itemclients:hover{
+    background-color:aquamarine;
 }

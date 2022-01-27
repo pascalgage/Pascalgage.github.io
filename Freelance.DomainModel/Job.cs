@@ -17,7 +17,7 @@ namespace FreelanceTP.DomainModel
         [Column("job_state")]
         [MaxLength(10)]
         [Display(Name ="Job state")]
-        public char JobState { get; set; }
+        public string JobState { get; set; }
         
         [Column("job_title")]
         [MaxLength(100)]
@@ -38,11 +38,11 @@ namespace FreelanceTP.DomainModel
         public string JobDescription { get; set; }
 
         [ForeignKey("Customers")]
-        public int CustomerId { get; set; }
+        public int? CustomerId { get; set; }
 
 
         [ForeignKey("CustomerId")]
-        public Customer Customer { get; set; }
+        public Customer? Customer { get; set; }
 
 
     }

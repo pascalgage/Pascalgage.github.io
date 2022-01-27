@@ -83,7 +83,7 @@ namespace FreelanceTP.Controllers
             {
                 return NotFound();
             }
-            ViewData["CatId"] = new SelectList(_context.CustomerCats, "Id", "CatDescription", customer.CatId);
+            ViewData["CatId"] = new SelectList(_context.CustomerCats, "Id", "CatName", customer.CatId);
             return View(customer);
         }
 
@@ -119,7 +119,7 @@ namespace FreelanceTP.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CatId"] = new SelectList(_context.CustomerCats, "Id", "CatDescription", customer.CatId);
+            ViewData["CatId"] = new SelectList(_context.CustomerCats, "Id", "CatName", customer.CatId);
             return View(customer);
         }
 
