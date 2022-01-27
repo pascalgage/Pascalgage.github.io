@@ -49,3 +49,14 @@ img{
 .pg-itemclients:hover{
     background-color:aquamarine;
 }
+
+.container{
+    
+    
+    width:75%;
+    background-color:white;
+}
+
+h1{
+    text-align:center;
+}
