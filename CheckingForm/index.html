@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" 
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" defer></script>
     <title>Verification_de_Champ</title>
 </head>
 <body>
@@ -16,9 +16,15 @@
     </header>
     <main>
         <div class="container">
-            <input type="text">
-            <i class="fas fa-check-circle"></i>
-			<i class="fas fa-exclamation-circle"></i>
+            <div class="general">
+            <div class="input-ok">
+            <input type="text" id="insert" onblur="checkInput()">
+            <i class="fas fa-check-circle fax1" id="test1"></i>
+            </div>
+            <div class="input-exclamation">
+			<i class="fas fa-exclamation-circle fax2" id="test2"></i>
+            </div>
+            </div>
         </div>
     </main>
     <footer>

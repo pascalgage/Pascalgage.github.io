@@ -23,3 +23,28 @@ body{
     width: 400px;
 }
 
+.input-exclamation{
+    width: 150px;
+    padding-top: 5px;
+
+}
+
+input{
+    width: 150px;
+}
+
+.fax1{
+    opacity: 0;
+}
+.notest{
+    opacity: 1;
+    transition-duration: 0.7s;
+}
+.fax2{
+    opacity: 0;
+}
+.notest2{
+    opacity: 1;
+    transition-duration: 0.7s;
+}
+
