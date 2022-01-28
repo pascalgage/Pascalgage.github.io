@@ -7,30 +7,37 @@ function checkInput(){
 
     const champValue = champ.value.trim(); 
 
-    var army=false;
+    var bool=false;
 
     if(champValue===" "){
         
-        army=false;
+        bool=false;
 
     }
     else if(champValue>=0)
     {
         
-        army=true;
+        bool=true;
         
     }
 
-    if(army===false)
+    if(bool===false)
     {
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
+        ok.classList.remove('notest');
+        ok.classList.add('fax2');
+        
     }
     else
     {
         ok.classList.remove('fax2');
         ok.classList.add('notest');
-    }
+        pasOK.classList.remove('notest');
+        pasOK.classList.add('fax1');
         
+    }
+    
+
         
 }
