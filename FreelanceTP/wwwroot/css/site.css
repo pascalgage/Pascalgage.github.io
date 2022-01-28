@@ -47,7 +47,7 @@ img{
     border-radius:5px;
 }
 .pg-itemclients:hover{
-    background-color:aquamarine;
+    background-color:#38DD09;
 }
 
 .container{
@@ -60,3 +60,14 @@ img{
 h1{
     text-align:center;
 }
+
+h3{
+    text-align:center;
+}
+
+.pg-ajouter{
+    margin-top:50px;
+    margin-left:42%;
+}
+
+

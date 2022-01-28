@@ -25,4 +25,8 @@
     <ProjectReference Include="..\FreelanceTP.DataAccessLayer\FreelanceTP.DataAccessLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Shared\components\" />
+  </ItemGroup>
+
 </Project>
