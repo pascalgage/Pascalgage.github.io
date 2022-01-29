@@ -12,7 +12,7 @@ body{
 }
 
 .container{
-    background-color: black;
+    background-color: lightgrey;
     display: flex;
     border-radius: 10px;
     border: 4px solid magenta;
@@ -23,11 +23,7 @@ body{
     width: 400px;
 }
 
-.input-exclamation{
-    width: 150px;
-    padding-top: 5px;
 
-}
 
 input{
     width: 150px;
@@ -48,5 +44,9 @@ input{
     opacity: 1;
     color: red;
     transition-duration: 0.7s;
+}
+
+small{
+    color: black;
 }
 

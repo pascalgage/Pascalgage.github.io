@@ -16,15 +16,25 @@
     </header>
     <main>
         <div class="container">
-            <div class="general">
-            <div class="input-ok">
-            <input type="text" id="insert" onblur="checkInput()">
-            <i class="fas fa-check-circle fax1" id="test1"></i>
-            </div>
-            <div class="input-exclamation">
-			<i class="fas fa-exclamation-circle fax2" id="test2"></i>
-            </div>
-            </div>
+            
+                    <div class="nomOK">
+                    <input type="text" id="insert" onblur="checkInput()">
+                    <i class="fas fa-check-circle fax1" id="test1"></i>
+                    </div>
+                    <div>
+                    <i class="fas fa-exclamation-circle fax2" id="test2"></i>
+                    <small id="smallmessage"></small>
+                    </div>
+
+                    <div class="emailOK">
+                        <input type="text" id="insertMail" onblur="checkInputMail()">
+                        <i class="fas fa-check-circle fax1" id="test3"></i>
+                        </div>
+                        <div>
+                        <i class="fas fa-exclamation-circle fax2" id="test4"></i>
+                        <small id="smallmessageMail"></small>
+                    </div>
+            
         </div>
     </main>
     <footer>
