@@ -80,7 +80,7 @@ function checkInputName(){
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
         pasOK.classList.add('fax1');
-        setErrorFor(champ,'Veuillez saisir au moins un caractère');
+        setErrorFor(champ,'Nom manquant');
         b1=false;
         (b1&&b2&&b3)?butt.disabled=false:butt.disabled=true;
         
