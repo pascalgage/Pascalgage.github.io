@@ -1,3 +1,10 @@
+ var boolName=false;
+ var boolMail=false;
+ var etatbutton=false;
+
+ const butt = document.querySelector('button');
+
+ (boolName&&boolMail)?butt.disabled=true:butt.disabled=false;
 
 function checkInput(){
 
@@ -21,6 +28,8 @@ function checkInput(){
         ok.classList.remove('notest2');
         ok.classList.add('fax2');
         setErrorFor(champ,'');
+        
+        
     }
     else
     {
@@ -60,18 +69,25 @@ function checkInputMail(){
 
     (champValue2!='' && isEmail(champValue2))?boolMail=false : boolMail=true;
 
-    if(boolMail==false){
+    if(boolMail===false){
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
         ok.classList.remove('notest2');
         ok.classList.add('fax2');
         setErrorForMail(champ2,'');
+        boolMail=true;
+
+
     }else{
         ok.classList.remove('fax2');
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
         pasOK.classList.add('fax1');
         setErrorForMail(champ2,'Email invalide');
+        
     }
 
 }
+
+
+

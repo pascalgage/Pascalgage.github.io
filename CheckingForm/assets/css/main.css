@@ -49,4 +49,6 @@ input{
 small{
     color: black;
 }
-
+.validation{
+    margin-top: 20px;
+}
