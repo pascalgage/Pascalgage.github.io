@@ -67,9 +67,7 @@ function checkInputName(){
         ok.classList.add('fax2');
         setErrorFor(champ,'');
         b1=true;
-        console.log(b1);
-        console.log(b2);
-        (b1&&b2&&b3)?butt.disabled=false:butt.disabled=true;
+        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
         
         
         
@@ -82,7 +80,7 @@ function checkInputName(){
         pasOK.classList.add('fax1');
         setErrorFor(champ,'Nom manquant');
         b1=false;
-        (b1&&b2&&b3)?butt.disabled=false:butt.disabled=true;
+        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
         
     }
 }
@@ -107,7 +105,7 @@ function checkInputMail(){
         ok.classList.add('fax2');
         setErrorForMail(champ2,'');
         b2=true;
-        (b1&&b2&&b3)?butt.disabled=false:butt.disabled=true;
+        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
         
 
 
@@ -118,7 +116,7 @@ function checkInputMail(){
         pasOK.classList.add('fax1');
         setErrorForMail(champ2,'Email invalide');
         b2=false;
-        (b1&&b2&&b3)?butt.disabled=false:butt.disabled=true;
+        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
         
     }
 }
@@ -128,16 +126,14 @@ function checkPassword(){
     var pasOK = document.getElementById('test5');
     var ok = document.getElementById('test6');
 
-    const champ3 = document.getElementById('insertPassword');
-    const champValue3 = champ3.value.trim();
+    var champ3 = document.getElementById('insertPassword');
+    var champValue3 = champ3.value.trim();
 
     var boolPass=false;
 
     //Check...
     (champValue3!='')?boolPass=true:boolPass=false;
     //Fin du check...
-
-    console.log(boolPass);
 
     if(boolPass===true){
         pasOK.classList.remove('fax1');
@@ -146,7 +142,7 @@ function checkPassword(){
         ok.classList.add('fax2');
         setErrorForPassword(champ3,'');
         b3=true;
-        (b1&&b2&&b3)?butt.disabled=false:butt.disabled=true;
+        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
     }else{
         ok.classList.remove('fax2');
         ok.classList.add('notest2');
@@ -154,7 +150,43 @@ function checkPassword(){
         pasOK.classList.add('fax1');
         setErrorForPassword(champ3,'Mot de passe incorrect');
         b3=false;
-        (b1&&b2&&b3)?butt.disabled=false:butt.disabled=true;
+        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
+
+    }
+
+
+}
+
+function checkPassword2(){
+    
+    var pasOK = document.getElementById('test7');
+    var ok = document.getElementById('test8');
+
+    var champ4 = document.getElementById('insertPassword2');
+    var champValue4 = champ4.value.trim();
+
+    var boolPass2=false;
+
+    //Check...
+    (champValue4!='')?boolPass2=true:boolPass2=false;
+    //Fin du check...
+
+    if(boolPass2===true){
+        pasOK.classList.remove('fax1');
+        pasOK.classList.add('notest');
+        ok.classList.remove('notest2');
+        ok.classList.add('fax2');
+        setErrorForPassword2(champ4,'');
+        b4=true;
+        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
+    }else{
+        ok.classList.remove('fax2');
+        ok.classList.add('notest2');
+        pasOK.classList.remove('notest');
+        pasOK.classList.add('fax1');
+        setErrorForPassword2(champ4,'Mot de passe différent');
+        b4=false;
+        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
 
     }
 
