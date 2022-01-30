@@ -1,11 +1,7 @@
-var b1=true;
-var b2=true;
+var b1=false;
+var b2=false;
 
 const butt=document.getElementById('valid');
-
-
-
-
 
 
 function checkInput(){
@@ -28,10 +24,10 @@ function checkInput(){
         ok.classList.remove('notest2');
         ok.classList.add('fax2');
         setErrorFor(champ,'');
-        b1=false;
+        b1=true;
         console.log(b1);
         console.log(b2);
-        (!b1&&!b2)?butt.disabled=false:butt.disabled=true;
+        (b1&&b2)?butt.disabled=false:butt.disabled=true;
         
         
         
@@ -43,8 +39,8 @@ function checkInput(){
         pasOK.classList.remove('notest');
         pasOK.classList.add('fax1');
         setErrorFor(champ,'Veuillez saisir au moins un caractère');
-        b1=true;
-        (!b1&&!b2)?butt.disabled=false:butt.disabled=true;
+        b1=false;
+        (b1&&b2)?butt.disabled=false:butt.disabled=true;
         
     }
 
@@ -83,10 +79,10 @@ function checkInputMail(){
         ok.classList.remove('notest2');
         ok.classList.add('fax2');
         setErrorForMail(champ2,'');
-        b2=false;
+        b2=true;
         console.log(b1);
         console.log(b2);
-        (!b1&&!b2)?butt.disabled=false:butt.disabled=true;
+        (b1&&b2)?butt.disabled=false:butt.disabled=true;
         
 
 
@@ -96,8 +92,8 @@ function checkInputMail(){
         pasOK.classList.remove('notest');
         pasOK.classList.add('fax1');
         setErrorForMail(champ2,'Email invalide');
-        b2=true;
-        (!b1&&!b2)?butt.disabled=false:butt.disabled=true;
+        b2=false;
+        (b1&&b2)?butt.disabled=false:butt.disabled=true;
         
     }
    
