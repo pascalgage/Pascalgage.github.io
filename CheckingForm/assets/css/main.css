@@ -11,6 +11,13 @@ body{
     align-items: center;
 }
 
+input{
+    width: 150px;
+}
+small{
+    color: black;
+}
+
 .container{
     background-color: lightgrey;
     display: flex;
@@ -23,11 +30,11 @@ body{
     width: 400px;
 }
 
-
-
-input{
-    width: 150px;
+.validation{
+    margin-top: 20px;
 }
+
+
 
 .fax1{
     opacity: 0;
@@ -35,7 +42,7 @@ input{
 .notest{
     opacity: 1;
     color: green;
-    transition-duration: 0.7s;
+    transition-duration: 1s;
 }
 .fax2{
     opacity: 0;
@@ -43,12 +50,11 @@ input{
 .notest2{
     opacity: 1;
     color: red;
-    transition-duration: 0.7s;
+    transition-duration: 1s;
 }
 
-small{
-    color: black;
-}
-.validation{
-    margin-top: 20px;
-}
+
+
+
+
+

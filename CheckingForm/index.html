@@ -18,24 +18,44 @@
         <div class="container">
             
                     <div class="nomOK">
-                    <input type="text" id="insert" onblur="checkInput()">
-                    <i class="fas fa-check-circle fax1" id="test1"></i>
+                        <input type="text" id="insert" onblur="checkInputName()">
+                        <i class="fas fa-check-circle fax1" id="test1"></i>
                     </div>
                     <div>
-                    <i class="fas fa-exclamation-circle fax2" id="test2"></i>
-                    <small id="smallmessage"></small>
+                        <i class="fas fa-exclamation-circle fax2" id="test2"></i>
+                        <small id="smallmessage"></small>
                     </div>
 
                     <div class="emailOK">
-                        <input type="text" id="insertMail" onblur="checkInputMail()">
+                        <input type="email" id="insertMail" onblur="checkInputMail()">
                         <i class="fas fa-check-circle fax1" id="test3"></i>
-                        </div>
+                    </div>
                         <div>
                         <i class="fas fa-exclamation-circle fax2" id="test4"></i>
                         <small id="smallmessageMail"></small>
                     </div>
+                    
+
+                    <div class="mdpOK">
+                        <input type="password" id="insertPassword" onblur="checkPassword()">
+                        <i class="fas fa-check-circle fax1" id="test5"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-exclamation-circle fax2" id="test6"></i>
+                        <small id="smallmessageMdp"></small>
+                    </div>
+
+
+                    <div class="mdpOK2">
+                        <input type="password" id="insertPassword2" onblur="checkPassword2()">
+                        <i class="fas fa-check-circle fax1" id="test7"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-exclamation-circle fax2" id="test8"></i>
+                        <small id="smallmessageMdp2"></small>
+                    </div>
+
                     <button class="validation" id="valid" disabled>VALIDEZ</button>
-            
         </div>
     </main>
     <footer>
