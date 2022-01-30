@@ -172,7 +172,7 @@ function checkPassword2(){
     var boolPass2=false;
 
     //Check...
-    (champValue4==champValue3)?boolPass2=true:boolPass2=false;
+    (champValue4==champValue3 && champValue4!='')?boolPass2=true:boolPass2=false;
     //Fin du check...
 
     if(boolPass2===true){
@@ -188,7 +188,7 @@ function checkPassword2(){
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
         pasOK.classList.add('fax1');
-        setErrorForPassword2(champ4,'Mot de passe différent');
+        setErrorForPassword2(champ4,'Mot de passe invalide');
         b4=false;
         (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
 
