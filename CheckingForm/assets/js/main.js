@@ -121,13 +121,15 @@ function checkInputMail(){
     }
 }
 
+var champValue3;
+
 function checkPassword(){
     
     var pasOK = document.getElementById('test5');
     var ok = document.getElementById('test6');
 
     var champ3 = document.getElementById('insertPassword');
-    var champValue3 = champ3.value.trim();
+    champValue3 = champ3.value.trim();
 
     var boolPass=false;
 
@@ -157,18 +159,20 @@ function checkPassword(){
 
 }
 
+var champValue4;
+
 function checkPassword2(){
     
     var pasOK = document.getElementById('test7');
     var ok = document.getElementById('test8');
 
     var champ4 = document.getElementById('insertPassword2');
-    var champValue4 = champ4.value.trim();
+    champValue4 = champ4.value.trim();
 
     var boolPass2=false;
 
     //Check...
-    (champValue4!='')?boolPass2=true:boolPass2=false;
+    (champValue4==champValue3)?boolPass2=true:boolPass2=false;
     //Fin du check...
 
     if(boolPass2===true){
