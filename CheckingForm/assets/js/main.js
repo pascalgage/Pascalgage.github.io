@@ -1,10 +1,12 @@
- var boolName=false;
- var boolMail=false;
- var etatbutton=false;
+var b1=true;
+var b2=true;
 
- const butt = document.querySelector('button');
+const butt=document.getElementById('valid');
 
- (boolName&&boolMail)?butt.disabled=true:butt.disabled=false;
+
+
+
+
 
 function checkInput(){
 
@@ -14,12 +16,10 @@ function checkInput(){
     const champ = document.getElementById('insert');
     const champValue = champ.value.trim(); 
 
-    var boolName=false;
+    var boolName=true;
     
-    (champValue===" ")? boolName=false : boolName=true;
-    (champValue>=0)? boolName=true : boolName=false;
-
-    
+    (champValue!=="")? boolName=false : boolName=true;
+   
 
     if(boolName===false)
     {
@@ -28,6 +28,11 @@ function checkInput(){
         ok.classList.remove('notest2');
         ok.classList.add('fax2');
         setErrorFor(champ,'');
+        b1=false;
+        console.log(b1);
+        console.log(b2);
+        (!b1&&!b2)?butt.disabled=false:butt.disabled=true;
+        
         
         
     }
@@ -38,8 +43,11 @@ function checkInput(){
         pasOK.classList.remove('notest');
         pasOK.classList.add('fax1');
         setErrorFor(champ,'Veuillez saisir au moins un caractère');
+        b1=true;
+        (!b1&&!b2)?butt.disabled=false:butt.disabled=true;
         
-    }     
+    }
+
 }
 
 function setErrorFor(input, message) {
@@ -65,7 +73,7 @@ function checkInputMail(){
     var ok = document.getElementById('test4');
     const champ2 = document.getElementById('insertMail');
     const champValue2 = champ2.value.trim();
-    var boolMail=false;
+    var boolMail=true;
 
     (champValue2!='' && isEmail(champValue2))?boolMail=false : boolMail=true;
 
@@ -75,7 +83,11 @@ function checkInputMail(){
         ok.classList.remove('notest2');
         ok.classList.add('fax2');
         setErrorForMail(champ2,'');
-        boolMail=true;
+        b2=false;
+        console.log(b1);
+        console.log(b2);
+        (!b1&&!b2)?butt.disabled=false:butt.disabled=true;
+        
 
 
     }else{
@@ -84,10 +96,15 @@ function checkInputMail(){
         pasOK.classList.remove('notest');
         pasOK.classList.add('fax1');
         setErrorForMail(champ2,'Email invalide');
+        b2=true;
+        (!b1&&!b2)?butt.disabled=false:butt.disabled=true;
         
     }
+   
 
 }
+
+
 
 
 
