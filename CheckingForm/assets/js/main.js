@@ -50,8 +50,6 @@ function checkInputName(){
     var pasOK = document.getElementById('test1');
     var ok = document.getElementById('test2');
 
-    var valid = document.getElementById('insert');
-
     const champ = document.getElementById('insert');
     const champValue = champ.value.trim(); 
 
@@ -63,8 +61,8 @@ function checkInputName(){
 
     if(boolName===false)
     {   
-        valid.classList.remove('inputnom');
-        valid.classList.add('nomOKgreen');
+        
+        champ.classList.add('nomOKgreen');
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
         ok.classList.remove('notest2');
@@ -103,6 +101,7 @@ function checkInputMail(){
     //Fin du Check....
 
     if(boolMail===false){
+        
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
         ok.classList.remove('notest2');
