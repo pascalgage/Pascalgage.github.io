@@ -101,7 +101,8 @@ function checkInputMail(){
     //Fin du Check....
 
     if(boolMail===false){
-        
+
+        champ2.classList.add('nomOKgreen');
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
         ok.classList.remove('notest2');
@@ -141,6 +142,8 @@ function checkPassword(){
     //Fin du check...
 
     if(boolPass===true){
+
+        champ3.classList.add('nomOKgreen');
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
         ok.classList.remove('notest2');
@@ -179,6 +182,8 @@ function checkPassword2(){
     //Fin du check...
 
     if(boolPass2===true){
+
+        champ4.classList.add('nomOKgreen');
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
         ok.classList.remove('notest2');
