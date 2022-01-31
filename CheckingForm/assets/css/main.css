@@ -44,6 +44,7 @@ small{
     color: green;
     transition-duration: 1s;
 }
+
 .fax2{
     opacity: 0;
 }
@@ -51,6 +52,14 @@ small{
     opacity: 1;
     color: red;
     transition-duration: 1s;
+}
+
+.nomOK input{
+    border: 1px solid black;
+}
+
+.nomOKgreen{
+    border-color: greenyellow;
 }
 
 
