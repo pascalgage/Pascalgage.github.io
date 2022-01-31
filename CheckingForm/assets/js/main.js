@@ -56,7 +56,7 @@ function checkInputName(){
     var boolName=true;
 
     //CHECK...
-    (champValue!='')? boolName=false : boolName=true;
+    (champValue!='' && champValue.length<25)? boolName=false : boolName=true;
     //FIN DU CHECK...
 
     if(boolName===false)
@@ -80,7 +80,7 @@ function checkInputName(){
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
         pasOK.classList.add('fax1');
-        setErrorFor(champ,'Nom manquant');
+        setErrorFor(champ,'Nom incorrect');
         b1=false;
         (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
         
