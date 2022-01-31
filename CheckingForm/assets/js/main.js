@@ -50,7 +50,7 @@ function checkInputName(){
     var pasOK = document.getElementById('test1');
     var ok = document.getElementById('test2');
 
-    let valid=document.getElementById('insert');
+    var valid = document.getElementById('insert');
 
     const champ = document.getElementById('insert');
     const champValue = champ.value.trim(); 
@@ -63,7 +63,7 @@ function checkInputName(){
 
     if(boolName===false)
     {   
-        valid.classList.remove('nomOK');
+        valid.classList.remove('inputnom');
         valid.classList.add('nomOKgreen');
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');

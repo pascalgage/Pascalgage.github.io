@@ -54,7 +54,7 @@ small{
     transition-duration: 1s;
 }
 
-.nomOK input{
+.inputnom{
     border: 1px solid black;
 }
 
