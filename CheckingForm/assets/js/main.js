@@ -61,7 +61,7 @@ function checkInputName(){
 
     if(boolName===false)
     {   
-        
+        champ.classList.remove('nomPasokred');
         champ.classList.add('nomOKgreen');
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
@@ -77,6 +77,7 @@ function checkInputName(){
     else
     {
         champ.classList.remove('nomOKgreen');
+        champ.classList.add('nomPasokred');
         ok.classList.remove('fax2');
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
