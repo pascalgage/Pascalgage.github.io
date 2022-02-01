@@ -140,7 +140,7 @@ function checkPassword(){
     var boolPass=false;
 
     //Check...
-    (champValue3!='')?boolPass=true:boolPass=false;
+    (champValue3!='' && champValue3.length >=5)?boolPass=true:boolPass=false;
     //Fin du check...
 
     if(boolPass===true){
