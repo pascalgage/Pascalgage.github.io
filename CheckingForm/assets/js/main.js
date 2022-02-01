@@ -76,6 +76,7 @@ function checkInputName(){
     }
     else
     {
+        champ.classList.remove('nomOKgreen');
         ok.classList.remove('fax2');
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
@@ -114,6 +115,7 @@ function checkInputMail(){
 
 
     }else{
+        champ2.classList.remove('nomOKgreen');
         ok.classList.remove('fax2');
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
@@ -152,6 +154,7 @@ function checkPassword(){
         b3=true;
         (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
     }else{
+        champ3.classList.remove('nomOKgreen');
         ok.classList.remove('fax2');
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
@@ -192,6 +195,7 @@ function checkPassword2(){
         b4=true;
         (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
     }else{
+        champ4.classList.remove('nomOKgreen');
         ok.classList.remove('fax2');
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
