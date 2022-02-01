@@ -15,11 +15,12 @@
 
     </header>
     <main>
+        <form action="index.php" method="POST">
         <div class="container">
             
                     <div>
                     <div class="nomOK">
-                        <input type="text" class="inputnom" id="insert" placeholder="Nom" onblur="checkInputName()">
+                        <input type="text" class="inputnom" id="insert" name="nom" placeholder="Nom" onblur="checkInputName()">
                         <i class="fas fa-check-circle fax1" id="test1"></i>
                     </div>
                     <div>
@@ -30,7 +31,7 @@
 
                     <div>
                     <div class="emailOK">
-                        <input type="email" id="insertMail" placeholder="Email" onblur="checkInputMail()">
+                        <input type="email" id="insertMail" name="email" placeholder="Email" onblur="checkInputMail()">
                         <i class="fas fa-check-circle fax1" id="test3"></i>
                     </div>
                         <div>
@@ -41,7 +42,7 @@
                     
                     <div>
                     <div class="mdpOK">
-                        <input type="password" id="insertPassword" placeholder="Mot de passe" onblur="checkPassword()">
+                        <input type="password" id="insertPassword" name="password" placeholder="Mot de passe" onblur="checkPassword()">
                         <i class="fas fa-check-circle fax1" id="test5"></i>
                     </div>
                     <div>
@@ -52,7 +53,7 @@
 
                     <div>
                     <div class="mdpOK2">
-                        <input type="password" id="insertPassword2" placeholder="Confirmez mot passe" onblur="checkPassword2()">
+                        <input type="password" id="insertPassword2" name="password2" placeholder="Confirmez mot passe" onblur="checkPassword2()">
                         <i class="fas fa-check-circle fax1" id="test7"></i>
                     </div>
                     <div>
@@ -61,20 +62,36 @@
                     </div>
                     </div>
 
-                    <button class="validation" id="valid" disabled>VALIDEZ</button>
+                    <button class="validation" id="valid" disabled name="submit" onclick="phpdo()">VALIDEZ</button>
         </div>
+        </form>
     </main>
     <footer>
 
     </footer>
-    
 </body>
 </html>
-<?php 
 
 
 
+<?php
 
+session_start();
+$bdd = new PDO('mysql:host=127.0.0.1;dbname=trolka', 'root', '');
 
+if(isset($_POST['submit'])){
 
+    $username= ($_POST['nom']);
+    $email=htmlspecialchars($_POST['email']);
+    $password= sha1($_POST['password']);
+    $password2= sha1($_POST['password2']);
+
+    if(!empty($_POST['password'])){
+
+    
+
+    $insertDATA = $bdd->prepare("INSERT INTO trolkax(username, email, pass, password2) VALUES (?,?,?,?)");
+    $insertDATA->execute(array($username, $email, $password, $password2));
+}
+}
 ?>
