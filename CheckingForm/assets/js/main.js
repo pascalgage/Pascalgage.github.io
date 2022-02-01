@@ -143,7 +143,7 @@ function checkPassword(){
     var boolPass=false;
 
     //Check...
-    (champValue3!='' && champValue3.length >=5)?boolPass=true:boolPass=false;
+    (champValue3!='' && champValue3.length >=5 && champValue4.length<30)?boolPass=true:boolPass=false;
     //Fin du check...
 
     if(boolPass===true){
@@ -189,7 +189,7 @@ function checkPassword2(){
     var boolPass2=false;
 
     //Check...
-    (champValue4==champValue3 && champValue4!='')?boolPass2=true:boolPass2=false;
+    (champValue4==champValue3 && champValue4!=''&& champValue4.length >=5 && champValue4.length<30)?boolPass2=true:boolPass2=false;
     //Fin du check...
 
     if(boolPass2===true){
