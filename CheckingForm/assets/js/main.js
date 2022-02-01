@@ -73,9 +73,8 @@ function checkInputName(){
         
         
         
-    }
-    else
-    {
+    }else{
+    	
         champ.classList.remove('nomOKgreen');
         champ.classList.add('nomPasokred');
         ok.classList.remove('fax2');
@@ -104,6 +103,7 @@ function checkInputMail(){
 
     if(boolMail===false){
 
+    	champ2.classList.remove('nomPasokred');
         champ2.classList.add('nomOKgreen');
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
@@ -116,7 +116,9 @@ function checkInputMail(){
 
 
     }else{
+
         champ2.classList.remove('nomOKgreen');
+        champ2.classList.add('nomPasokred');
         ok.classList.remove('fax2');
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
@@ -146,6 +148,7 @@ function checkPassword(){
 
     if(boolPass===true){
 
+    	champ3.classList.remove('nomPasokred');
         champ3.classList.add('nomOKgreen');
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
@@ -154,8 +157,12 @@ function checkPassword(){
         setErrorForPassword(champ3,'');
         b3=true;
         (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
+
     }else{
+
+
         champ3.classList.remove('nomOKgreen');
+        champ3.classList.add('nomPasokred');
         ok.classList.remove('fax2');
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
@@ -187,6 +194,7 @@ function checkPassword2(){
 
     if(boolPass2===true){
 
+    	champ4.classList.remove('nomPasokred');
         champ4.classList.add('nomOKgreen');
         pasOK.classList.remove('fax1');
         pasOK.classList.add('notest');
@@ -195,8 +203,11 @@ function checkPassword2(){
         setErrorForPassword2(champ4,'');
         b4=true;
         (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
+
     }else{
+
         champ4.classList.remove('nomOKgreen');
+        champ4.classList.add('nomPasokred');
         ok.classList.remove('fax2');
         ok.classList.add('notest2');
         pasOK.classList.remove('notest');
