@@ -18,7 +18,7 @@
         <form action="index.php" method="POST">
         <div class="container" id="form">
                     <div class="buttonClose">
-                        <button id="buttonX" onclick="closeForm()">X</button>
+                        <button type="button" id="buttonX" onclick="closeForm()">X</button>
                     </div>
                     <div>
                     <div class="nomOK">

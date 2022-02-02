@@ -1,6 +1,7 @@
 //Gestion du bouton de fermeture haut droit du formulaire...
 
 function closeForm(){
+    
     var buttonx=document.getElementById('buttonX');
     let formulaire=document.getElementById('form');
     formulaire.classList.remove('container');
