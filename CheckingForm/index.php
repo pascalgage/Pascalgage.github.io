@@ -15,7 +15,7 @@
 
     </header>
     <main>
-        <form action="index.php" method="POST">
+        <form action="" method="POST">
         <div class="container" id="form">
                     <div class="buttonClose">
                         <button type="button" id="buttonX" onclick="closeForm()">X</button>
@@ -96,4 +96,5 @@ if(isset($_POST['submit'])){
     $insertDATA->execute(array($username, $email, $password, $password2));
 }
 }
+
 ?>
