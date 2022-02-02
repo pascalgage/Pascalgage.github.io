@@ -1,3 +1,12 @@
+//Gestion du bouton de fermeture haut droit du formulaire...
+
+function closeForm(){
+    var buttonx=document.getElementById('buttonX');
+    let formulaire=document.getElementById('form');
+    formulaire.classList.remove('container');
+    formulaire.classList.add('noform');
+}
+//Fin gestion du bouton fermeture...
 //Booléens relatifs à l'ouverture du bouton de validation...
 
 var b1 = false;
@@ -143,7 +152,7 @@ function checkPassword(){
     var boolPass=false;
 
     //Check...
-    (champValue3!='' && champValue3.length >=5 && champValue4.length<30)?boolPass=true:boolPass=false;
+    (champValue3!='' && champValue3.length >=5 && champValue3.length<30)?boolPass=true:boolPass=false;
     //Fin du check...
 
     if(boolPass===true){
