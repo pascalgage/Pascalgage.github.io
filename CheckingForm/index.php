@@ -64,7 +64,7 @@
                     </div>
                     </div>
 
-                    <button class="validation" id="valid" disabled name="submit" onclick="phpdo()">VALIDEZ</button>
+                    <button class="validation" id="valid" disabled name="submit" onclick="">VALIDEZ</button>
         </div>
         </form>
     </main>
