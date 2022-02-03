@@ -23,6 +23,9 @@ input{
 small{
     color: black;
 }
+span{
+    display: flex;
+}
 
 .container{
     background-color: #76D7C4;

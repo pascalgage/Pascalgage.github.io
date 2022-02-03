@@ -63,7 +63,7 @@
                         <small id="smallmessageMdp2"></small>
                     </div>
                     </div>
-
+                    <span><?php if(isset ($error)){ echo '<font color="black" size"2">' .$error.'</font>';} ?></span>
                     <button class="validation" id="valid" disabled name="submit" onclick="">VALIDEZ</button>
         </div>
         </form>
@@ -88,12 +88,15 @@ if(isset($_POST['submit'])){
     $password= sha1($_POST['password']);
     $password2= sha1($_POST['password2']);
 
-    if(!empty($_POST['password'])){
+    if(!empty($_POST['nom'])&&!empty($_POST['email'])&&!empty($_POST['password'])&&!empty($_POST['password2'])){
 
     $insertDATA = $bdd->prepare("INSERT INTO trolkax(username, email, pass, password2) VALUES (?,?,?,?)");
     $insertDATA->execute(array($username, $email, $password, $password2));
+    $error="INSCRIPTION OK !";
     header('Location: followinscription.html');
     exit;
+}else{
+    $error="Tous les champs doivent être complétés !";
 }
 }
 
