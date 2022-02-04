@@ -72,26 +72,7 @@
         </form>
         
     </main>
-    <div class="maincontent">
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet rem consectetur in, error earum modi reiciendis beatae, magni labore totam dolorum, expedita voluptates nam sed obcaecati? Vitae, explicabo inventore.</p>
-        </article>
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet rem consectetur in, error earum modi reiciendis beatae, magni labore totam dolorum, expedita voluptates nam sed obcaecati? Vitae, explicabo inventore.</p>
-        </article>
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet rem consectetur in, error earum modi reiciendis beatae, magni labore totam dolorum, expedita voluptates nam sed obcaecati? Vitae, explicabo inventore.</p>
-        </article>
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet rem consectetur in, error earum modi reiciendis beatae, magni labore totam dolorum, expedita voluptates nam sed obcaecati? Vitae, explicabo inventore.</p>
-        </article>
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet rem consectetur in, error earum modi reiciendis beatae, magni labore totam dolorum, expedita voluptates nam sed obcaecati? Vitae, explicabo inventore.</p>
-        </article>
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet rem consectetur in, error earum modi reiciendis beatae, magni labore totam dolorum, expedita voluptates nam sed obcaecati? Vitae, explicabo inventore.</p>
-        </article>
-    </div>
+    
     <footer>
 
     </footer>
@@ -117,7 +98,7 @@ if(isset($_POST['submit'])){
     $insertDATA = $bdd->prepare("INSERT INTO trolkax(username, email, pass, password2) VALUES (?,?,?,?)");
     $insertDATA->execute(array($username, $email, $password, $password2));
     header("Location: follow.html");
-    exit;
+    exit();
     
 }
 }
