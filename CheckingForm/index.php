@@ -16,12 +16,13 @@
     </header>
     
     <main id="mainform">
-    
+        
         <form action="index.php" method="POST">
         <div class="container" id="form">
                     <div class="buttonClose">
                         <button type="button" id="buttonX" onclick="closeForm()">X</button>
                     </div>
+                    <h1>VOTRE INSCRIPTION</h1>
                     <div>
                     <div class="nomOK">
                         <input type="text" class="inputnom" id="insert" name="nom" placeholder="Nom" onblur="checkInputName()">
@@ -65,8 +66,8 @@
                         <small id="smallmessageMdp2"></small>
                     </div>
                     </div>
-                    <span><?php if(isset ($error)){ echo '<font color="black" size"2">' .$error.'</font>';} ?></span>
-                    <button class="validation" id="valid" disabled name="submit" onclick="">VALIDEZ</button>
+
+                    <button class="validation" id="valid" disabled name="submit">VALIDEZ</button>
         </div>
         </form>
         
@@ -115,11 +116,9 @@ if(isset($_POST['submit'])){
 
     $insertDATA = $bdd->prepare("INSERT INTO trolkax(username, email, pass, password2) VALUES (?,?,?,?)");
     $insertDATA->execute(array($username, $email, $password, $password2));
-    $error="INSCRIPTION OK !";
-    header('Location: followinscription.html');
+    header("Location: follow.html");
     exit;
-}else{
-    $error="Tous les champs doivent être complétés !";
+    
 }
 }
 
