@@ -31,7 +31,7 @@ main{
 }
 .maincontent2{
     width: 500px;
-    background-color: red;
+    background-color: darkgray;
     justify-content: space-between;
 }
 
