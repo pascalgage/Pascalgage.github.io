@@ -2,12 +2,21 @@
 
 function closeForm(){
     
-    var buttonx=document.getElementById('buttonX');
-    let formulaire=document.getElementById('form');
-    formulaire.classList.remove('container');
-    formulaire.classList.add('noform');
+    //var buttonx=document.getElementById('buttonX');
+    let formulaire=document.getElementById('mainform');
+    formulaire.classList.remove('formset');
+    formulaire.classList.add('main');
 }
 //Fin gestion du bouton fermeture...
+
+function toggleSetForm(){
+    var formhide=document.getElementById('mainform');
+    formhide.classList.remove('main');
+    formhide.classList.add('formset');
+}
+
+
+
 //Booléens relatifs à l'ouverture du bouton de validation...
 
 var b1 = false;

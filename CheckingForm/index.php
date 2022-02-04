@@ -12,9 +12,11 @@
 </head>
 <body>
     <header>
-
+    <button onclick="toggleSetForm()">S'INSCRIRE SUR LE SITE</button>
     </header>
-    <main>
+    
+    <main id="mainform">
+    
         <form action="index.php" method="POST">
         <div class="container" id="form">
                     <div class="buttonClose">
@@ -67,7 +69,11 @@
                     <button class="validation" id="valid" disabled name="submit" onclick="">VALIDEZ</button>
         </div>
         </form>
+        
     </main>
+    <div class="maincontent">
+        
+        </div>
     <footer>
 
     </footer>
