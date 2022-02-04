@@ -5,7 +5,7 @@
 body{
     background-color: darkgrey;
     height: 100vh;
-    
+    display: flex;
     
 }
 main{
@@ -29,6 +29,11 @@ main{
     background-color: darkgrey;
     justify-content: flex-start;
 }
+.maincontent2{
+    width: 500px;
+    background-color: red;
+    justify-content: space-between;
+}
 
 button{
     border-radius: 5px;
@@ -47,7 +52,6 @@ span{
     display: flex;
 }
 header{
-    display: flex;
     justify-content: flex-end;
     background-color: darkgrey;
     

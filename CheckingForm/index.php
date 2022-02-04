@@ -72,7 +72,12 @@
         </form>
         
     </main>
-    
+    <div class="maincontent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, itaque. Tenetur ducimus assumenda optio repudiandae, ipsa aut odit! Sed veniam tempore eius illo maxime odio voluptates sunt ad natus quidem.</p>
+    </div>
+    <div class="maincontent2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perspiciatis expedita accusantium sed error fuga recusandae quibusdam velit, esse, magnam autem veniam. Vitae, voluptatem ipsum quisquam veniam dolorum natus quos!</p>
+    </div>
     <footer>
 
     </footer>
