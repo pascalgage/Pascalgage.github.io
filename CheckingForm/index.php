@@ -77,15 +77,13 @@
     </div>
     <div class="maincontent2">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perspiciatis expedita accusantium sed error fuga recusandae quibusdam velit, esse, magnam autem veniam. Vitae, voluptatem ipsum quisquam veniam dolorum natus quos!</p>
+        
     </div>
     <footer>
 
     </footer>
 </body>
 </html>
-
-
-
 <?php
 
 session_start();
