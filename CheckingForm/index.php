@@ -23,48 +23,48 @@
                         <button type="button" id="buttonX" onclick="closeForm()">X</button>
                     </div>
                     <h1>VOTRE INSCRIPTION</h1>
-                    <div>
-                    <div class="nomOK">
+                    <div id="general">
+                    
                         <input type="text" class="inputnom" id="insert" name="nom" placeholder="Nom" onblur="checkInputName()">
                         <i class="fas fa-check-circle fax1" id="test1"></i>
-                    </div>
-                    <div>
+                        <br>
+                    
                         <i class="fas fa-exclamation-circle fax2" id="test2"></i>
-                        <small id="smallmessage"></small>
-                    </div>
+                        <small></small>
+                    
                     </div>
 
-                    <div>
-                    <div class="emailOK">
+                    <div id="general">
+                    
                         <input type="email" id="insertMail" name="email" placeholder="Email" onblur="checkInputMail()">
                         <i class="fas fa-check-circle fax1" id="test3"></i>
-                    </div>
-                        <div>
+                        <br>
+                        
                         <i class="fas fa-exclamation-circle fax2" id="test4"></i>
-                        <small id="smallmessageMail"></small>
-                    </div>
+                        <small></small>
+                    
                     </div>
                     
-                    <div>
-                    <div class="mdpOK">
+                    <div id="general">
+                    
                         <input type="password" id="insertPassword" name="password" placeholder="Mot de passe" onblur="checkPassword()">
                         <i class="fas fa-check-circle fax1" id="test5"></i>
-                    </div>
-                    <div>
+                        <br>
+                    
                         <i class="fas fa-exclamation-circle fax2" id="test6"></i>
-                        <small id="smallmessageMdp"></small>
-                    </div>
+                        <small></small>
+                
                     </div>
 
-                    <div>
-                    <div class="mdpOK2">
+                    <div id="general">
+                    
                         <input type="password" id="insertPassword2" name="password2" placeholder="Confirmez mot passe" onblur="checkPassword2()">
                         <i class="fas fa-check-circle fax1" id="test7"></i>
-                    </div>
-                    <div>
+                        <br>
+                    
                         <i class="fas fa-exclamation-circle fax2" id="test8"></i>
-                        <small id="smallmessageMdp2"></small>
-                    </div>
+                        <small></small>
+                    
                     </div>
 
                     <button class="validation" id="valid" disabled name="submit">VALIDEZ</button>

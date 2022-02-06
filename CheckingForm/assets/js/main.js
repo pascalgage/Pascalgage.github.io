@@ -31,30 +31,13 @@ const butt=document.getElementById('valid');
 // Fonctions appelées au sein des Checkinputs()....
 
 function setErrorFor(input,message) {
-	
-    const formControl=document.getElementById('smallmessage');
-	formControl.innerText = message;
+
+	const location = input.parentElement;
+    location.className='general';
+    const mes= location.querySelector('small');
+    mes.innerText=message;
 
 }
-function setErrorForMail(input,message) {
-	
-    const formControl=document.getElementById('smallmessageMail');
-	formControl.innerText = message;
-
-}
-
-function setErrorForPassword(input,message){
-
-    const formControl=document.getElementById('smallmessageMdp');
-	formControl.innerText = message;
-}
-
-function setErrorForPassword2(input,message){
-
-    const formControl=document.getElementById('smallmessageMdp2');
-    formControl.innerText = message;
-}
-
 
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
@@ -127,11 +110,11 @@ function checkInputMail(){
     //Fin du Check....
 
     if(boolMail===false){
-        setErrorForMail(champ2,'');
+        setErrorFor(champ2,'');
         b2=true;
         isSuccess(champ2,pasOK,ok);
     }else{
-        setErrorForMail(champ2,'Email invalide');
+        setErrorFor(champ2,'Email invalide');
         b2=false;
         isFail(champ2,ok,pasOK); 
     }
@@ -154,11 +137,11 @@ function checkPassword(){
     //Fin du check...
 
     if(boolPass===true){
-        setErrorForPassword(champ3,'');
+        setErrorFor(champ3,'');
         b3=true;
         isSuccess(champ3,pasOK,ok);
     }else{
-        setErrorForPassword(champ3,'Mot de passe incorrect');
+        setErrorFor(champ3,'Mot de passe incorrect');
         b3=false;
         isFail(champ3,ok,pasOK);
     }
@@ -183,11 +166,11 @@ function checkPassword2(){
     //Fin du check...
 
     if(boolPass2===true){
-       setErrorForPassword2(champ4,'');
+       setErrorFor(champ4,'');
         b4=true;
         isSuccess(champ4,pasOK,ok);
     	}else{
-        setErrorForPassword2(champ4,'Mot de passe invalide');
+        setErrorFor(champ4,'Mot de passe invalide');
         b4=false;
         isFail(champ4,ok,pasOK);
     }
