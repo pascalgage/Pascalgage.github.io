@@ -77,21 +77,22 @@ function checkInputName(){
     const champ = document.getElementById('insert');
     const champValue = champ.value.trim(); 
 
-    var boolName=true;
-
-    //CHECK...
-    (champValue!='' && champValue.length<50)? boolName=false : boolName=true;
-    //FIN DU CHECK...
-
-    if(boolName===false)
+    if(champValue=='')
     {   
-        setErrorFor(champ,'');
-        b1=true;
-        isSuccess(champ,pasOK,ok);  
-    }else{
-        setErrorFor(champ,'Nom incorrect');
+        setErrorFor(champ,'Champ non-renseigné');
         b1=false;
         isFail(champ,ok,pasOK);
+
+    }else if (champValue.length>25)
+    {
+        setErrorFor(champ,'Pas plus de 25 caractères');
+        b1=false;
+        isFail(champ,ok,pasOK);
+    }else
+    {
+        setErrorFor(champ,'');
+        b1=true;
+        isSuccess(champ,pasOK,ok);
     }
 }
 
@@ -102,20 +103,19 @@ function checkInputMail(){
     const champ2 = document.getElementById('insertMail');
     const champValue2 = champ2.value.trim();
 
-    var boolMail=true;
-
-    //Check....
-    (champValue2!='' && isEmail(champValue2))?boolMail=false : boolMail=true;
-    //Fin du Check....
-
-    if(boolMail===false){
+    if(champValue2==''){
+        setErrorFor(champ2,'Champ non-renseigné');
+        b2=false;
+        isFail(champ2,ok,pasOK);
+    }else if (!isEmail(champValue2))
+    {
+        setErrorFor(champ2,'Adresse incorrecte');
+        b2=false;
+        isFail(champ2,ok,pasOK); 
+    }else{
         setErrorFor(champ2,'');
         b2=true;
         isSuccess(champ2,pasOK,ok);
-    }else{
-        setErrorFor(champ2,'Email invalide');
-        b2=false;
-        isFail(champ2,ok,pasOK); 
     }
 }
 
