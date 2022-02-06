@@ -80,7 +80,7 @@ function checkInputName(){
     var boolName=true;
 
     //CHECK...
-    (champValue!='' && champValue.length<25)? boolName=false : boolName=true;
+    (champValue!='' && champValue.length<50)? boolName=false : boolName=true;
     //FIN DU CHECK...
 
     if(boolName===false)
