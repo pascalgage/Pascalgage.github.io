@@ -119,6 +119,7 @@ function checkInputMail(){
     }
 }
 
+//Variable globale du mot de passe 1 à comparer avec mot de passe 2
 var champValue3;
 
 function checkPassword(){
@@ -128,20 +129,23 @@ function checkPassword(){
     var champ3 = document.getElementById('insertPassword');
     champValue3 = champ3.value.trim();
 
-    var boolPass=false;
-
-    //Check...
-    (champValue3!='' && champValue3.length >=5 && champValue3.length<30)?boolPass=true:boolPass=false;
-    //Fin du check...
-
-    if(boolPass===true){
+    if(champValue3==''){
+        setErrorFor(champ3,'Champ non-renseigné');
+        b3=false;
+        isFail(champ3,ok,pasOK);
+    }else if(champValue3.length <=5) 
+    {
+        setErrorFor(champ3,'6 caractères au minimum');
+        b3=false;
+        isFail(champ3,ok,pasOK);
+    }else if(champValue3.length>30){
+        setErrorFor(champ3,'30 caractères au maximum');
+        b3=false;
+        isFail(champ3,ok,pasOK);
+    }else{
         setErrorFor(champ3,'');
         b3=true;
         isSuccess(champ3,pasOK,ok);
-    }else{
-        setErrorFor(champ3,'Mot de passe incorrect');
-        b3=false;
-        isFail(champ3,ok,pasOK);
     }
 
 
@@ -159,7 +163,10 @@ function checkPassword2(){
     var boolPass2=false;
 
     //Check...
-    (champValue4==champValue3 && champValue4!=''&& champValue4.length >=5 && champValue4.length<30)?boolPass2=true:boolPass2=false;
+    (champValue4==champValue3 && 
+        champValue4!=''&& 
+        champValue4.length >=5 && 
+        champValue4.length<30)?boolPass2=true:boolPass2=false;
     //Fin du check...
 
     if(boolPass2===true){
