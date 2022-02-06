@@ -62,6 +62,29 @@ function isEmail(email) {
 
 //  FIN DES FONCTIONS appelées au sein des CheckInput()....
 
+//Début des deux principales fonctions génériques (bloc d'éxécution)
+function isSuccess(champ,pasOK,ok){
+    champ.classList.remove('nomPasokred');
+    champ.classList.add('nomOKgreen');
+    pasOK.classList.remove('fax1');
+    pasOK.classList.add('notest');
+    ok.classList.remove('notest2');
+    ok.classList.add('fax2');
+    (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
+}
+
+function isFail(champ,ok,pasOK){
+    champ.classList.remove('nomOKgreen');
+    champ.classList.add('nomPasokred');
+    ok.classList.remove('fax2');
+    ok.classList.add('notest2');
+    pasOK.classList.remove('notest');
+    pasOK.classList.add('fax1');
+    (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
+}
+
+//Fin des 2 fonctions génériques...
+
 // Début des fonctions de vérification des INPUTS...(entrées ou saisies des infos utilisateur)....
 
 function checkInputName(){
@@ -80,30 +103,13 @@ function checkInputName(){
 
     if(boolName===false)
     {   
-        champ.classList.remove('nomPasokred');
-        champ.classList.add('nomOKgreen');
-        pasOK.classList.remove('fax1');
-        pasOK.classList.add('notest');
-        ok.classList.remove('notest2');
-        ok.classList.add('fax2');
         setErrorFor(champ,'');
         b1=true;
-        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
-        
-        
-        
+        isSuccess(champ,pasOK,ok);  
     }else{
-    	
-        champ.classList.remove('nomOKgreen');
-        champ.classList.add('nomPasokred');
-        ok.classList.remove('fax2');
-        ok.classList.add('notest2');
-        pasOK.classList.remove('notest');
-        pasOK.classList.add('fax1');
         setErrorFor(champ,'Nom incorrect');
         b1=false;
-        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
-        
+        isFail(champ,ok,pasOK);
     }
 }
 
@@ -121,31 +127,13 @@ function checkInputMail(){
     //Fin du Check....
 
     if(boolMail===false){
-
-    	champ2.classList.remove('nomPasokred');
-        champ2.classList.add('nomOKgreen');
-        pasOK.classList.remove('fax1');
-        pasOK.classList.add('notest');
-        ok.classList.remove('notest2');
-        ok.classList.add('fax2');
         setErrorForMail(champ2,'');
         b2=true;
-        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
-        
-
-
+        isSuccess(champ2,pasOK,ok);
     }else{
-
-        champ2.classList.remove('nomOKgreen');
-        champ2.classList.add('nomPasokred');
-        ok.classList.remove('fax2');
-        ok.classList.add('notest2');
-        pasOK.classList.remove('notest');
-        pasOK.classList.add('fax1');
         setErrorForMail(champ2,'Email invalide');
         b2=false;
-        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
-        
+        isFail(champ2,ok,pasOK); 
     }
 }
 
@@ -166,30 +154,13 @@ function checkPassword(){
     //Fin du check...
 
     if(boolPass===true){
-
-    	champ3.classList.remove('nomPasokred');
-        champ3.classList.add('nomOKgreen');
-        pasOK.classList.remove('fax1');
-        pasOK.classList.add('notest');
-        ok.classList.remove('notest2');
-        ok.classList.add('fax2');
         setErrorForPassword(champ3,'');
         b3=true;
-        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
-
+        isSuccess(champ3,pasOK,ok);
     }else{
-
-
-        champ3.classList.remove('nomOKgreen');
-        champ3.classList.add('nomPasokred');
-        ok.classList.remove('fax2');
-        ok.classList.add('notest2');
-        pasOK.classList.remove('notest');
-        pasOK.classList.add('fax1');
         setErrorForPassword(champ3,'Mot de passe incorrect');
         b3=false;
-        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
-
+        isFail(champ3,ok,pasOK);
     }
 
 
@@ -212,32 +183,14 @@ function checkPassword2(){
     //Fin du check...
 
     if(boolPass2===true){
-
-    	champ4.classList.remove('nomPasokred');
-        champ4.classList.add('nomOKgreen');
-        pasOK.classList.remove('fax1');
-        pasOK.classList.add('notest');
-        ok.classList.remove('notest2');
-        ok.classList.add('fax2');
-        setErrorForPassword2(champ4,'');
+       setErrorForPassword2(champ4,'');
         b4=true;
-        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
-
-    }else{
-
-        champ4.classList.remove('nomOKgreen');
-        champ4.classList.add('nomPasokred');
-        ok.classList.remove('fax2');
-        ok.classList.add('notest2');
-        pasOK.classList.remove('notest');
-        pasOK.classList.add('fax1');
+        isSuccess(champ4,pasOK,ok);
+    	}else{
         setErrorForPassword2(champ4,'Mot de passe invalide');
         b4=false;
-        (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
-
+        isFail(champ4,ok,pasOK);
     }
-
-
 }
 
 
