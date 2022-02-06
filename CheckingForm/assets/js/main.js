@@ -2,19 +2,19 @@
 
 function closeForm(){
     
-    //var buttonx=document.getElementById('buttonX');
     let formulaire=document.getElementById('mainform');
     formulaire.classList.remove('formset');
     formulaire.classList.add('main');
 }
 //Fin gestion du bouton fermeture...
 
+//Gestion de l'apparition du formulaire à l'écran
 function toggleSetForm(){
-    var formhide=document.getElementById('mainform');
+    let formhide=document.getElementById('mainform');
     formhide.classList.remove('main');
     formhide.classList.add('formset');
 }
-
+//Fin de l'apparition du formulaire
 
 
 //Booléens relatifs à l'ouverture du bouton de validation...
@@ -74,7 +74,6 @@ function checkInputName(){
 
     var pasOK = document.getElementById('test1');
     var ok = document.getElementById('test2');
-
     const champ = document.getElementById('insert');
     const champValue = champ.value.trim(); 
 
@@ -126,7 +125,6 @@ function checkPassword(){
     
     var pasOK = document.getElementById('test5');
     var ok = document.getElementById('test6');
-
     var champ3 = document.getElementById('insertPassword');
     champValue3 = champ3.value.trim();
 
@@ -155,7 +153,6 @@ function checkPassword2(){
     
     var pasOK = document.getElementById('test7');
     var ok = document.getElementById('test8');
-
     var champ4 = document.getElementById('insertPassword2');
     champValue4 = champ4.value.trim();
 
@@ -166,7 +163,7 @@ function checkPassword2(){
     //Fin du check...
 
     if(boolPass2===true){
-       setErrorFor(champ4,'');
+        setErrorFor(champ4,'');
         b4=true;
         isSuccess(champ4,pasOK,ok);
     	}else{
