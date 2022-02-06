@@ -2,7 +2,7 @@
 
 function closeForm(){
     
-    var buttonx=document.getElementById('buttonX');
+    //var buttonx=document.getElementById('buttonX');
     let formulaire=document.getElementById('mainform');
     formulaire.classList.remove('formset');
     formulaire.classList.add('main');
@@ -192,6 +192,10 @@ function checkPassword2(){
         isFail(champ4,ok,pasOK);
     }
 }
+
+
+
+
 
 
 
