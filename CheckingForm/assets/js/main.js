@@ -160,24 +160,27 @@ function checkPassword2(){
     var champ4 = document.getElementById('insertPassword2');
     champValue4 = champ4.value.trim();
 
-    var boolPass2=false;
-
-    //Check...
-    (champValue4==champValue3 && 
-        champValue4!=''&& 
-        champValue4.length >=5 && 
-        champValue4.length<30)?boolPass2=true:boolPass2=false;
-    //Fin du check...
-
-    if(boolPass2===true){
+    if(champValue4!=champValue3){
+        setErrorFor(champ4,'Mots de passe différents');
+        b4=false;
+        isFail(champ4,ok,pasOK);
+    	}else if(champValue4==''){
+        setErrorFor(champ4,'Champ non-renseigné');
+        b4=false;
+        isFail(champ4,ok,pasOK);
+        }else if(champValue4.length <=5){
+        setErrorFor(champ4,'6 caractères au minimum');
+        b4=false;
+        isFail(champ4,ok,pasOK)
+        }else if(champValue4.length>30){
+        setErrorFor(champ4,'30 caractères au maximum');
+        b4=false;
+        isFail(champ4,ok,pasOK);
+        }else{
         setErrorFor(champ4,'');
         b4=true;
         isSuccess(champ4,pasOK,ok);
-    	}else{
-        setErrorFor(champ4,'Mot de passe invalide');
-        b4=false;
-        isFail(champ4,ok,pasOK);
-    }
+        }
 }
 
 
