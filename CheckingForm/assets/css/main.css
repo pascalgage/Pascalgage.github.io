@@ -118,8 +118,11 @@ header{
 
 }
 .validation{
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 10px;
+}
+.reinit{
+    margin-top: 10px;
 }
 
 .validation ::after{

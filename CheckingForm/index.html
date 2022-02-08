@@ -12,12 +12,12 @@
 </head>
 <body>
     <header>
-    <button onclick="toggleSetForm()">S'INSCRIRE SUR LE SITE</button>
+    <button onclick="closeSetForm()">S'INSCRIRE SUR LE SITE</button>
     </header>
     
     <main id="mainform">
         
-        <form action="./assets/Back-End/sendToDatabase.php" method="POST">
+        <form action="./assets/Back-End/sendToDatabase.php" method="POST" id="formulaire">
         <div class="container" id="form">
                     <div class="buttonClose">
                         <button type="button" id="buttonX" onclick="closeForm()">X</button>
@@ -66,12 +66,13 @@
                         <small></small>
                     
                     </div>
-
-                    <button class="validation" id="valid" disabled name="submit">VALIDEZ</button>
+                    <button type="button" class="reinit" id="" name="" onclick="reinitialise()">ANNULER</button><br>
+                    <button class="validation" id="valid" disabled name="submit">VALIDEZ L'INSCRIPTION</button>
         </div>
         </form>
-        
+                    
     </main>
+                    
     <div class="maincontent">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, itaque. Tenetur ducimus assumenda optio repudiandae, ipsa aut odit! Sed veniam tempore eius illo maxime odio voluptates sunt ad natus quidem.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, itaque. Tenetur ducimus assumenda optio repudiandae, ipsa aut odit! Sed veniam tempore eius illo maxime odio voluptates sunt ad natus quidem.</p>

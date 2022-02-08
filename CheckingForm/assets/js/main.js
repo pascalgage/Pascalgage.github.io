@@ -9,12 +9,63 @@ function closeForm(){
 //Fin gestion du bouton fermeture...
 
 //Gestion de l'apparition du formulaire à l'écran
-function toggleSetForm(){
+function closeSetForm(){
     let formhide=document.getElementById('mainform');
     formhide.classList.remove('main');
     formhide.classList.add('formset');
 }
 //Fin de l'apparition du formulaire
+//Action du bouton annuler...
+function reinitialise(){
+    const champs = document.getElementById('formulaire');
+    champs.reset();
+    b1=false;
+    b2=false;
+    b3=false;
+    b4=false;
+    (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
+    //Enlever tous les textes d'erreurs...
+    let num1=document.getElementById('insert');
+    let num2=document.getElementById('insertMail');
+    let num3=document.getElementById('insertPassword');
+    let num4=document.getElementById('insertPassword2');
+    num1.classList.remove('nomPasokred','fax1','notest2','nomOKgreen','fax2','notest');
+    setErrorFor(num1,'');
+    num2.classList.remove('nomPasokred','fax1','notest2','nomOKgreen','fax2','notest');
+    setErrorFor(num2,'');
+    num3.classList.remove('nomPasokred','fax1','notest2','nomOKgreen','fax2','notest');
+    setErrorFor(num3,'');
+    num4.classList.remove('nomPasokred','fax1','notest2','nomOKgreen','fax2','notest');
+    setErrorFor(num4,'');
+    //Enlever toutes les pastilles....
+    let tes1=document.getElementById('test1');
+    tes1.classList.remove('notest');
+    tes1.classList.add('fax1');
+    let tes1b=document.getElementById('test2');
+    tes1b.classList.remove('notest2');
+    tes1b.classList.add('fax2');
+
+    let tes2=document.getElementById('test3');
+    tes2.classList.remove('notest');
+    tes2.classList.add('fax1');
+    let tes2b=document.getElementById('test4');
+    tes2b.classList.remove('notest2');
+    tes2b.classList.add('fax2');
+
+    let tes3=document.getElementById('test5');
+    tes3.classList.remove('notest');
+    tes3.classList.add('fax1');
+    let tes3b=document.getElementById('test6');
+    tes3b.classList.remove('notest2');
+    tes3b.classList.add('fax2');
+
+    let tes4=document.getElementById('test7');
+    tes4.classList.remove('notest');
+    tes4.classList.add('fax1');
+    let tes4b=document.getElementById('test8');
+    tes4b.classList.remove('notest2');
+    tes4b.classList.add('fax2');
+}
 
 
 //Booléens relatifs à l'ouverture du bouton de validation...
