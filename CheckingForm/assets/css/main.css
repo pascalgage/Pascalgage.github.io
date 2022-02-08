@@ -45,6 +45,11 @@ form{
     background-color: darkgray;
     justify-content: space-between;
 }
+.maincontent3{
+    width: 500px;
+    background-color: darkgray;
+    justify-content: space-between;
+}
 
 button{
     border-radius: 5px;
