@@ -6,10 +6,13 @@ body{
     background-color: darkgrey;
     height: 100vh;
     display: flex;
+    position:absolute;
+    
     
 }
 main{
     position: absolute;
+    z-index: 1;
     background-color: darkgrey;
     opacity: 1;
     display: flex;
@@ -18,7 +21,14 @@ main{
     justify-content: flex-start;
     align-items: center;
     transition-duration: 2s;
+    
 }
+
+form{
+    position: absolute;
+    z-index: -1;
+}
+
 .formset{
     margin-left: 700px;
     transition-duration: 2s;
@@ -58,6 +68,12 @@ header{
     
 
 }
+.mainform{
+    position: absolute;
+    
+}
+
+
 .container{
     background-color: lightskyblue;
     opacity: 1;
