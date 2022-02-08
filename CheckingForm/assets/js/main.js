@@ -160,12 +160,12 @@ function checkPassword2(){
     var champ4 = document.getElementById('insertPassword2');
     champValue4 = champ4.value.trim();
 
-    if(champValue4!=champValue3){
-        setErrorFor(champ4,'Mots de passe différents');
+    if(champValue4==''){
+        setErrorFor(champ4,'Champ non-renseigné');
         b4=false;
         isFail(champ4,ok,pasOK);
-    	}else if(champValue4==''){
-        setErrorFor(champ4,'Champ non-renseigné');
+    	}else if(champValue4!=champValue3){
+        setErrorFor(champ4,'Mots de passe différents');
         b4=false;
         isFail(champ4,ok,pasOK);
         }else if(champValue4.length <=5){
