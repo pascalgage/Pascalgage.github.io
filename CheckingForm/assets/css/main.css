@@ -30,6 +30,7 @@ form{
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
+    margin-left:-20px;
 }
 small{
     font-family: Arial, Helvetica, sans-serif;
@@ -37,7 +38,9 @@ small{
 }
 
 label{
-    font-size: 50%;
+    font-size: 75%;
+    font-style: italic;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 .formset{
@@ -70,7 +73,8 @@ button:hover{
     background-color: lightskyblue;
 }
 input{
-    width: 150px;
+    width: 220px;
+    height: 30px;
 }
 small{
     color: black;
