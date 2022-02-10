@@ -46,7 +46,7 @@ label{
 }
 .formset{
     margin-left: 600px;
-    transition-duration: 2s;
+    transition-duration: 0.7s;
 }
 .maincontent{
     
@@ -97,6 +97,7 @@ header{
 
 .container{
     background-color: lightskyblue;
+    zoom: 150%;
     opacity: 1;
     display: flex;
     border-radius: 10px;
@@ -142,7 +143,7 @@ header{
 .notest{
     opacity: 1;
     color: green;
-    transition-duration: 1s;
+    transition-duration: 0.7s;
 }
 
 .fax2{
@@ -151,7 +152,7 @@ header{
 .notest2{
     opacity: 1;
     color: red;
-    transition-duration: 1s;
+    transition-duration: 0.7s;
 }
 
 
