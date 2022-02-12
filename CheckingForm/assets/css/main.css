@@ -51,10 +51,18 @@ header{
     display: flex;
     justify-content: flex-end;
 }
-footer{
-    background-color: brown;
+
+.wrapper{
+    background-color: lightcyan;
+    opacity: 0.3;
     height: 100vh;
     width: 100%;
+    margin-top: 900px;
+    transition-duration: 0.9s;
+}
+.footer-wrapper{
+    margin-top: -900px;
+    transition-duration: 0.9s;
 }
 .formset{
     margin-left: 650px;

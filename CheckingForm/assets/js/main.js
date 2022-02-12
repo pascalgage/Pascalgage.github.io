@@ -5,6 +5,10 @@ function closeForm(){
     let formulaire=document.getElementById('mainform');
     formulaire.classList.remove('formset');
     formulaire.classList.add('main');
+    let wrapped=document.getElementById('wrapper');
+    wrapped.classList.remove('footer-wrapper');
+    wrapped.classList.add('footer');
+
 }
 //Fin gestion du bouton fermeture...
 
@@ -13,6 +17,9 @@ function closeSetForm(){
     let formhide=document.getElementById('mainform');
     formhide.classList.remove('main');
     formhide.classList.add('formset');
+    let wrapped=document.getElementById('wrapper');
+    wrapped.classList.remove('footer');
+    wrapped.classList.add('footer-wrapper');
 }
 //Fin de l'apparition du formulaire
 //Action du bouton annuler...
