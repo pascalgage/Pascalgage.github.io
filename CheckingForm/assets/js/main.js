@@ -1,26 +1,44 @@
+//Super-Fonction pour refactoriser le code....
+function removeAddClass(elementAchanger,de,a){
+    
+    const p1=elementAchanger;
+    p1+'';
+    const p2=de;
+    p2+'';
+    const p3=a;
+    p3+'';
 
+    let params=document.getElementById(p1);
+    params.classList.remove(p2);
+    params.classList.add(p3);
+}
+//Intra-fonction à fonction générique isSuccess et isFail...
+function removeAdd(de,a){
+    const p1=de;
+    p1+'';
+    const p2=a;
+    p2+'';
+
+    let params=document.getElementById('champ');
+    params.classList.remove(p1);
+    params.classList.add(p2);
+}
+//Pas bon, pour l'instant...
 //Gestion du bouton de fermeture haut droit du formulaire...
 
 function closeForm(){
-    
-    let formulaire=document.getElementById('mainform');
-    formulaire.classList.remove('formset');
-    formulaire.classList.add('main');
-    let wrapped=document.getElementById('wrapper');
-    wrapped.classList.remove('footer-wrapper');
-    wrapped.classList.add('footer');
+    removeAddClass('mainform','formset','main');
+    removeAddClass('wrapper','footer-wrapper','footer');
+
 
 }
 //Fin gestion du bouton fermeture...
 
 //Gestion de l'apparition du formulaire à l'écran
-function closeSetForm(){
-    let formhide=document.getElementById('mainform');
-    formhide.classList.remove('main');
-    formhide.classList.add('formset');
-    let wrapped=document.getElementById('wrapper');
-    wrapped.classList.remove('footer');
-    wrapped.classList.add('footer-wrapper');
+function openSetForm(){
+    removeAddClass('mainform','main','formset');
+    removeAddClass('wrapper','footer','footer-wrapper');
+    
 }
 //Fin de l'apparition du formulaire
 //Action du bouton annuler...
@@ -32,11 +50,13 @@ function reinitialise(){
     b3=false;
     b4=false;
     (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
+    
     //Enlever tous les textes d'erreurs...
     let num1=document.getElementById('insert');
     let num2=document.getElementById('insertMail');
     let num3=document.getElementById('insertPassword');
     let num4=document.getElementById('insertPassword2');
+
     num1.classList.remove('nomPasokred','fax1','notest2','nomOKgreen','fax2','notest');
     setErrorFor(num1,'');
     num2.classList.remove('nomPasokred','fax1','notest2','nomOKgreen','fax2','notest');
@@ -45,34 +65,17 @@ function reinitialise(){
     setErrorFor(num3,'');
     num4.classList.remove('nomPasokred','fax1','notest2','nomOKgreen','fax2','notest');
     setErrorFor(num4,'');
+
     //Enlever toutes les pastilles....
-    let tes1=document.getElementById('test1');
-    tes1.classList.remove('notest');
-    tes1.classList.add('fax1');
-    let tes1b=document.getElementById('test2');
-    tes1b.classList.remove('notest2');
-    tes1b.classList.add('fax2');
+    removeAddClass('test1','notest','fax1');
+    removeAddClass('test2','notest2','fax2');
+    removeAddClass('test3','notest','fax1');
+    removeAddClass('test4','notest2','fax2');
+    removeAddClass('test5','notest','fax1');
+    removeAddClass('test6','notest2','fax2');
+    removeAddClass('test7','notest','fax1');
+    removeAddClass('test8','notest2','fax2');
 
-    let tes2=document.getElementById('test3');
-    tes2.classList.remove('notest');
-    tes2.classList.add('fax1');
-    let tes2b=document.getElementById('test4');
-    tes2b.classList.remove('notest2');
-    tes2b.classList.add('fax2');
-
-    let tes3=document.getElementById('test5');
-    tes3.classList.remove('notest');
-    tes3.classList.add('fax1');
-    let tes3b=document.getElementById('test6');
-    tes3b.classList.remove('notest2');
-    tes3b.classList.add('fax2');
-
-    let tes4=document.getElementById('test7');
-    tes4.classList.remove('notest');
-    tes4.classList.add('fax1');
-    let tes4b=document.getElementById('test8');
-    tes4b.classList.remove('notest2');
-    tes4b.classList.add('fax2');
 }
 
 
@@ -106,6 +109,7 @@ function isEmail(email) {
 
 //Début des deux principales fonctions génériques (bloc d'éxécution)
 function isSuccess(champ,pasOK,ok){
+    
     champ.classList.remove('nomPasokred');
     champ.classList.add('nomOKgreen');
     pasOK.classList.remove('fax1');
@@ -116,6 +120,7 @@ function isSuccess(champ,pasOK,ok){
 }
 
 function isFail(champ,ok,pasOK){
+
     champ.classList.remove('nomOKgreen');
     champ.classList.add('nomPasokred');
     ok.classList.remove('fax2');
