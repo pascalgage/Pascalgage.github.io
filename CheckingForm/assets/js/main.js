@@ -1,3 +1,8 @@
+var champ = document.getElementById('insert');
+var champ2 = document.getElementById('insertMail');
+var champ3 = document.getElementById('insertPassword');
+var champ4 = document.getElementById('insertPassword2');
+
 //Super-Fonction pour refactoriser le code....
 function removeAddClass(elementAchanger,de,a){
     
@@ -14,14 +19,7 @@ function removeAddClass(elementAchanger,de,a){
 }
 //Intra-fonction à fonction générique isSuccess et isFail...
 function removeAdd(de,a){
-    const p1=de;
-    p1+'';
-    const p2=a;
-    p2+'';
 
-    let params=document.getElementById('champ');
-    params.classList.remove(p1);
-    params.classList.add(p2);
 }
 //Pas bon, pour l'instant...
 //Gestion du bouton de fermeture haut droit du formulaire...
@@ -49,6 +47,7 @@ function reinitialise(){
     b2=false;
     b3=false;
     b4=false;
+    
     (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
     
     //Enlever tous les textes d'erreurs...
@@ -110,10 +109,13 @@ function isEmail(email) {
 //Début des deux principales fonctions génériques (bloc d'éxécution)
 function isSuccess(champ,pasOK,ok){
     
+    //removeAddClass(champ,'nomPasokred','nomOKgreen');
     champ.classList.remove('nomPasokred');
     champ.classList.add('nomOKgreen');
+    //removeAddClass(pasOK,'fax1','notest');
     pasOK.classList.remove('fax1');
     pasOK.classList.add('notest');
+    //removeAddClass(ok,'notest2','fax2');
     ok.classList.remove('notest2');
     ok.classList.add('fax2');
     (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
@@ -138,7 +140,7 @@ function checkInputName(){
 
     var pasOK = document.getElementById('test1');
     var ok = document.getElementById('test2');
-    const champ = document.getElementById('insert');
+    var champ = document.getElementById('insert');
     const champValue = champ.value.trim(); 
 
     if(champValue=='')
@@ -164,7 +166,7 @@ function checkInputMail(){
 
     var pasOK = document.getElementById('test3');
     var ok = document.getElementById('test4');
-    const champ2 = document.getElementById('insertMail');
+    var champ2 = document.getElementById('insertMail');
     const champValue2 = champ2.value.trim();
 
     if(champValue2==''){
