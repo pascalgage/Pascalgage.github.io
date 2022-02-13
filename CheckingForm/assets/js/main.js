@@ -1,8 +1,3 @@
-var champ = document.getElementById('insert');
-var champ2 = document.getElementById('insertMail');
-var champ3 = document.getElementById('insertPassword');
-var champ4 = document.getElementById('insertPassword2');
-
 //Super-Fonction pour refactoriser le code....
 function removeAddClass(elementAchanger,de,a){
     
@@ -17,11 +12,7 @@ function removeAddClass(elementAchanger,de,a){
     params.classList.remove(p2);
     params.classList.add(p3);
 }
-//Intra-fonction à fonction générique isSuccess et isFail...
-function removeAdd(de,a){
 
-}
-//Pas bon, pour l'instant...
 //Gestion du bouton de fermeture haut droit du formulaire...
 
 function closeForm(){
@@ -109,13 +100,13 @@ function isEmail(email) {
 //Début des deux principales fonctions génériques (bloc d'éxécution)
 function isSuccess(champ,pasOK,ok){
     
-    //removeAddClass(champ,'nomPasokred','nomOKgreen');
+    
     champ.classList.remove('nomPasokred');
     champ.classList.add('nomOKgreen');
-    //removeAddClass(pasOK,'fax1','notest');
+    
     pasOK.classList.remove('fax1');
     pasOK.classList.add('notest');
-    //removeAddClass(ok,'notest2','fax2');
+    
     ok.classList.remove('notest2');
     ok.classList.add('fax2');
     (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
@@ -125,8 +116,10 @@ function isFail(champ,ok,pasOK){
 
     champ.classList.remove('nomOKgreen');
     champ.classList.add('nomPasokred');
+
     ok.classList.remove('fax2');
     ok.classList.add('notest2');
+
     pasOK.classList.remove('notest');
     pasOK.classList.add('fax1');
     (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
