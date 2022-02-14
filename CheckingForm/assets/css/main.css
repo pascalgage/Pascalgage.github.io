@@ -39,10 +39,14 @@ small{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 70%;
     
+    
+}
+.general small{
+    color: deeppink;
 }
 
 label{
-    
+    color: darkorange;
     font-size: 75%;
     font-style: italic;
     font-weight: bold;
@@ -94,6 +98,7 @@ header{
 
 .container{
     background-color: lightskyblue;
+    background-image: url(../img/PASKY4.JPG);
     zoom: 125%;
     opacity: 1;
     display: flex;
