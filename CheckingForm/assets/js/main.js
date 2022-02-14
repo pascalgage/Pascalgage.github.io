@@ -99,10 +99,11 @@ function isEmail(email) {
 
 //Début des deux principales fonctions génériques (bloc d'éxécution)
 function isSuccess(champ,pasOK,ok){
+    const p=champ;
+    p+'';
     
-    
-    champ.classList.remove('nomPasokred');
-    champ.classList.add('nomOKgreen');
+    p.classList.remove('nomPasokred');
+    p.classList.add('nomOKgreen');
     
     pasOK.classList.remove('fax1');
     pasOK.classList.add('notest');
