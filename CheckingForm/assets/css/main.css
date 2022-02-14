@@ -147,7 +147,7 @@ header{
 }
 .notest{
     opacity: 1;
-    color: green;
+    color: greenyellow;
     transition-duration: 0.7s;
 }
 
