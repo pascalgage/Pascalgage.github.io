@@ -99,6 +99,9 @@ header{
 .container{
     background-color: lightskyblue;
     background-image: url(../img/PASKY4.JPG);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
     zoom: 125%;
     opacity: 1;
     display: flex;
