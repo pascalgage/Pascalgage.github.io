@@ -109,6 +109,7 @@ function isSuccess(champ,pasOK,ok){
     
     ok.classList.remove('notest2');
     ok.classList.add('fax2');
+
     (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
 }
 
@@ -122,6 +123,7 @@ function isFail(champ,ok,pasOK){
 
     pasOK.classList.remove('notest');
     pasOK.classList.add('fax1');
+    
     (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
 }
 
