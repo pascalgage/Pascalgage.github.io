@@ -160,8 +160,11 @@ span{
 .buttonClose2{
     display: flex;
     justify-content: flex-end;
+    padding: 5px;
 }
-
+.buttonClose2 button:hover{
+    background-color: #FD3A40;
+}
 
 
 .buttonClose{
