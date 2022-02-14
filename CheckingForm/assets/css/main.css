@@ -122,7 +122,11 @@ header{
     justify-content: flex-end;
     margin-top: -400px;
 }
-
+.header-classic{
+    width: 100%;
+    display: flex;
+    
+}
 button{
     border-radius: 5px;
     
@@ -140,12 +144,7 @@ small{
 span{
     display: flex;
 }
-header{
-    justify-content: flex-end;
-    background-color: darkred;
-    
 
-}
 .mainform{
     position: absolute;
     
