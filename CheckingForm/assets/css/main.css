@@ -7,6 +7,8 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(../img/pasky.JPG);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -20,16 +22,53 @@ main{
     background-color: darkgrey;
     display: flex;
     height: 100vh;
-    margin-left: -1000px;
+    margin-left: -3000px;
     justify-content: flex-start;
     align-items: center;
     transition-duration: 0.7s;
     
 }
 
+.formset{
+    margin-left: -500px;
+    transition-duration: 0.7s;
+}
+
+.mainconnect{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px solid darkred;
+    background-image: url(../img/PASKY4.JPG);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+    margin-top: 200px;
+    margin-bottom: -200px;
+    height: 500px;
+    width: 400px;
+
+}
 form{
     position: absolute;
     z-index: -1;
+}
+.container{
+    background-color: lightskyblue;
+    background-image: url(../img/PASKY4.JPG);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+    zoom: 125%;
+    opacity: 1;
+    display: flex;
+    border-radius: 10px;
+    border: 4px solid darkred;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 400px;
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -58,15 +97,8 @@ header{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-top: -400px;
 }
-
-
-.formset{
-    margin-left: 650px;
-    transition-duration: 0.7s;
-}
-
-
 
 button{
     border-radius: 5px;
@@ -97,26 +129,7 @@ header{
 }
 
 
-.container{
-    background-color: lightskyblue;
-    background-image: url(../img/PASKY4.JPG);
-    background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-    zoom: 125%;
-    opacity: 1;
-    display: flex;
-    border-radius: 10px;
-    border: 4px solid darkred;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    width: 400px;
-}
-.noform{
-    display: none;
-}
+
 
 .buttonClose{
     width: 100%;
@@ -142,6 +155,7 @@ header{
 }
 
 
+/*DEBUT des styles rouge ou vert des INPUTS*/ 
 
 .fax1{
     opacity: 0;

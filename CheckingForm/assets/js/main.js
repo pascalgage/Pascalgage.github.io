@@ -26,7 +26,7 @@ function closeForm(){
 //Gestion de l'apparition du formulaire à l'écran
 function openSetForm(){
     removeAddClass('mainform','main','formset');
-    removeAddClass('wrapper','footer','footer-wrapper');
+    
     
 }
 //Fin de l'apparition du formulaire
