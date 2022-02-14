@@ -5,6 +5,8 @@
 body{
     background-color: darkgrey;
     height: 100vh;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +38,8 @@ main{
 
 .mainconnect{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     border-radius: 10px;
     border: 4px solid darkred;
     background-image: url(../img/PASKY4.JPG);
@@ -45,9 +48,28 @@ main{
 	background-position: center center;
     margin-top: 200px;
     margin-bottom: -200px;
+    margin-left: -2800px;
     height: 500px;
     width: 400px;
+    transition-duration: 0.7s;
 
+}
+.formset2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    border: 4px solid darkred;
+    background-image: url(../img/PASKY4.JPG);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+    margin-top: 200px;
+    margin-bottom: -200px;
+    margin-left: 0px;
+    height: 500px;
+    width: 400px;
+    transition-duration: 0.5s;
 }
 form{
     position: absolute;
@@ -73,6 +95,7 @@ form{
 h1{
     font-family: Arial, Helvetica, sans-serif;
     margin-left:-20px;
+    text-align: center;
     color: greenyellow;
 }
 small{
@@ -127,7 +150,10 @@ header{
     position: absolute;
     
 }
-
+.buttonClose2{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 
@@ -142,6 +168,8 @@ header{
     background-color: crimson;
 
 }
+
+
 .validation{
     margin-top: 5px;
     margin-bottom: 10px;

@@ -17,17 +17,22 @@ function removeAddClass(elementAchanger,de,a){
 
 function closeForm(){
     removeAddClass('mainform','formset','main');
-    removeAddClass('wrapper','footer-wrapper','footer');
-
 
 }
 //Fin gestion du bouton fermeture...
 
 //Gestion de l'apparition du formulaire à l'écran
 function openSetForm(){
+    closeSetConnection();
     removeAddClass('mainform','main','formset');
     
-    
+}
+function openSetConnection(){
+    closeForm();
+    removeAddClass('mainconnect2','mainconnect','formset2');
+}
+function closeSetConnection(){
+    removeAddClass('mainconnect2','formset2','mainconnect');
 }
 //Fin de l'apparition du formulaire
 //Action du bouton annuler...
