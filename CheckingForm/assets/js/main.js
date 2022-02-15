@@ -73,7 +73,24 @@ function reinitialise(){
 
 }
 function reinitialiseConn(){
+        
+    const champs=document.getElementById('form-de-connexion');
+    champs.reset();
 
+    c1=false;
+    c2=false;
+    (c1&&c2)?buttConn.disabled=false:buttConn.disabled=true;
+
+    let num1=document.getElementById('insertMailconnect');
+    let num2=document.getElementById('insertPassconnect');
+    num1.classList.remove('nomPasokred','fax1','notest2','nomOKgreen','fax2','notest');
+    setErrorFor(num1,'');
+    num2.classList.remove('nomPasokred','fax1','notest2','nomOKgreen','fax2','notest');
+    setErrorFor(num2,'');
+    removeAddClass('test9','notest','fax1');
+    removeAddClass('test10','notest2','fax2');
+    removeAddClass('test11','notest','fax1');
+    removeAddClass('test12','notest2','fax2');
 }
 
 //Booléens relatifs à l'ouverture du bouton de validation...

@@ -36,7 +36,10 @@ main{
     transition-duration: 0.7s;
 }
 .formulaire-connexion{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .mainconnect{
     display: flex;
@@ -58,6 +61,7 @@ main{
     transition-duration: 0.7s;
 
 }
+
 .formset2{
     display: flex;
     flex-direction: column;
@@ -79,7 +83,7 @@ main{
 }
 form{
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 }
 .container{
     background-color: lightskyblue;
@@ -167,7 +171,7 @@ span{
 .buttonClose2{
     display: flex;
     width: 100%;
-    margin-top: -145px;
+    margin-top: -365px;
     justify-content: flex-end;
     padding: 5px;
 }
