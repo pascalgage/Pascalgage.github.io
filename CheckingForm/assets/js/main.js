@@ -248,6 +248,71 @@ function checkPassword2(){
         }
 }
 
+//Booléens relatifs à l'ouverture du bouton connexion
+c1=false;
+c2=false;
+const buttConn=document.getElementById('validConn');
+(c1&&c2)?buttConn.disabled=false:buttConn.disabled=true;
+
+
+function checkConnMail(){
+    var pasOK = document.getElementById('test9');
+    var ok = document.getElementById('test10');
+    var champ5 = document.getElementById('insertMailconnect');
+    champValue5 = champ5.value.trim();
+
+    if(champValue5=='')
+    {   
+        setErrorFor(champ5,'Champ non-renseigné');
+        c1=false;
+        isFail(champ5,ok,pasOK);
+
+    }else if (champValue5.length>25)
+    {
+        setErrorFor(champ5,'Pas plus de 25 caractères');
+        c1=false;
+        isFail(champ5,ok,pasOK);
+
+    }else if(!isEmail(champValue5))
+    {   
+        setErrorFor(champ5,'Adresse incorrecte');
+        c1=false;
+        isFail(champ5,ok,pasOK);
+
+    }else{
+        setErrorFor(champ5,'');
+        c1=true;
+        isSuccess(champ5,pasOK,ok);
+        (c1&&c2)?buttConn.disabled=false:buttConn.disabled=true;
+    }
+}
+
+function checkConnPassword(){
+    var pasOK = document.getElementById('test11');
+    var ok = document.getElementById('test12');
+    var champ6 = document.getElementById('insertPassconnect');
+    champValue6 = champ6.value.trim();
+
+    if(champValue6==''){
+        setErrorFor(champ6,'Champ non-renseigné');
+        c2=false;
+        isFail(champ6,ok,pasOK);
+
+    }else if(champValue6.length <=5){
+        setErrorFor(champ6,'6 caractères au minimum');
+        c2=false;
+        isFail(champ6,ok,pasOK);
+    }else if (champValue6.length>25){
+        setErrorFor(champ6,'Mot de passe invalide');
+        c2=false;
+        isFail(champ6,ok,pasOK);
+    }else{
+        setErrorFor(champ6,'');
+        c2=true;
+        isSuccess(champ6,pasOK,ok);
+        (c1&&c2)?buttConn.disabled=false:buttConn.disabled=true;
+    }
+}
 
 
 
