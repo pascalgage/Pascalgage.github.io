@@ -35,7 +35,9 @@ main{
     margin-left: -500px;
     transition-duration: 0.7s;
 }
-
+.formulaire-connexion{
+    
+}
 .mainconnect{
     display: flex;
     flex-direction: column;
@@ -165,11 +167,12 @@ span{
 .buttonClose2{
     display: flex;
     width: 100%;
-    margin-top: -190px;
+    margin-top: -145px;
     justify-content: flex-end;
     padding: 5px;
 }
 .buttonClose2 button:hover{
+    
     background-color: #FD3A40;
 }
 

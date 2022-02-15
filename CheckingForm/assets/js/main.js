@@ -72,7 +72,9 @@ function reinitialise(){
     removeAddClass('test8','notest2','fax2');
 
 }
+function reinitialiseConn(){
 
+}
 
 //Booléens relatifs à l'ouverture du bouton de validation...
 
