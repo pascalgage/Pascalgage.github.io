@@ -114,6 +114,7 @@ function isSuccess(champ,pasOK,ok){
     ok.classList.remove('notest2');
     ok.classList.add('fax2');
 
+    (c1&&c2)?buttConn.disabled=false:buttConn.disabled=true;
     (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
 }
 
@@ -127,7 +128,8 @@ function isFail(champ,ok,pasOK){
 
     pasOK.classList.remove('notest');
     pasOK.classList.add('fax1');
-    
+
+    (c1&&c2)?buttConn.disabled=false:buttConn.disabled=true;
     (b1&&b2&&b3&&b4)?butt.disabled=false:butt.disabled=true;
 }
 
@@ -283,7 +285,7 @@ function checkConnMail(){
         setErrorFor(champ5,'');
         c1=true;
         isSuccess(champ5,pasOK,ok);
-        (c1&&c2)?buttConn.disabled=false:buttConn.disabled=true;
+        
     }
 }
 
@@ -310,7 +312,7 @@ function checkConnPassword(){
         setErrorFor(champ6,'');
         c2=true;
         isSuccess(champ6,pasOK,ok);
-        (c1&&c2)?buttConn.disabled=false:buttConn.disabled=true;
+        
     }
 }
 
