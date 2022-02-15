@@ -42,6 +42,7 @@ main{
     align-items: center;
 }
 .mainconnect{
+    box-shadow: 10px 5px 15px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,6 +64,7 @@ main{
 }
 
 .formset2{
+    box-shadow: 10px 5px 15px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +88,7 @@ form{
     z-index: 0;
 }
 .container{
-    background-color: lightskyblue;
+    box-shadow: 10px 5px 15px black;
     background-image: url(../img/PASKY4.JPG);
     background-size: cover;
 	background-repeat: no-repeat;
