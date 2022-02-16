@@ -83,10 +83,10 @@
             <button type="button" id="" onclick="closeSetConnection()">X</button>
         </div>
         <h1>CONNEXION</h1>
-        <form action="" class="formulaire-connexion" id="form-de-connexion">
+        <form action="./assets/Back-End/connexion.php" method="POST" class="formulaire-connexion" id="form-de-connexion">
         <div id="generalconnexion">
             <label for="insertMail">VOTRE E-MAIL :</label><br>
-            <input type="email" id="insertMailconnect" name="email" placeholder="Email" onblur="checkConnMail()">
+            <input type="email" id="insertMailconnect" name="mailconnect" placeholder="Email" onblur="checkConnMail()">
             <i class="fas fa-check-circle fax1" id="test9"></i>
             <br>
             
@@ -96,7 +96,7 @@
         </div>
         <div id="general">
             <label for="insertPassword">VOTRE MOT DE PASSE :</label><br>
-            <input type="password" id="insertPassconnect" name="password" placeholder="Mot de passe" onblur="checkConnPassword()">
+            <input type="password" id="insertPassconnect" name="mdpconnect" placeholder="Mot de passe" onblur="checkConnPassword()">
             <i class="fas fa-check-circle fax1" id="test11"></i>
             <br>
         
@@ -105,7 +105,7 @@
     
         </div>
         
-        <button class="validationConn" id="validConn" disabled name="">CONNEXION</button><br>
+        <button class="validationConn" id="validConn" disabled name="formconnexion">CONNEXION</button><br>
         <button type="button" class="" id="" name="" onclick="reinitialiseConn()">ANNULER</button>
     </form>
     </div>
