@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    height: 100vh;
+    background-image: url(../img/pasky.JPG);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+h1{
+    color: darkorange;
+    zoom: 125%;
+}
