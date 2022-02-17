@@ -18,9 +18,11 @@ if(isset($_POST['formconnexion'])) {
          header("Location: firstPAGE.html?ID=".$_SESSION['ID']);
       } else {
          $erreur = "Mauvais mail ou mot de passe !";
+         header("Location:errorC.php");
       }
    } else {
       $erreur = "Tous les champs doivent être complétés !";
+      header("Location:errorC.php");
    }
 }
 ?>
