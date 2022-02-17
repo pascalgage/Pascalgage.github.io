@@ -12,10 +12,10 @@ if(isset($_POST['formconnexion'])) {
       $userexist = $requser->rowCount();
       if($userexist == 1) {
          $userinfo = $requser->fetch();
-         $_SESSION['id'] = $userinfo['id'];
+         $_SESSION['ID'] = $userinfo['ID'];
          $_SESSION['username'] = $userinfo['username'];
          $_SESSION['email'] = $userinfo['email'];
-         header("Location: firstPAGE.html?id=".$_SESSION['id']);
+         header("Location: firstPAGE.html?ID=".$_SESSION['ID']);
       } else {
          $erreur = "Mauvais mail ou mot de passe !";
       }
