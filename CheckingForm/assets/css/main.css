@@ -148,6 +148,7 @@ header{
 .header-classic h1{
     color: #FD3A40;
     zoom: 125%;
+    font-style: italic;
 }
 button{
     border-radius: 5px;
