@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/assets/img/pasky.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 5px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: silver;
+}
