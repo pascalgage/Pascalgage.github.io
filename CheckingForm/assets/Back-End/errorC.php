@@ -7,6 +7,9 @@
 </head>
 
 <body>
+    <form action="/index.html">
     <h1>ERREUR DE CONNEXION !</h1>
+    <button type="submit" >RETOURNER à la PAGE D'ACCUEIL</button>
+    </form>
 </body>
 </html>
